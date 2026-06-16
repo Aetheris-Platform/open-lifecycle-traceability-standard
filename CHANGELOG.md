@@ -10,6 +10,7 @@ OLTS is currently in the `v0.x` draft series. See [docs/versioning.md](docs/vers
 
 - Draft `v0.2.0` conformance model with level expectations, diagnostics guidance, validation reporting, extension guidance, and adopter claim language.
 - Draft `v0.3.0` schema contracts for lifecycle records, relationship rows, diagnostics, conformance reports, and generated artifact metadata.
+- `v1.0.0` readiness plan with stable-standard gates, launch settings, release evidence, and explicit approval requirements.
 
 ### Changed
 

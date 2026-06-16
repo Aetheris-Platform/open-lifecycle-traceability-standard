@@ -6,7 +6,7 @@ OLTS uses versioned milestones to separate draft maturity from stable standard c
 
 OLTS is in the `v0.x` draft series. Draft milestones are intended for review, experimentation, compatibility feedback, and early adopter trials before a stable public `v1.0.0` release. They may change as the community clarifies terminology, schemas, conformance levels, and governance.
 
-The first stable standard target is `v1.0.0`. After `v1.0.0`, compatibility promises become stricter and breaking changes require a major version. `v0.1.0` introduces provisional conformance levels for orientation; `v0.2.0` is expected to formalize diagnostics, validation expectations, and adopter-claim language.
+The first stable standard target is `v1.0.0`; see [v1-readiness.md](v1-readiness.md) for the launch gates. After `v1.0.0`, compatibility promises become stricter and breaking changes require a major version. `v0.1.0` introduces provisional conformance levels for orientation; `v0.2.0` is expected to formalize diagnostics, validation expectations, and adopter-claim language.
 
 ## Planned Readiness Path
 
@@ -31,7 +31,7 @@ During the `v0.x` draft period, minor versions may still include breaking change
 
 Before `v1.0.0`, maintainers may use version labels, changelog sections, branches, or private/internal tags to organize draft milestones. A draft milestone does not automatically mean the repository is publicly released.
 
-At `v1.0.0` and later, a public release tag should identify the state of:
+At `v1.0.0` and later, after the [v1 readiness gates](v1-readiness.md) are satisfied, a public release tag should identify the state of:
 
 - the draft or stable specification under `spec/`;
 - public guidance under `docs/`;
