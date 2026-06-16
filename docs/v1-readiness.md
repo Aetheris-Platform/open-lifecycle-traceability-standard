@@ -131,7 +131,7 @@ Before `v1.0.0`:
 - [x] Code of Conduct, security policy, trademark guidance, notice, license, issue templates, and PR template are reviewed.
 - [x] License posture for specification text and tooling is explicitly confirmed before stable publication.
 - [ ] Discussion categories and repository settings support public feedback.
-- [ ] Branch protection and review requirements are configured before public launch.
+- [x] Branch protection and review requirements are configured before public launch.
 
 Evidence to review:
 
@@ -174,11 +174,11 @@ Before tagging `v1.0.0`:
 
 - [x] Changelog has a `v1.0.0` section with stable scope and migration notes.
 - [ ] All intended launch PRs are merged.
-- [ ] Final private/local scrub is clean.
-- [ ] Markdown links are checked.
-- [ ] Schema files parse as JSON and validate against the selected JSON Schema validator path.
-- [ ] Minimal examples validate against the selected schema or documented equivalent checks.
-- [ ] Public README, overview, and Get Started path reflect the actual public repo state.
+- [x] Final private/local scrub is clean.
+- [x] Markdown links are checked.
+- [x] Schema files parse as JSON and validate against the selected JSON Schema validator path or documented equivalent consistency checks.
+- [x] Minimal and realistic examples validate against the selected schema or documented equivalent checks.
+- [x] Public README, overview, and Get Started path reflect the actual public repo state.
 - [ ] Maintainers explicitly approve public visibility and tag creation.
 - [ ] A tracked release-readiness issue or final checklist PR records the approval evidence and links to this plan.
 
