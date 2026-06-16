@@ -8,5 +8,5 @@ APP-VAL-00006,APP-EVD-00034,evidenced_by,Validation scenario has review evidence
 APP-SR-00027,APP-VT-00019,verified_by,Requirement is verified by an automated test,implemented
 APP-VT-00019,APP-EVD-00033,evidenced_by,Verification test has CI run evidence,captured
 APP-SR-00027,APP-ADR-00004,explained_by,Requirement rationale is explained by the decision record,accepted
-APP-ART-00008,APP-SR-00027,documents,Design artifact documents the requirement,reviewed
+APP-SR-00027,APP-ART-00008,documented_by,Requirement is documented by the design artifact,reviewed
 APP-ART-00008,APP-EVD-00035,evidenced_by,Design artifact has review approval evidence,captured

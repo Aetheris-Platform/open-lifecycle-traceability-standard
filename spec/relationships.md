@@ -6,7 +6,7 @@ Normative keywords in this file use the convention defined in [core.md](core.md#
 
 ## Relationship Principle
 
-A lifecycle relationship is a reviewed statement that one lifecycle entity depends on, supports, verifies, validates, documents, explains, or provides evidence for another lifecycle entity.
+A lifecycle relationship is a reviewed statement that one lifecycle entity depends on another, is specified by provenance, is verified by a test, is validated by a scenario, is documented by an artifact, is explained by a decision, or is evidenced by a reviewable source.
 
 Relationships SHOULD be explicit. OLTS-compatible tooling MUST NOT infer canonical relationships from text similarity, filename similarity, row order, heading names, generated diagrams, or AI guesses.
 
@@ -29,7 +29,7 @@ Other useful links include:
 ```text
 Work Item --implements--> Capability, Use Case, or Requirement
 Requirement --explained_by--> Decision
-Artifact --documents--> Capability, Use Case, Requirement, or Decision
+Capability, Use Case, Requirement, or Decision --documented_by--> Artifact
 Artifact --evidenced_by--> Evidence
 Decision --supersedes--> Decision
 ```
@@ -68,11 +68,13 @@ A record's inline relationship fields, such as `verified_by` or `explained_by`, 
 | `verified_by` | Requirement | Verification test | Test verifies the requirement. |
 | `validated_by` | Use case | Validation scenario | Scenario validates the use case or stakeholder need. |
 | `evidenced_by` | Test, validation, artifact, or release claim | Evidence | Evidence supports the source claim. |
-| `documents` | Artifact | Capability, use case, requirement, or decision | Artifact documents the target. |
+| `documented_by` | Capability, use case, requirement, or decision | Artifact | Source lifecycle entity is documented by the artifact. |
 | `explained_by` | Requirement, artifact, or work item | Decision | Decision explains rationale. |
 | `supersedes` | Decision or artifact | Decision or artifact | Source replaces or supersedes target. |
 
-The vocabulary is directed. Relationship names are not inverse aliases. For example, `requires` is written from use case to requirement; OLTS core does not define an inverse `supports` relationship from requirement to use case. Repositories that need inverse or domain-specific relationships MAY define them as local extensions, but they MUST document those extensions and keep them separate from core OLTS vocabulary.
+The vocabulary is directed. Relationship names are not inverse aliases. For example, `requires` is written from use case to requirement; OLTS core does not define an inverse `supports` relationship from requirement to use case.
+
+For lifecycle-to-artifact traceability, canonical stored relationship rows use `documented_by` from the lifecycle entity to the artifact. Artifact-centric tools MAY render the inverse display wording, such as "Artifact documents Requirement," but `documents` is not the canonical core stored relationship. Repositories that need inverse or domain-specific relationships MAY define them as local extensions, but they MUST document those extensions and keep them separate from core OLTS vocabulary.
 
 The vocabulary is intentionally draft. Unknown relationships SHOULD be surfaced as diagnostics until a repo explicitly allows them.
 

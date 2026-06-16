@@ -45,6 +45,8 @@
     - openspec:passwordless-sign-in
   verified_by:
     - APP-VT-00019
+  documented_by:
+    - APP-ART-00008
   explained_by:
     - APP-ADR-00004
   source:
@@ -111,8 +113,6 @@
   title: Authentication sequence diagram
   description: Design artifact documenting the one-time code sign-in flow.
   status: reviewed
-  documents:
-    - APP-SR-00027
   evidenced_by:
     - APP-EVD-00035
   source:

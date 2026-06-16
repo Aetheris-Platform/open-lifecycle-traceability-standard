@@ -69,7 +69,7 @@
         "verified_by",
         "validated_by",
         "evidenced_by",
-        "documents",
+        "documented_by",
         "explained_by",
         "supersedes"
       ]
