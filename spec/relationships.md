@@ -70,6 +70,14 @@ A record's inline relationship fields, such as `verified_by` or `explained_by`, 
 
 The vocabulary is intentionally draft. Unknown relationships SHOULD be surfaced as diagnostics until a repo explicitly allows them.
 
+## Relationship Extensions
+
+Repositories MAY define local relationship verbs during the draft period. Local verbs MUST be documented before they are used in a conformance claim, and they MUST NOT be presented as core OLTS vocabulary unless accepted into the standard.
+
+A relationship extension SHOULD define its source type, target type or external reference namespace, direction, meaning, and diagnostic behavior. Unknown relationship verbs SHOULD be surfaced as diagnostics unless a documented local extension or reviewed exception applies.
+
+See [../docs/extensions.md](../docs/extensions.md) for the broader extension model.
+
 ## Relationship File Strategy
 
 For early adoption, relationship-specific files are often easier to review than one large generic traceability file. Examples:

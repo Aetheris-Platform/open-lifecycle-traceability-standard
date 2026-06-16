@@ -206,6 +206,8 @@ The `v0.3.0` schemas draft translates the conformance semantics into small revie
 
 Adopters MAY define local entity types, relationship verbs, external reference namespaces, and diagnostic codes during the draft period.
 
+Detailed extension behavior is described in [../docs/extensions.md](../docs/extensions.md).
+
 Extensions SHOULD be documented with:
 
 - name;
