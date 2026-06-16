@@ -98,12 +98,13 @@ When a semantic check cannot be completed, the validator SHOULD emit a diagnosti
 
 The minimal example can be checked as a small shape and relationship-row validation case:
 
-- parse [../examples/minimal/requirement.yaml](../examples/minimal/requirement.yaml);
-- validate the requirement record shape;
-- confirm `type: SR` matches `APP-SR-00014`;
+- parse every record in [../examples/minimal/records.yaml](../examples/minimal/records.yaml);
+- validate each record shape;
+- confirm each `type` matches the ID type segment;
 - parse [../examples/minimal/relationships.csv](../examples/minimal/relationships.csv);
 - validate each parsed relationship row;
-- confirm all relationship verbs are in the draft vocabulary.
+- confirm all relationship verbs are in the draft vocabulary;
+- confirm each OLTS relationship source and target resolves to a record in the example.
 
 The realistic example exercises a broader scoped L4 traceability chain:
 

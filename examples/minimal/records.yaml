@@ -1,0 +1,27 @@
+- id: APP-UC-00003
+  type: UC
+  title: Operator revokes an API token
+  requires:
+    - APP-SR-00014
+
+- id: APP-SR-00014
+  type: SR
+  title: Operator can revoke an API token
+  verified_by:
+    - APP-VT-00221
+  explained_by:
+    - APP-ADR-00007
+
+- id: APP-VT-00221
+  type: VT
+  title: Verify API token revocation
+  evidenced_by:
+    - APP-EVD-00098
+
+- id: APP-EVD-00098
+  type: EVD
+  title: API token revocation test evidence
+
+- id: APP-ADR-00007
+  type: ADR
+  title: Token revocation design rationale

@@ -105,7 +105,7 @@ Evidence to review:
 
 Before `v1.0.0`:
 
-- [ ] Minimal example validates against the stable schema contracts or documented equivalent checks.
+- [x] Minimal example validates against the stable schema contracts or documented equivalent checks.
 - [x] A realistic multi-entity example exists for adopters who need more than the minimal chain.
 - [x] Adoption guide explains a first `L1` or `L2` slice without requiring a full migration.
 - [ ] AI-agent adoption prompt preserves source truth and defaults to plan-only unless edits are explicitly authorized.
@@ -115,6 +115,7 @@ Evidence to review:
 
 - [../examples/minimal/README.md](../examples/minimal/README.md)
 - [../examples/realistic/README.md](../examples/realistic/README.md)
+- [example-validation-review.md](example-validation-review.md)
 - [adoption-guide.md](adoption-guide.md)
 - [pipeline-integration.md](pipeline-integration.md)
 - [ai-agent-adoption-prompt.md](ai-agent-adoption-prompt.md)
