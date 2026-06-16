@@ -4,18 +4,20 @@ This file defines the draft OLTS conformance model intended for the `v0.2.0` con
 
 OLTS conformance is designed to help adopters make honest, incremental claims about lifecycle traceability without requiring a specific tool, database, UI, ALM platform, MBSE framework, OpenSpec workflow, or AI agent.
 
+Normative keywords in this file use the convention defined in [core.md](core.md#normative-language).
+
 ## Conformance Principles
 
-1. Conformance levels are cumulative. A repository claiming `OLTS L3` is expected to satisfy `L1`, `L2`, and `L3` for the stated scope.
-2. Claims should name their scope. A claim may cover a whole repository, one product area, one release line, or one reviewed path such as `docs/olts/`.
-3. Source truth must be explicit. Generated diagrams, dashboards, indexes, and reports are derived unless accepted by normal review.
-4. Unknown, missing, or ambiguous lifecycle data should produce diagnostics, not false confidence.
-5. Automation can validate, diagnose, summarize, and propose. Humans approve canonical lifecycle truth.
-6. Local extensions are allowed, but claims should separate draft OLTS vocabulary from repository-specific extensions.
+1. Conformance levels are cumulative. A repository claiming `OLTS L3` SHOULD satisfy `L1`, `L2`, and `L3` for the stated scope.
+2. Claims SHOULD name their scope. A claim MAY cover a whole repository, one product area, one release line, or one reviewed path such as `docs/olts/`.
+3. Source truth MUST be explicit. Generated diagrams, dashboards, indexes, and reports are derived unless accepted by normal review.
+4. Unknown, missing, or ambiguous lifecycle data SHOULD produce diagnostics, not false confidence.
+5. Automation MAY validate, diagnose, summarize, and propose. Humans approve canonical lifecycle truth.
+6. Local extensions MAY be allowed, but claims SHOULD separate draft OLTS vocabulary from repository-specific extensions.
 
 ## Claim Shape
 
-During the `v0.x` draft period, claims should be phrased as draft adoption statements, not certification statements.
+During the `v0.x` draft period, claims SHOULD be phrased as draft adoption statements, not certification statements.
 
 Good examples:
 
@@ -25,7 +27,7 @@ This release branch maintains an OLTS L2 draft relationship set for selected use
 This product area targets OLTS L3 for requirements that are in active release scope.
 ```
 
-Avoid:
+Claims MUST NOT use certification language unless a certification policy exists. Avoid:
 
 ```text
 OLTS certified.
@@ -153,7 +155,7 @@ L5 does not require OLTS reference tooling. A repository can satisfy an L5 draft
 
 ## Diagnostic Severity
 
-OLTS diagnostics should be understandable before they are enforceable. A draft validator or manual review process should classify diagnostics in a way maintainers can act on.
+OLTS diagnostics SHOULD be understandable before they are enforceable. A draft validator or manual review process SHOULD classify diagnostics in a way maintainers can act on.
 
 Recommended severities:
 
@@ -164,13 +166,13 @@ Recommended severities:
 | `error` | A conformance expectation failed for the stated scope. |
 | `blocked` | The source could not be read, so the checker cannot make a trustworthy claim. |
 
-A missing file, parser failure, inaccessible external source, or disabled data source should not be treated as a healthy zero-result scan.
+A missing file, parser failure, inaccessible external source, or disabled data source MUST NOT be treated as a healthy zero-result scan.
 
 ## Validation Expectations
 
-Draft machine-readable schemas are available under [../schemas/](../schemas/). Adopters can also validate conformance with reviewed checklists, repository scripts, CI jobs, or external tooling.
+Draft machine-readable schemas are available under [../schemas/](../schemas/). Adopters MAY also validate conformance with reviewed checklists, repository scripts, CI jobs, or external tooling.
 
-A useful validation report should identify:
+A useful validation report SHOULD identify:
 
 - claimed level and scope;
 - source files or external systems inspected;
@@ -179,25 +181,25 @@ A useful validation report should identify:
 - explicit exceptions;
 - whether the report is advisory or blocking.
 
-The `v0.3.0` schemas draft translates the conformance semantics into small reviewable contracts. Schemas should support diagnostics and adoption without replacing human-approved lifecycle truth.
+The `v0.3.0` schemas draft translates the conformance semantics into small reviewable contracts. Schemas SHOULD support diagnostics and adoption without replacing human-approved lifecycle truth.
 
 ## Extensions
 
-Adopters may define local entity types, relationship verbs, external reference namespaces, and diagnostic codes during the draft period.
+Adopters MAY define local entity types, relationship verbs, external reference namespaces, and diagnostic codes during the draft period.
 
-Extensions should be documented with:
+Extensions SHOULD be documented with:
 
 - name;
 - meaning;
 - expected source and target when the extension is a relationship;
 - whether the extension is local-only or proposed for future OLTS standardization.
 
-A repository should not present local extensions as core OLTS vocabulary unless they are accepted into the standard.
+A repository MUST NOT present local extensions as core OLTS vocabulary unless they are accepted into the standard.
 
 ## OpenSpec and Non-OpenSpec Workflows
 
-OpenSpec can satisfy change-provenance needs in an OLTS workflow, but OpenSpec is not required for conformance.
+OpenSpec MAY satisfy change-provenance needs in an OLTS workflow, but OpenSpec is not required for conformance.
 
-Non-OpenSpec repositories can use GitHub Issues, GitLab Issues, Jira tickets, Azure Boards work items, ADRs, release plans, pull requests, change request documents, or other reviewed records as provenance.
+Non-OpenSpec repositories MAY use GitHub Issues, GitLab Issues, Jira tickets, Azure Boards work items, ADRs, release plans, pull requests, change request documents, or other reviewed records as provenance.
 
 The conformance requirement is explicit, reviewable provenance. It is not a requirement to use any one planning or change-governance tool.
