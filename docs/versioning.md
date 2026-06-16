@@ -14,7 +14,7 @@ The first stable standard target is `v1.0.0`; see [v1-readiness.md](v1-readiness
 | --- | --- | --- |
 | `v0.1.0` | Initial draft | Overview, core positioning, initial identifier and relationship direction, minimal examples, contribution path. |
 | `v0.2.0` | Conformance draft | Formalize the provisional levels introduced in `v0.1.0` with diagnostics, validation expectations, and adopter claims such as `OLTS L1` or `OLTS L2`. |
-| `v0.3.0` | Schemas draft | Machine-readable draft schemas for core records, parsed relationship rows, generated artifact metadata, diagnostics, and conformance reports. |
+| `v0.3.0` | Schemas draft | Initial machine-readable schemas for core records, parsed relationship rows, generated artifact metadata, diagnostics, and conformance reports. |
 | `v1.0.0` | First stable public standard | Stable core terminology, conformance levels, compatibility expectations, governance flow, and reference examples. |
 
 ## Version Semantics

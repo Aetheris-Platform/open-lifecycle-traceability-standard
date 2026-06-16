@@ -23,7 +23,7 @@ Recommended GitHub flow:
 1. Add OLTS files under `docs/olts/` or another reviewed path.
 2. Add issue templates for requirements, proposals, or evidence gaps.
 3. Add a PR checklist item for lifecycle impact.
-4. Run OLTS checks in GitHub Actions when tooling exists. Early checks can validate parsed records and relationship rows against the draft schemas in [../schemas/](../schemas/).
+4. Run OLTS checks in GitHub Actions when tooling exists. Early checks can validate parsed records and relationship rows against the candidate v1 schemas in [../schemas/](../schemas/).
 5. Publish diagnostics as PR comments or check summaries.
 6. Require relationship fixes only after the team trusts the check.
 
@@ -42,7 +42,7 @@ Recommended GitLab flow:
 
 1. Keep OLTS files in the repository with the product source.
 2. Add merge request checklist items for lifecycle impact.
-3. Run OLTS validation jobs in `.gitlab-ci.yml` when tooling exists. Early jobs can validate parsed records and relationship rows against the draft schemas in [../schemas/](../schemas/).
+3. Run OLTS validation jobs in `.gitlab-ci.yml` when tooling exists. Early jobs can validate parsed records and relationship rows against the candidate v1 schemas in [../schemas/](../schemas/).
 4. Publish diagnostics as job artifacts.
 5. Use protected branches for standard or product-truth updates.
 
@@ -53,7 +53,7 @@ Recommended Azure DevOps flow:
 1. Map Azure Boards work items to OLTS `TRK`, `UC`, `SR`, or local extension records.
 2. Keep canonical OLTS relationship files in the repo.
 3. Link pull requests to work items and OLTS records.
-4. Run validation in Azure Pipelines when tooling exists. Early jobs can validate parsed records and relationship rows against the draft schemas in [../schemas/](../schemas/).
+4. Run validation in Azure Pipelines when tooling exists. Early jobs can validate parsed records and relationship rows against the candidate v1 schemas in [../schemas/](../schemas/).
 5. Keep release evidence linked to test and validation records.
 
 ## Jira Pipeline

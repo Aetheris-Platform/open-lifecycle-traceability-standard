@@ -70,16 +70,17 @@ Evidence to review:
 
 Before `v1.0.0`:
 
-- [ ] Draft schema files are reviewed against the prose standard.
-- [ ] Schema identifiers and cross-schema references are stable and vendor-neutral.
-- [ ] Draft schema `$id` URNs are promoted to stable, versioned identifiers and all cross-references are updated together.
-- [ ] The record `type` field and the type segment in `id` are either checked for consistency or explicitly documented as intentionally decoupled.
+- [ ] Schema files are reviewed against the prose standard.
+- [x] Schema identifiers and cross-schema references are stable and vendor-neutral.
+- [x] Schema `$id` URNs are promoted to stable, versioned identifiers and all cross-references are updated together.
+- [x] The record `type` field and the type segment in `id` are checked for consistency or explicitly documented as intentionally decoupled.
 - [ ] CSV relationship-row validation guidance is clear.
 - [ ] Local extension behavior is documented for records, relationships, diagnostics, conformance reports, and generated artifacts.
 - [ ] At least one validator path is documented or tested without making one implementation mandatory.
 
 Evidence to review:
 
+- [../spec/core.md](../spec/core.md)
 - [../schemas/README.md](../schemas/README.md)
 - [../schemas/olts-record.schema.json](../schemas/olts-record.schema.json)
 - [../schemas/olts-relationship.schema.json](../schemas/olts-relationship.schema.json)

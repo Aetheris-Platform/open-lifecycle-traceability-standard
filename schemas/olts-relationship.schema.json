@@ -1,8 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:olts:schema:draft:olts-relationship",
+  "$id": "urn:olts:schema:v1:relationship",
+  "$comment": "Candidate stable OLTS v1 schema identifier. Publication remains gated by the OLTS v1.0.0 release process.",
   "title": "OLTS Relationship Row",
-  "description": "Draft schema for one parsed OLTS relationship row. CSV relationship files can be validated by mapping each row to this object shape.",
+  "description": "Candidate v1 schema for one parsed OLTS relationship row. CSV relationship files can be validated by mapping each row to this object shape.",
   "type": "object",
   "required": ["Source_Key", "Target_Key", "Relationship"],
   "properties": {

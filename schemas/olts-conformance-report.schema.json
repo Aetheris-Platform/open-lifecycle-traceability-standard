@@ -1,8 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:olts:schema:draft:olts-conformance-report",
+  "$id": "urn:olts:schema:v1:conformance-report",
+  "$comment": "Candidate stable OLTS v1 schema identifier. Publication remains gated by the OLTS v1.0.0 release process.",
   "title": "OLTS Conformance Report",
-  "description": "Draft schema for an OLTS conformance report covering a stated level and scope.",
+  "description": "Candidate v1 schema for an OLTS conformance report covering a stated level and scope.",
   "type": "object",
   "required": ["claimed_level", "scope", "generated_at", "advisory", "diagnostics"],
   "properties": {
@@ -62,7 +63,7 @@
     "diagnostics": {
       "type": "array",
       "items": {
-        "$ref": "urn:olts:schema:draft:olts-diagnostic"
+        "$ref": "urn:olts:schema:v1:diagnostic"
       }
     },
     "exceptions": {
