@@ -4,6 +4,8 @@ OLTS is an early draft. Governance should be lightweight enough to invite feedba
 
 ## Public Change Flow
 
+This flow describes public operation after the `v1.0.0` launch. While the repository is private, maintainers may gather feedback through private or invited channels.
+
 The intended public flow is:
 
 ```text
@@ -64,4 +66,4 @@ OLTS should avoid changes that require a specific vendor platform, require a dat
 
 Milestones and release decisions should happen after reviewed changes are merged and the changelog is updated. Public release tags should wait until `v1.0.0` unless maintainers explicitly approve an earlier draft release.
 
-During `v0.x`, releases are draft milestones. At `v1.0.0`, the project should publish a clearer compatibility and deprecation policy.
+During `v0.x`, releases are draft milestones. At `v1.0.0`, the project should satisfy the [v1 readiness plan](v1-readiness.md) and publish a clearer compatibility and deprecation policy.

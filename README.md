@@ -65,7 +65,7 @@ OLTS is currently an early draft. The planned readiness path is:
 - `v0.3.0` schemas draft
 - `v1.0.0` first stable standard
 
-See [docs/versioning.md](docs/versioning.md) and [CHANGELOG.md](CHANGELOG.md).
+See [docs/versioning.md](docs/versioning.md), [docs/v1-readiness.md](docs/v1-readiness.md), and [CHANGELOG.md](CHANGELOG.md).
 
 ## Repository Layout
 
