@@ -23,6 +23,7 @@ OLTS is currently in the `v0.x` draft series. See [docs/versioning.md](docs/vers
 - Clarified that public community processes activate at `v1.0.0`, while `v0.x` feedback may use private or invited channels.
 - Added `v1.0.0` gates for normative keywords, stable schema identifiers, record ID/type consistency, approval evidence, and license posture.
 - Applied normative keywords consistently across the core, relationship, and conformance draft specs.
+- Hardened `L1` through `L5` conformance criteria with scoped claim requirements, explicit criteria, diagnostics guidance, and adopter-facing scope language.
 
 ## `v0.1.0` - 2026-06-16
 

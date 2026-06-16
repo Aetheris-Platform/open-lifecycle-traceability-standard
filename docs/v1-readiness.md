@@ -54,8 +54,8 @@ Evidence to review:
 Before `v1.0.0`:
 
 - [ ] `L1` through `L5` are stable enough for scoped adopter claims.
-- [ ] Each level has clear expectations, diagnostics, and non-goals.
-- [ ] Expected facts and expected diagnostics under each level are reviewed for their final `v1.0.0` normative force.
+- [x] Each level has clear expectations, diagnostics, and non-goals.
+- [x] Claim criteria and expected diagnostics under each level are reviewed for their final `v1.0.0` normative force.
 - [ ] Claim language avoids overstatement and does not imply certification unless a certification policy exists.
 - [ ] Diagnostic severity guidance is consistent with pipeline and governance docs.
 - [ ] Manual, scripted, CI, and external-tool validation paths are all allowed without requiring a vendor platform.

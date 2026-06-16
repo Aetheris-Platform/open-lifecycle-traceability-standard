@@ -19,6 +19,15 @@ Normative keywords in this file use the convention defined in [core.md](core.md#
 
 During the `v0.x` draft period, claims SHOULD be phrased as draft adoption statements, not certification statements.
 
+A draft conformance claim MUST identify:
+
+- the claimed OLTS level;
+- the repository, product area, release line, source path, or other scope being claimed;
+- any documented local extensions that are needed to understand the claim;
+- any reviewed exceptions that affect the claimed scope.
+
+A draft conformance claim MUST NOT imply coverage outside its stated scope.
+
 Good examples:
 
 ```text
@@ -47,17 +56,25 @@ OLTS has no official third-party certification program during the `v0.x` draft s
 | `L4` | Evidence Coverage | Tests, validation scenarios, and release claims in scope link to evidence. |
 | `L5` | Automated Conformance | Automated checks validate identifiers, relationships, provenance, and diagnostics. |
 
+## Criteria and Diagnostics
+
+Each level below separates claim criteria from diagnostics.
+
+Claim criteria define what MUST or SHOULD be true for a repository to make a scoped draft claim at that level. Diagnostics define the gaps, malformed facts, or blocked checks that reviewers and validators SHOULD surface when evaluating the claim.
+
+Diagnostics do not automatically make a repository non-conforming. A scoped claim MAY include reviewed exceptions, advisory diagnostics, or deferred work when the level criteria explicitly allow them and the claim identifies the affected scope.
+
 ## L1: Stable IDs
 
 An `OLTS L1` draft claim means lifecycle entities in scope have stable IDs.
 
-Expected facts:
+Claim criteria:
 
-- each lifecycle record in scope has an `id`;
-- IDs follow the draft shape `<DOMAIN>-<TYPE>-<NNNNN>`;
-- `TYPE` values are draft OLTS entity type codes or explicitly documented local extensions;
-- IDs are not reused for different lifecycle entities;
-- retired or deprecated records preserve their IDs.
+- each lifecycle record in scope MUST have an `id`;
+- IDs MUST follow the draft shape `<DOMAIN>-<TYPE>-<NNNNN>`;
+- `TYPE` values MUST be draft OLTS entity type codes or explicitly documented local extensions;
+- IDs MUST NOT be reused for different lifecycle entities;
+- retired or deprecated records SHOULD preserve their IDs.
 
 Expected diagnostics:
 
@@ -72,13 +89,13 @@ L1 does not require relationship coverage. It gives the repository stable handle
 
 An `OLTS L2` draft claim means key lifecycle relationships in scope are explicit and reviewable.
 
-Expected facts:
+Claim criteria:
 
-- relationships are stored in reviewed files or reviewed fields;
-- relationship verbs use the draft OLTS relationship vocabulary or documented local extensions;
-- relationship direction is consistent with the vocabulary;
-- referenced OLTS IDs resolve to known records or documented external references;
-- relationship source files are part of normal review.
+- relationships in scope MUST be stored in reviewed files or reviewed fields;
+- relationship verbs MUST use the draft OLTS relationship vocabulary or documented local extensions;
+- relationship direction MUST be consistent with the vocabulary or documented extension;
+- referenced OLTS IDs MUST resolve to known records or documented external references;
+- relationship source files SHOULD be part of normal review.
 
 Expected diagnostics:
 
@@ -94,12 +111,12 @@ L2 does not require every requirement to have verification or evidence. It requi
 
 An `OLTS L3` draft claim means requirements and use cases in scope have verification or validation coverage.
 
-Expected facts:
+Claim criteria:
 
-- system requirements in scope link to verification tests through `verified_by` or an equivalent approved relationship;
-- use cases in scope link to validation scenarios through `validated_by` or another documented lifecycle path;
-- intentionally deferred or not-applicable coverage is documented as a reviewed exception;
-- coverage gaps are visible as diagnostics or tracked follow-up work.
+- system requirements in scope MUST link to verification tests through `verified_by` or an equivalent documented relationship, unless a reviewed exception applies;
+- use cases in scope MUST link to validation scenarios through `validated_by` or another documented lifecycle path, unless a reviewed exception applies;
+- intentionally deferred or not-applicable coverage MUST be documented as a reviewed exception;
+- coverage gaps SHOULD be visible as diagnostics or tracked follow-up work.
 
 Expected diagnostics:
 
@@ -114,12 +131,12 @@ L3 helps reviewers see whether the product behavior in scope has a planned way t
 
 An `OLTS L4` draft claim means verification, validation, and release claims in scope link to evidence.
 
-Expected facts:
+Claim criteria:
 
-- verification tests in scope link to evidence records through `evidenced_by` or an approved equivalent;
-- validation scenarios in scope link to evidence records when execution evidence is required;
-- release claims in scope link to evidence, exceptions, or reviewed release decisions;
-- evidence records preserve enough provenance to identify the source result, report, log, artifact, or review record.
+- verification tests in scope MUST link to evidence records through `evidenced_by` or an equivalent documented relationship, unless a reviewed exception applies;
+- validation scenarios in scope MUST link to evidence records when execution evidence is required, unless a reviewed exception applies;
+- release claims in scope MUST link to evidence, exceptions, or reviewed release decisions;
+- evidence records SHOULD preserve enough provenance to identify the source result, report, log, artifact, or review record.
 
 Expected diagnostics:
 
@@ -135,13 +152,13 @@ L4 supports release review and audit preparation, but it does not by itself prov
 
 An `OLTS L5` draft claim means automated checks validate the lower-level expectations for the stated scope.
 
-Expected facts:
+Claim criteria:
 
-- checks run locally, in CI, or in another reviewed automation path;
-- check results include diagnostics for failed or incomplete expectations;
-- generated reports identify source files, inspected versions, and omitted or unresolved facts when practical;
-- repository maintainers define which diagnostics are informational, warning-level, or blocking;
-- blocking checks are only enabled after the team trusts the diagnostic quality.
+- automated checks MUST run locally, in CI, or in another reviewed automation path for the claimed scope;
+- check results MUST include diagnostics for failed or incomplete criteria;
+- generated reports SHOULD identify source files, inspected versions, and omitted or unresolved facts when practical;
+- repository maintainers MUST define which diagnostics are informational, warning-level, or blocking;
+- blocking checks SHOULD only be enabled after the team trusts the diagnostic quality.
 
 Expected diagnostics:
 
