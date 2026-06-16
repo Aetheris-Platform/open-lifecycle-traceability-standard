@@ -168,7 +168,7 @@ A missing file, parser failure, inaccessible external source, or disabled data s
 
 ## Validation Expectations
 
-Before machine-readable schemas are published, adopters can validate conformance with reviewed checklists, repository scripts, CI jobs, or external tooling.
+Draft machine-readable schemas are available under [../schemas/](../schemas/). Adopters can also validate conformance with reviewed checklists, repository scripts, CI jobs, or external tooling.
 
 A useful validation report should identify:
 
@@ -179,7 +179,7 @@ A useful validation report should identify:
 - explicit exceptions;
 - whether the report is advisory or blocking.
 
-Machine-readable schemas are planned for the `v0.3.0` schemas draft. The `v0.2.0` conformance draft should focus on semantics and claim language first.
+The `v0.3.0` schemas draft translates the conformance semantics into small reviewable contracts. Schemas should support diagnostics and adoption without replacing human-approved lifecycle truth.
 
 ## Extensions
 

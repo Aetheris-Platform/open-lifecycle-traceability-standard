@@ -9,10 +9,12 @@ OLTS is currently in the `v0.x` draft series. See [docs/versioning.md](docs/vers
 ### Added
 
 - Draft `v0.2.0` conformance model with level expectations, diagnostics guidance, validation reporting, extension guidance, and adopter claim language.
+- Draft `v0.3.0` schema contracts for lifecycle records, relationship rows, diagnostics, conformance reports, and generated artifact metadata.
 
 ### Changed
 
 - Linked README, overview, adoption, pipeline, and core spec guidance to the draft conformance model.
+- Updated schema guidance to describe draft machine-readable contracts and CSV relationship row validation.
 - Clarified draft maturity language so pre-`v1.0.0` work does not imply a public stable release.
 
 ## `v0.1.0` - 2026-06-16

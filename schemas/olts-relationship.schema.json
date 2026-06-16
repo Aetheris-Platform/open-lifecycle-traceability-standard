@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:olts:schema:draft:olts-relationship",
+  "title": "OLTS Relationship Row",
+  "description": "Draft schema for one parsed OLTS relationship row. CSV relationship files can be validated by mapping each row to this object shape.",
+  "type": "object",
+  "required": ["Source_Key", "Target_Key", "Relationship"],
+  "properties": {
+    "Source_Key": {
+      "$ref": "#/$defs/oltsIdentifier"
+    },
+    "Target_Key": {
+      "$ref": "#/$defs/idOrExternalReference"
+    },
+    "Relationship": {
+      "$ref": "#/$defs/relationshipVerb"
+    },
+    "Notes": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "string"
+    },
+    "Rationale": {
+      "type": "string"
+    },
+    "Source_File": {
+      "type": "string"
+    },
+    "Source_Row": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "Owner": {
+      "type": "string"
+    },
+    "Last_Reviewed": {
+      "type": "string",
+      "format": "date"
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "oltsIdentifier": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9]*-[A-Z][A-Z0-9]{1,9}-[0-9]{5}$"
+    },
+    "externalReference": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_.-]*:.+"
+    },
+    "idOrExternalReference": {
+      "anyOf": [
+        { "$ref": "#/$defs/oltsIdentifier" },
+        { "$ref": "#/$defs/externalReference" }
+      ]
+    },
+    "relationshipVerb": {
+      "type": "string",
+      "enum": [
+        "implements",
+        "realizes",
+        "requires",
+        "specified_by",
+        "verified_by",
+        "validated_by",
+        "evidenced_by",
+        "documents",
+        "explained_by",
+        "supersedes"
+      ]
+    }
+  }
+}

@@ -11,7 +11,8 @@ OLTS is an early draft being shaped before the stable public `v1.0.0` standard. 
 - repo-native catalog and relationship files;
 - provenance for generated artifacts;
 - diagnostics for missing or malformed lifecycle data;
-- staged conformance levels and draft claim language.
+- staged conformance levels and draft claim language;
+- draft machine-readable schema contracts.
 
 ## Draft Conformance Model
 

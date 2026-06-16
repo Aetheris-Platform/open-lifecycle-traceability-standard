@@ -290,7 +290,7 @@ Conformance tooling under `tools/` is planned. Until it lands, run these steps a
 
 - `spec/` - draft core and relationship standard material.
 - `examples/` - minimal and realistic OLTS-compatible examples.
-- `schemas/` - planned machine-readable validation contracts.
+- `schemas/` - draft machine-readable validation contracts for records, relationships, diagnostics, conformance reports, and generated artifacts.
 - `tools/` - planned conformance and migration tooling.
 - `docs/` - overview, adoption, pipeline, governance, and versioning guidance.
 

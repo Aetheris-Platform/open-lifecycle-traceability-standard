@@ -79,7 +79,7 @@ docs/olts/links/requirement-test-links.csv
 docs/olts/links/test-evidence-links.csv
 ```
 
-A single `relationships.csv` can work for small projects. Larger projects should prefer narrower files that match reviewer ownership and pipeline checks.
+A single `relationships.csv` can work for small projects. Larger projects should prefer narrower files that match reviewer ownership and pipeline checks. The draft relationship schema in [../schemas/olts-relationship.schema.json](../schemas/olts-relationship.schema.json) validates parsed relationship rows rather than raw CSV text.
 
 ## OpenSpec Integration
 

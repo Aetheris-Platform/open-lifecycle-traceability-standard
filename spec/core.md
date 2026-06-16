@@ -83,7 +83,7 @@ explained_by:
 
 OLTS should be format-tolerant. The same concepts may be represented in Markdown with YAML frontmatter, CSV, YAML, JSON, existing ALM exports, issue tracker metadata, OpenSpec changes, ADR folders, and release or evidence records.
 
-For early adoption, Markdown, CSV, YAML, and JSON are preferred because they are easy to review in pull requests.
+For early adoption, Markdown, CSV, YAML, and JSON are preferred because they are easy to review in pull requests. Draft JSON Schemas under [../schemas/](../schemas/) describe the shared validation contracts for records, parsed relationship rows, diagnostics, conformance reports, and generated artifact metadata.
 
 ## Provenance
 

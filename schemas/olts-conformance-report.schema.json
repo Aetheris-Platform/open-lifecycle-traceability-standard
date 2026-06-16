@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:olts:schema:draft:olts-conformance-report",
+  "title": "OLTS Conformance Report",
+  "description": "Draft schema for an OLTS conformance report covering a stated level and scope.",
+  "type": "object",
+  "required": ["claimed_level", "scope", "generated_at", "advisory", "diagnostics"],
+  "properties": {
+    "claimed_level": {
+      "type": "string",
+      "enum": ["L1", "L2", "L3", "L4", "L5"]
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable scope, such as a repository, release branch, product area, or reviewed path."
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "tool": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "configuration": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "advisory": {
+      "type": "boolean",
+      "description": "True when the report is diagnostic-only and not a blocking gate."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path"],
+        "properties": {
+          "path": { "type": "string" },
+          "kind": { "type": "string" },
+          "commit": { "type": "string" },
+          "source_hash": { "type": "string" },
+          "inspected_at": { "type": "string", "format": "date-time" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "records_checked": { "type": "integer", "minimum": 0 },
+        "relationships_checked": { "type": "integer", "minimum": 0 },
+        "info": { "type": "integer", "minimum": 0 },
+        "warnings": { "type": "integer", "minimum": 0 },
+        "errors": { "type": "integer", "minimum": 0 },
+        "blocked": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": true
+    },
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "$ref": "urn:olts:schema:draft:olts-diagnostic"
+      }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["reason"],
+        "properties": {
+          "subject_id": { "type": "string" },
+          "reason": { "type": "string" },
+          "approved_by": { "type": "string" },
+          "approved_at": { "type": "string", "format": "date-time" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
