@@ -81,7 +81,7 @@ The current community files are acceptable for `v1.0.0` launch readiness:
 | `NOTICE` | Identifies the OLTS project and contributor copyright notice. |
 | `LICENSE` | Uses Apache License 2.0 for the repository. |
 | `.github/pull_request_template.md` | Asks contributors to preserve tool neutrality, product source truth, reviewed generated artifacts, and compatibility notes. |
-| Issue templates | Cover spec clarification, proposals, conformance questions, adoption stories, and prior art or compatibility notes. |
+| Issue templates | Cover spec clarification, proposals, conformance questions, adoption stories, and prior art or compatibility notes; `config.yml` provides the issue chooser contact link. |
 
 This review does not assert that GitHub repository settings are already configured. Settings such as Discussions, branch protection, required reviews, and security features remain part of the public launch settings checklist.
 
