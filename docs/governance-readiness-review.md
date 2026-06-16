@@ -1,8 +1,8 @@
 # Governance and Community Readiness Review
 
-This review records the governance decisions that should be stable before the first public `v1.0.0` launch. It is launch-readiness evidence, not a release announcement.
+This review records the governance decisions for the first public `v1.0.0` launch.
 
-OLTS remains a private `v1.0.0` release candidate until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release.
+It is launch evidence for the first stable OLTS release.
 
 ## Review Scope
 
@@ -41,7 +41,7 @@ This is intentionally lightweight. If OLTS later moves to a foundation, working 
 
 ## Feedback Channel Decision
 
-During private release-candidate work, feedback may be gathered through private or invited channels. Public community processes should activate at the `v1.0.0` public launch unless maintainers explicitly approve an earlier public preview.
+Public community processes activate at the `v1.0.0` public launch.
 
 At public launch:
 

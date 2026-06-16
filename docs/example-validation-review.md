@@ -1,8 +1,8 @@
 # OLTS Example Validation Review
 
-This review records the documented equivalent checks used to validate the minimal and realistic examples for `v1.0.0` readiness.
+This review records the documented equivalent checks used to validate the minimal and realistic examples for `v1.0.0`.
 
-It is launch-readiness evidence, not a release announcement. OLTS remains a private `v1.0.0` release candidate until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release.
+It is launch evidence for the first stable OLTS release.
 
 ## Review Scope
 
@@ -71,6 +71,6 @@ The realistic example remains a scoped `OLTS L4` example. It does not claim `L5`
 
 ## Stability Decision
 
-The examples are suitable as reference examples for `v1.0.0` readiness when paired with the documented equivalent checks above.
+The examples are suitable as reference examples for `v1.0.0` when paired with the documented equivalent checks above.
 
 Future changes to example IDs, entity types, relationship directions, evidence attachment, or external-reference handling should re-run or update this review before the examples are used as public launch evidence.

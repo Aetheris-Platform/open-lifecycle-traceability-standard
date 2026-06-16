@@ -13,9 +13,9 @@ It connects requirements, tests, evidence, decisions, release readiness, artifac
 
 ## Maturity
 
-OLTS is a private `v1.0.0` release candidate. Core terminology, relationship semantics, conformance levels, schemas, examples, and governance guidance have been reviewed for the first stable public standard.
+OLTS is `v1.0.0`, the first stable public version of the Open Lifecycle Traceability Standard. Core terminology, relationship semantics, conformance levels, schemas, examples, and governance guidance are stable for adopter use.
 
-The repository should remain private until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release. See [docs/v1-readiness.md](docs/v1-readiness.md) and [docs/v1-release-evidence.md](docs/v1-release-evidence.md) for the remaining launch gates.
+See [docs/v1-readiness.md](docs/v1-readiness.md) and [docs/v1-release-evidence.md](docs/v1-release-evidence.md) for the launch record and separate tag/GitHub Release status.
 
 The intent is practical: make lifecycle traceability usable in real development pipelines, not only in specialized tools or after-the-fact compliance reviews.
 
@@ -67,7 +67,7 @@ OLTS defines an adoption ladder from stable IDs through automated conformance. S
 
 ## Versioning
 
-OLTS is currently a private `v1.0.0` release candidate. The readiness path has been:
+OLTS is currently `v1.0.0`. The readiness path was:
 
 - `v0.1.0` initial draft
 - `v0.2.0` conformance draft
@@ -76,24 +76,26 @@ OLTS is currently a private `v1.0.0` release candidate. The readiness path has b
 
 See [docs/versioning.md](docs/versioning.md), [docs/v1-readiness.md](docs/v1-readiness.md), and [CHANGELOG.md](CHANGELOG.md).
 
-Core entity types, identifier shape, source-truth boundaries, generated artifact semantics, and launch-gated language scope are reviewed in [docs/core-terminology.md](docs/core-terminology.md).
+Core entity types, identifier shape, source-truth boundaries, and generated artifact semantics are reviewed in [docs/core-terminology.md](docs/core-terminology.md).
 
 ## Repository Layout
 
 - [docs/](docs/) - overview, adoption notes, pipeline integration, governance, and migration guidance.
-- [spec/](spec/) - release-candidate core and relationship standard material.
+- [spec/](spec/) - core and relationship standard material.
 - [examples/](examples/) - minimal and realistic OLTS-compatible examples.
-- [schemas/](schemas/) - candidate machine-readable validation contracts for records, relationships, diagnostics, conformance reports, and generated artifacts.
+- [schemas/](schemas/) - machine-readable validation contracts for records, relationships, diagnostics, conformance reports, and generated artifacts.
 - [tools/](tools/) - future conformance and migration tooling.
 
 ## Get Started
 
-1. Read [docs/overview.md](docs/overview.md).
-2. Review the [minimal example](examples/minimal/README.md).
-3. Review the [realistic example](examples/realistic/README.md) when you need a fuller capability-to-evidence chain.
-4. Follow [docs/adoption-guide.md](docs/adoption-guide.md) for a first L1 or L2 adoption slice.
-5. Use [docs/pipeline-integration.md](docs/pipeline-integration.md) to connect OLTS to GitHub, GitLab, Azure DevOps, Jira, OpenSpec, CI/CD, or release review.
-6. If using an AI coding agent, start with [docs/ai-agent-adoption-prompt.md](docs/ai-agent-adoption-prompt.md).
+1. Read the short [overview](docs/overview.md) to understand OLTS concepts and benefits.
+2. Open the [minimal example](examples/minimal/README.md) and copy its shape for one requirement, one test, one evidence record, and one relationship file.
+3. Choose a domain prefix for your repository, such as `APP`, and start with an `OLTS L1` or `OLTS L2` scoped adoption target.
+4. Add one reviewed record file and one reviewed relationship file, usually under a path such as `docs/olts/`.
+5. Use the [adoption guide](docs/adoption-guide.md) to expand the first slice without migrating everything at once.
+6. Use the [pipeline integration guide](docs/pipeline-integration.md) when you are ready to add local, CI, release-review, or evidence checks.
+7. Review the [realistic example](examples/realistic/README.md) when you need a fuller capability-to-evidence chain.
+8. If using an AI coding agent, start with the [AI agent adoption prompt](docs/ai-agent-adoption-prompt.md); it defaults to plan-only unless edits are explicitly authorized.
 
 ## License
 

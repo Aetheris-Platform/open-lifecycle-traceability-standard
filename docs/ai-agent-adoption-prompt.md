@@ -20,7 +20,7 @@ Goal:
 Create a conservative first OLTS adoption slice that makes lifecycle traceability more explicit without rewriting product truth or inventing relationships.
 
 Context:
-OLTS is a private v1.0.0 release candidate pending explicit public launch approval. Product repository files, issue trackers, tests, evidence, ADRs, and release records remain source truth. OLTS records and relationship files should make existing lifecycle meaning explicit and reviewable.
+OLTS is v1.0.0. Product repository files, issue trackers, tests, evidence, ADRs, and release records remain source truth. OLTS records and relationship files should make existing lifecycle meaning explicit and reviewable.
 
 Primary objectives:
 1. Inspect the repository for lifecycle sources:

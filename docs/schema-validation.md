@@ -1,6 +1,6 @@
 # OLTS Schema Validation Path
 
-This guide describes one repeatable way to validate OLTS candidate v1 records, relationship rows, and examples against the candidate v1 schema contracts.
+This guide describes one repeatable way to validate OLTS v1 records, relationship rows, and examples against the v1 schema contracts.
 
 It is validation guidance, not required reference tooling. OLTS adopters MAY use any JSON Schema validator, CI system, local script, review checklist, or external tool that preserves the same semantics and produces reviewable diagnostics.
 
@@ -9,7 +9,7 @@ It is validation guidance, not required reference tooling. OLTS adopters MAY use
 A useful OLTS validation path should answer:
 
 1. Do schema files parse as JSON?
-2. Do lifecycle records match the candidate record schema?
+2. Do lifecycle records match the record schema?
 3. Do relationship CSV rows map cleanly into relationship-row objects?
 4. Do relationship rows use known verbs and resolvable targets?
 5. Do semantic rules that JSON Schema cannot express pass or produce diagnostics?
@@ -23,7 +23,7 @@ A validator normally needs:
 
 - one or more lifecycle record files, such as YAML, JSON, Markdown frontmatter, or an exported tracker format;
 - one or more relationship files, usually CSV during early adoption;
-- the candidate schemas under [../schemas/](../schemas/);
+- the schemas under [../schemas/](../schemas/);
 - any documented local extensions for entity types, relationship verbs, metadata fields, or diagnostic codes;
 - the claimed OLTS level and scope, if the output is used as conformance evidence.
 
@@ -103,7 +103,7 @@ The minimal example can be checked as a small shape and relationship-row validat
 - confirm each `type` matches the ID type segment;
 - parse [../examples/minimal/relationships.csv](../examples/minimal/relationships.csv);
 - validate each parsed relationship row;
-- confirm all relationship verbs are in the candidate vocabulary;
+- confirm all relationship verbs are in the OLTS vocabulary;
 - confirm each OLTS relationship source and target resolves to a record in the example.
 
 The realistic example exercises a broader scoped L4 traceability chain:

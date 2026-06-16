@@ -1,6 +1,6 @@
 # OLTS Relationship Model
 
-This file captures the release-candidate model for explicit OLTS relationships. It remains launch-gated until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release.
+This file captures the OLTS relationship model for `v1.0.0`.
 
 Normative keywords in this file use the convention defined in [core.md](core.md#normative-language).
 
@@ -78,7 +78,7 @@ For lifecycle-to-artifact traceability, canonical stored relationship rows use `
 
 Unknown relationships SHOULD be surfaced as diagnostics until a repo explicitly allows them.
 
-See [../docs/relationship-semantics.md](../docs/relationship-semantics.md) for the candidate `v1.0.0` relationship semantics review.
+See [../docs/relationship-semantics.md](../docs/relationship-semantics.md) for the `v1.0.0` relationship semantics review.
 
 ## Relationship Extensions
 

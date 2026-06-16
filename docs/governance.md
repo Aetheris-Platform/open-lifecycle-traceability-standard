@@ -1,10 +1,10 @@
 # OLTS Governance
 
-OLTS is a private `v1.0.0` release candidate. Governance should be lightweight enough to invite feedback and structured enough to protect the standard from unclear changes.
+OLTS is `v1.0.0`. Governance should be lightweight enough to invite feedback and structured enough to protect the standard from unclear changes.
 
 ## Public Change Flow
 
-This flow describes public operation after the `v1.0.0` launch. While the repository is private, maintainers may gather feedback through private or invited channels.
+This flow describes public operation for OLTS.
 
 The intended public flow is:
 
@@ -95,6 +95,6 @@ OLTS should avoid changes that require a specific vendor platform, require a dat
 
 ## Release Decisions
 
-Milestones and release decisions should happen after reviewed changes are merged and the changelog is updated. Public release tags should wait until `v1.0.0` unless maintainers explicitly approve an earlier public preview.
+Milestones and release decisions should happen after reviewed changes are merged and the changelog is updated.
 
-Before `v1.0.0`, release-candidate work remains private or invited unless maintainers approve otherwise. At `v1.0.0`, the project should satisfy the [v1 readiness plan](v1-readiness.md) and publish a clearer compatibility and deprecation policy.
+At `v1.0.0`, the project satisfies the [v1 readiness plan](v1-readiness.md). Future releases should follow the compatibility and deprecation expectations in [versioning.md](versioning.md).

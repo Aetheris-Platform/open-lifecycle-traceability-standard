@@ -1,10 +1,10 @@
 # OLTS Core
 
-This file captures the release-candidate OLTS Core model. It remains launch-gated until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release.
+This file captures the OLTS Core model for `v1.0.0`.
 
 OLTS Core defines the minimum shared language needed to make lifecycle traceability explicit, repo-native, reviewable, and automatable.
 
-The candidate `v1.0.0` core terminology review is recorded in [../docs/core-terminology.md](../docs/core-terminology.md).
+The `v1.0.0` core terminology review is recorded in [../docs/core-terminology.md](../docs/core-terminology.md).
 
 ## Normative Language
 
@@ -12,7 +12,7 @@ The key words `MUST`, `MUST NOT`, `SHOULD`, `SHOULD NOT`, and `MAY` in OLTS spec
 
 Lowercase words such as "should", "may", and "recommended" are ordinary explanatory language unless this standard explicitly says otherwise.
 
-Before an explicit public launch and certification policy, normative keywords describe intended stable semantics. They do not create a public certification program, public release guarantee, or third-party compliance claim.
+Normative keywords describe stable `v1.0.0` semantics. They do not create a certification program or third-party compliance claim.
 
 ## Core Principles
 
@@ -26,7 +26,7 @@ Before an explicit public launch and certification policy, normative keywords de
 
 ## Lifecycle Identifier Shape
 
-The candidate identifier shape is:
+The identifier shape is:
 
 ```text
 <DOMAIN>-<TYPE>-<NNNNN>
@@ -49,7 +49,7 @@ APP-EVD-00098
 
 Stable IDs name lifecycle entities. They SHOULD NOT encode status, priority, maturity, owner, release, branch, or implementation state. Those are attributes that may change.
 
-## Candidate Entity Types
+## Entity Types
 
 | Type | Entity | Meaning |
 | --- | --- | --- |
@@ -75,7 +75,7 @@ type: SR
 title: Operator can revoke an API token
 ```
 
-The `type` value uses the entity-type code from the Candidate Entity Types table, such as `UC`, `SR`, `VT`, or `EVD`. The `type` value MUST match the `<TYPE>` segment in `id`; for example, `APP-SR-00014` uses `type: SR`.
+The `type` value uses the entity-type code from the Entity Types table, such as `UC`, `SR`, `VT`, or `EVD`. The `type` value MUST match the `<TYPE>` segment in `id`; for example, `APP-SR-00014` uses `type: SR`.
 
 A more useful record includes explicit relationships:
 
@@ -93,7 +93,7 @@ explained_by:
 
 OLTS SHOULD be format-tolerant. The same concepts MAY be represented in Markdown with YAML frontmatter, CSV, YAML, JSON, existing ALM exports, issue tracker metadata, OpenSpec changes, ADR folders, and release or evidence records.
 
-For early adoption, Markdown, CSV, YAML, and JSON are preferred because they are easy to review in pull requests. Candidate v1 JSON Schemas under [../schemas/](../schemas/) describe the shared validation contracts for records, parsed relationship rows, diagnostics, conformance reports, and generated artifact metadata.
+Markdown, CSV, YAML, and JSON are preferred because they are easy to review in pull requests. JSON Schemas under [../schemas/](../schemas/) describe the shared validation contracts for records, parsed relationship rows, diagnostics, conformance reports, and generated artifact metadata.
 
 ## Source-of-Truth Boundaries
 
@@ -154,4 +154,4 @@ The OLTS conformance ladder is defined in [conformance.md](conformance.md). In s
 | `L4` | Tests, validation scenarios, and release claims in scope link to evidence. |
 | `L5` | Automated checks validate identifiers, relationships, provenance, and diagnostics. |
 
-These labels remain launch-gated until maintainers approve the public `v1.0.0` release.
+These labels are stable in `v1.0.0`.
