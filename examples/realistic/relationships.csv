@@ -1,0 +1,12 @@
+Source_Key,Target_Key,Relationship,Notes,Status
+APP-TRK-00042,APP-CAP-00002,implements,Work item delivers the passwordless sign-in capability,planned
+APP-CAP-00002,APP-UC-00011,realizes,Capability is expressed through the one-time code sign-in use case,draft
+APP-UC-00011,APP-SR-00027,requires,Use case depends on one-time code expiry behavior,draft
+APP-SR-00027,openspec:passwordless-sign-in,specified_by,Requirement is specified by optional OpenSpec change provenance,draft
+APP-UC-00011,APP-VAL-00006,validated_by,Use case is validated through a usability scenario,planned
+APP-VAL-00006,APP-EVD-00034,evidenced_by,Validation scenario has review evidence,captured
+APP-SR-00027,APP-VT-00019,verified_by,Requirement is verified by an automated test,implemented
+APP-VT-00019,APP-EVD-00033,evidenced_by,Verification test has CI run evidence,captured
+APP-SR-00027,APP-ADR-00004,explained_by,Requirement rationale is explained by the decision record,accepted
+APP-ART-00008,APP-SR-00027,documents,Design artifact documents the requirement,reviewed
+APP-ART-00008,APP-EVD-00035,evidenced_by,Design artifact has review approval evidence,captured

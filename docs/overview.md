@@ -279,10 +279,11 @@ Teams can adopt OLTS gradually:
 ## Get Started
 
 1. Read this overview and the [minimal example](../examples/minimal/README.md).
-2. Pick a domain prefix and a first conformance target, usually L1 or L2. See the [adoption guide](adoption-guide.md).
-3. Add one record file and one relationship file in a reviewed path such as `docs/olts/`.
-4. Connect OLTS to your pipeline with the [pipeline integration guide](pipeline-integration.md).
-5. If you use an AI coding agent, start with the [AI agent adoption prompt](ai-agent-adoption-prompt.md).
+2. Review the [realistic example](../examples/realistic/README.md) when you need to see capability, work item, use case, requirement, validation, test, evidence, decision, and artifact records together.
+3. Pick a domain prefix and a first conformance target, usually L1 or L2. See the [adoption guide](adoption-guide.md).
+4. Add one record file and one relationship file in a reviewed path such as `docs/olts/`.
+5. Connect OLTS to your pipeline with the [pipeline integration guide](pipeline-integration.md).
+6. If you use an AI coding agent, start with the [AI agent adoption prompt](ai-agent-adoption-prompt.md).
 
 Conformance tooling under `tools/` is planned. Until it lands, run these steps as reviewed pull requests.
 
