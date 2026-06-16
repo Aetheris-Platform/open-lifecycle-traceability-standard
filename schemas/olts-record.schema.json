@@ -49,7 +49,7 @@
     "evidenced_by": {
       "$ref": "#/$defs/referenceList"
     },
-    "documents": {
+    "documented_by": {
       "$ref": "#/$defs/referenceList"
     },
     "explained_by": {

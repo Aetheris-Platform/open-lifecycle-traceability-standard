@@ -32,6 +32,7 @@ OLTS is currently in the `v0.x` draft series. See [docs/versioning.md](docs/vers
 - Hardened conformance claim language, diagnostic severity guidance, advisory/blocking pipeline posture, and vendor-neutral validation-path language for scoped adopter claims.
 - Reviewed candidate schema contracts against the prose standard and documented semantic checks that remain outside portable JSON Schema.
 - Validated the minimal and realistic examples with documented equivalent checks, including complete minimal records and relationship target resolution.
+- Canonicalized lifecycle-to-artifact traceability on `documented_by`, with `documents` retained only as inverse display wording or local extension language.
 
 ## `v0.1.0` - 2026-06-16
 

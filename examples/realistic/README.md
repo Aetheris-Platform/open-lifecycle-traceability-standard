@@ -41,7 +41,7 @@ APP-UC-00011 --requires--> APP-SR-00027
 APP-UC-00011 --validated_by--> APP-VAL-00006 --evidenced_by--> APP-EVD-00034
 APP-SR-00027 --verified_by--> APP-VT-00019 --evidenced_by--> APP-EVD-00033
 APP-SR-00027 --explained_by--> APP-ADR-00004
-APP-ART-00008 --documents--> APP-SR-00027
+APP-SR-00027 --documented_by--> APP-ART-00008
 APP-ART-00008 --evidenced_by--> APP-EVD-00035
 ```
 

@@ -64,6 +64,7 @@ The realistic example passes the documented equivalent checks:
 - all relationship verbs are core OLTS verbs;
 - each OLTS relationship source and target resolves to a record in the realistic example;
 - the external `openspec:passwordless-sign-in` target is shaped as a documented external reference;
+- the `documented_by` relationship points from the requirement to the design artifact;
 - evidence attaches to validation, verification, or artifact records.
 
 The realistic example remains a scoped draft `OLTS L4` example. It does not claim `L5` because the repository does not include an automated conformance checker or generated conformance report.

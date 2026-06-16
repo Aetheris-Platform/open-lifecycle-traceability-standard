@@ -41,7 +41,7 @@ The candidate schema files match the prose standard at the level portable JSON S
 The relationship schema enum matches the core relationship vocabulary:
 
 ```text
-implements, realizes, requires, specified_by, verified_by, validated_by, evidenced_by, documents, explained_by, supersedes
+implements, realizes, requires, specified_by, verified_by, validated_by, evidenced_by, documented_by, explained_by, supersedes
 ```
 
 The record schema describes the same candidate entity types documented in the core terminology review:
@@ -74,6 +74,6 @@ That flexibility does not make local vocabulary core OLTS vocabulary. Local enti
 
 ## Stability Decision
 
-No schema behavior changes are required by this review.
+The schemas reflect the pre-`v1.0.0` vocabulary decision to use `documented_by` as the canonical stored relationship from lifecycle entities to artifacts. No additional schema behavior changes are required by this review.
 
 The candidate schema contracts are aligned with the prose standard for `v1.0.0` readiness, subject to the documented semantic checks and extension guidance above. Future changes to required fields, schema identifiers, relationship vocabulary, diagnostic severity values, report posture fields, or generated-artifact provenance expectations should be treated as compatibility-impacting v1 readiness decisions.

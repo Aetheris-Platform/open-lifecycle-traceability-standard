@@ -43,6 +43,7 @@ Before `v1.0.0`:
 
 - [x] Relationship vocabulary is reviewed for direction, naming, and overlap.
 - [x] The canonical lifecycle chain is internally consistent across spec, README, examples, and schemas.
+- [x] Lifecycle-to-artifact traceability uses `documented_by` as the canonical stored relationship, with `documents` reserved for inverse display wording or local extension language.
 - [x] Local extension guidance is clear enough that adopters do not confuse local verbs with core OLTS verbs.
 - [x] Unknown relationships are consistently described as diagnostics unless explicitly allowed by a repository extension.
 

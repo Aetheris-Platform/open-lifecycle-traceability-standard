@@ -48,7 +48,7 @@ Implementation, rationale, and artifact links are adjacent paths:
 ```text
 Work Item --implements--> Capability, Use Case, or Requirement
 Requirement --explained_by--> Decision
-Artifact --documents--> Capability, Use Case, Requirement, or Decision
+Capability, Use Case, Requirement, or Decision --documented_by--> Artifact
 Artifact --evidenced_by--> Evidence
 Decision --supersedes--> Decision
 ```
@@ -66,11 +66,21 @@ The current draft vocabulary intentionally separates these concerns:
 | `verified_by` | Requirement -> verification test | Requirement has a test that checks system behavior. |
 | `validated_by` | Use case -> validation scenario | Stakeholder or user need has a validation scenario. |
 | `evidenced_by` | Test, validation, artifact, or release claim -> evidence | Source claim has evidence. |
-| `documents` | Artifact -> lifecycle entity | Artifact documents the target. |
+| `documented_by` | lifecycle entity -> artifact | Source lifecycle entity is documented by the artifact. |
 | `explained_by` | Requirement, artifact, or work item -> decision | Decision explains rationale. |
 | `supersedes` | Decision or artifact -> decision or artifact | Source replaces or supersedes target. |
 
 No two core verbs are intended to be synonyms. Repositories MAY define local relationship extensions, but local verbs MUST remain separate from core OLTS vocabulary unless accepted into the standard.
+
+## Artifact Display Guidance
+
+Canonical stored rows for lifecycle-to-artifact traceability use `documented_by`:
+
+```text
+System Requirement --documented_by--> Artifact
+```
+
+Artifact-centric views MAY render the inverse display wording, such as "Artifact documents System Requirement," as long as the stored relationship direction remains explicit and reviewable. `documents` is inverse display wording or local extension language, not the canonical core stored relationship.
 
 ## Cross-Artifact Consistency
 
@@ -82,7 +92,7 @@ The canonical chain is aligned across the current draft materials:
 | [../README.md](../README.md) | Describes the minimal example and links use case -> requirement -> test -> evidence. |
 | [overview.md](overview.md) | Uses the canonical verb chain in the lifecycle-chain section. |
 | [../examples/minimal/relationships.csv](../examples/minimal/relationships.csv) | Uses `requires`, `verified_by`, `evidenced_by`, and `explained_by` in the same direction as the spec. |
-| [../examples/realistic/relationships.csv](../examples/realistic/relationships.csv) | Exercises the broader chain with `implements`, `realizes`, `requires`, `specified_by`, `validated_by`, `verified_by`, `evidenced_by`, `explained_by`, and `documents`. |
+| [../examples/realistic/relationships.csv](../examples/realistic/relationships.csv) | Exercises the broader chain with `implements`, `realizes`, `requires`, `specified_by`, `validated_by`, `verified_by`, `evidenced_by`, `documented_by`, and `explained_by`. |
 | [../schemas/olts-relationship.schema.json](../schemas/olts-relationship.schema.json) | Enumerates the same core relationship verbs used by the spec and examples. |
 
 ## Diagnostics
