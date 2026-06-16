@@ -12,6 +12,8 @@ No post-`v1.0.0` changes yet.
 
 First stable public OLTS standard.
 
+The git tag and GitHub Release remain separate actions pending explicit maintainer approval.
+
 ### Stable Scope
 
 - Stable core terminology, entity types, identifier shape, source-of-truth boundaries, and generated-artifact posture.
