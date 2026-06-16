@@ -28,19 +28,15 @@ Read the full public overview: [docs/overview.md](docs/overview.md). To try OLTS
 
 ```yaml
 id: APP-SR-00014
-type: requirement
+type: SR
 title: Operator can revoke an API token
-supports:
-  - APP-UC-00003
 verified_by:
   - APP-VT-00221
-evidence:
-  - APP-EVD-00098
-decisions:
+explained_by:
   - APP-ADR-00007
 ```
 
-That small record lets a reviewer ask which use case a requirement supports, which test verifies it, which evidence proves the test ran, and which decision explains the design.
+That small record lets a reviewer ask which test verifies the requirement and which decision explains the design. The related relationship file links the use case to the requirement and the test to its evidence.
 
 ## How OLTS Fits With OpenSpec
 

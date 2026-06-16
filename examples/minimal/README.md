@@ -14,22 +14,18 @@ It includes:
 
 ```yaml
 id: APP-SR-00014
-type: requirement
+type: SR
 title: Operator can revoke an API token
-supports:
-  - APP-UC-00003
 verified_by:
   - APP-VT-00221
-evidence:
-  - APP-EVD-00098
-decisions:
+explained_by:
   - APP-ADR-00007
 ```
 
 ## Relationship Chain
 
 ```text
-APP-UC-00003 -> APP-SR-00014 -> APP-VT-00221 -> APP-EVD-00098
+APP-UC-00003 --requires--> APP-SR-00014 --verified_by--> APP-VT-00221 --evidenced_by--> APP-EVD-00098
 ```
 
-This is enough for a reviewer to inspect what the requirement supports, how it is verified, and which evidence proves the verification ran.
+This is enough for a reviewer to inspect which use case requires the requirement, how the requirement is verified, and which evidence proves the verification ran.

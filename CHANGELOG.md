@@ -38,7 +38,7 @@ Readiness scope:
 
 Expected scope:
 
-- draft conformance levels;
+- formalized conformance levels introduced provisionally in `v0.1.0`;
 - diagnostics guidance;
 - validation expectations;
 - adopter claim language such as `OLTS L1` or `OLTS L2`.

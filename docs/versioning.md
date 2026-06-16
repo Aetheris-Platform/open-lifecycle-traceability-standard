@@ -6,14 +6,14 @@ OLTS uses public version tags to separate draft maturity from stable standard co
 
 OLTS is in the `v0.x` draft series. Draft releases are intended for review, experimentation, compatibility feedback, and early adopter trials. They may change as the community clarifies terminology, schemas, conformance levels, and governance.
 
-The first stable standard target is `v1.0.0`. After `v1.0.0`, compatibility promises become stricter and breaking changes require a major version.
+The first stable standard target is `v1.0.0`. After `v1.0.0`, compatibility promises become stricter and breaking changes require a major version. `v0.1.0` introduces provisional conformance levels for orientation; `v0.2.0` is expected to formalize diagnostics, validation expectations, and adopter-claim language.
 
 ## Planned Readiness Path
 
 | Version | Readiness Milestone | Expected Scope |
 | --- | --- | --- |
 | `v0.1.0` | Initial public draft | Overview, core positioning, initial identifier and relationship direction, minimal examples, contribution path. |
-| `v0.2.0` | Conformance draft | Draft conformance levels, diagnostics, validation expectations, and adopter claims such as `OLTS L1` or `OLTS L2`. |
+| `v0.2.0` | Conformance draft | Formalize the provisional levels introduced in `v0.1.0` with diagnostics, validation expectations, and adopter claims such as `OLTS L1` or `OLTS L2`. |
 | `v0.3.0` | Schemas draft | Machine-readable schemas for core records, relationship files, generated artifact metadata, diagnostics, and conformance reports. |
 | `v1.0.0` | First stable standard | Stable core terminology, conformance levels, compatibility expectations, governance flow, and reference examples. |
 

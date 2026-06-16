@@ -61,23 +61,21 @@ A lifecycle record should include at least:
 
 ```yaml
 id: APP-SR-00014
-type: requirement
+type: SR
 title: Operator can revoke an API token
 ```
+
+The `type` value uses the entity-type code from the Draft Entity Types table, such as `UC`, `SR`, `VT`, or `EVD`.
 
 A more useful record includes explicit relationships:
 
 ```yaml
 id: APP-SR-00014
-type: requirement
+type: SR
 title: Operator can revoke an API token
-supports:
-  - APP-UC-00003
 verified_by:
   - APP-VT-00221
-evidence:
-  - APP-EVD-00098
-decisions:
+explained_by:
   - APP-ADR-00007
 ```
 

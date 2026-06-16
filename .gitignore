@@ -10,9 +10,8 @@ Thumbs.db
 ~$*.xlsx
 
 # Local generated state
-.aetherion/
-.codex-runs/
-.claude-runs/
+.local-state/
+.generated/
 
 # Local source draft converted to Markdown
 docs/description.docx

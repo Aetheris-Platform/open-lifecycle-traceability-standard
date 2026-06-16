@@ -107,24 +107,20 @@ An OLTS-compatible record can be simple:
 
 ```yaml
 id: APP-SR-00014
-type: requirement
+type: SR
 title: Operator can revoke an API token
-supports:
-  - APP-UC-00003
 verified_by:
   - APP-VT-00221
-evidence:
-  - APP-EVD-00098
-decisions:
+explained_by:
   - APP-ADR-00007
 ```
 
 That small record lets a reviewer ask:
 
-- Which use case does this requirement support?
-- Which test verifies it?
-- Which evidence proves the test ran?
+- Which test verifies this requirement?
 - Which decision explains the design?
+- Which relationship file links the requirement to a use case?
+- Which relationship file links the test to evidence?
 
 That is the core value of OLTS: important lifecycle relationships become explicit facts instead of reconstructed memories.
 
@@ -282,24 +278,21 @@ Teams can adopt OLTS gradually:
 
 ## Get Started
 
-A public OLTS repository should give adopters a 10-minute path:
+1. Read this overview and the [minimal example](../examples/minimal/README.md).
+2. Pick a domain prefix and a first conformance target, usually L1 or L2. See the [adoption guide](adoption-guide.md).
+3. Add one record file and one relationship file in a reviewed path such as `docs/olts/`.
+4. Connect OLTS to your pipeline with the [pipeline integration guide](pipeline-integration.md).
+5. If you use an AI coding agent, start with the [AI agent adoption prompt](ai-agent-adoption-prompt.md).
 
-1. Read the core specification.
-2. Copy a minimal example catalog.
-3. Add one relationship file.
-4. Run a local conformance check.
-5. Review diagnostics.
-6. Open a pull request with the first lifecycle links.
+Conformance tooling under `tools/` is planned. Until it lands, run these steps as reviewed pull requests.
 
-Recommended public repo sections:
+## Repository Layout
 
-- `spec/` for the draft standard;
-- `examples/` for minimal and realistic repo layouts;
-- `schemas/` for machine-readable validation contracts;
-- `tools/` for conformance checks;
-- `docs/` for adoption guides and migration notes;
-- `CONTRIBUTING.md` for feedback and proposals;
-- `LICENSE` for the standard and reference tooling.
+- `spec/` - draft core and relationship standard material.
+- `examples/` - minimal and realistic OLTS-compatible examples.
+- `schemas/` - planned machine-readable validation contracts.
+- `tools/` - planned conformance and migration tooling.
+- `docs/` - overview, adoption, pipeline, governance, and versioning guidance.
 
 ## The Outcome
 

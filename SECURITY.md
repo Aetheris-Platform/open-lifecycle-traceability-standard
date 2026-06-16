@@ -4,7 +4,7 @@ OLTS is a standard and documentation repository. It does not currently ship prod
 
 ## Reporting Security Issues
 
-If you find a security issue in OLTS reference material, examples, schemas, or future tooling, please open a private security advisory if available or contact the maintainers through the repository owner.
+If you find a security issue in OLTS reference material, examples, schemas, or future tooling, please use GitHub private vulnerability reporting or GitHub Security Advisories for this repository when available. If the issue is not sensitive, open a GitHub Issue and label it `security` once that label exists.
 
 Do not disclose sensitive vulnerabilities publicly until maintainers have had a reasonable opportunity to respond.
 

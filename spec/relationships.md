@@ -46,6 +46,11 @@ Recommended future columns include:
 Status,Rationale,Source_File,Source_Row,Owner,Last_Reviewed
 ```
 
+
+## Inline Fields and Relationship Files
+
+A record's inline relationship fields, such as `verified_by` or `explained_by`, use the same verb names and directions as the relationship vocabulary below. Every relationship used in a record or relationship file must appear in this vocabulary. Unknown verbs are diagnostics, not accepted truth.
+
 ## Draft Relationship Vocabulary
 
 | Relationship | Typical Source | Typical Target | Meaning |

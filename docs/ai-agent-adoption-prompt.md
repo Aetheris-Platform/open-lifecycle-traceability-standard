@@ -9,6 +9,8 @@ Before using it, decide whether the agent may edit files directly or should only
 ```text
 You are helping adopt the Open Lifecycle Traceability Standard (OLTS) in this repository.
 
+Default to plan-only. Do not create, edit, or delete any files unless the maintainer explicitly authorizes edits in this prompt.
+
 Goal:
 Create a conservative first OLTS adoption slice that makes lifecycle traceability more explicit without rewriting product truth or inventing relationships.
 

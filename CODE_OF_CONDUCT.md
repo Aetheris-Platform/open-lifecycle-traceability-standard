@@ -29,4 +29,4 @@ Maintainers may moderate discussions, close issues, edit or remove comments wher
 
 ## Reporting
 
-If you see behavior that violates this code, contact the maintainers through the repository owner or GitHub's reporting tools.
+If you see behavior that violates this code, contact the maintainers listed in [MAINTAINERS.md](MAINTAINERS.md) or use GitHub's reporting tools.
