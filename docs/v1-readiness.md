@@ -74,14 +74,15 @@ Before `v1.0.0`:
 - [x] Schema identifiers and cross-schema references are stable and vendor-neutral.
 - [x] Schema `$id` URNs are promoted to stable, versioned identifiers and all cross-references are updated together.
 - [x] The record `type` field and the type segment in `id` are checked for consistency or explicitly documented as intentionally decoupled.
-- [ ] CSV relationship-row validation guidance is clear.
+- [x] CSV relationship-row validation guidance is clear.
 - [ ] Local extension behavior is documented for records, relationships, diagnostics, conformance reports, and generated artifacts.
-- [ ] At least one validator path is documented or tested without making one implementation mandatory.
+- [x] At least one validator path is documented or tested without making one implementation mandatory.
 
 Evidence to review:
 
 - [../spec/core.md](../spec/core.md)
 - [../schemas/README.md](../schemas/README.md)
+- [schema-validation.md](schema-validation.md)
 - [../schemas/olts-record.schema.json](../schemas/olts-record.schema.json)
 - [../schemas/olts-relationship.schema.json](../schemas/olts-relationship.schema.json)
 - [../schemas/olts-diagnostic.schema.json](../schemas/olts-diagnostic.schema.json)
@@ -192,7 +193,7 @@ JSON schema parse check
 minimal and realistic example schema-shape check
 ```
 
-If a stronger JSON Schema validator is adopted, document the exact command and validator version in the release evidence.
+Use [schema-validation.md](schema-validation.md) as the baseline validation path. If a stronger JSON Schema validator is adopted, document the exact command and validator version in the release evidence.
 
 ## Launch Decision
 
