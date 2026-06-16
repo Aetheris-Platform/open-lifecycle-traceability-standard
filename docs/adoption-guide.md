@@ -157,6 +157,16 @@ This repository maintains explicit OLTS L2 relationship files for selected requi
 
 During `v0.x`, conformance claims are provisional and should be phrased as scoped adoption targets or experiments. Avoid certification-style claims until OLTS publishes a stable certification or trademark policy.
 
+Every claim should name its scope. A scope might be a repository, release branch, product area, source path, or selected record set. Do not imply that an OLTS claim covers records outside the stated scope.
+
+Examples:
+
+```text
+This repository is experimenting with OLTS L1 for lifecycle records under docs/olts/records/.
+This release branch maintains an OLTS L2 draft relationship set for selected authentication requirements.
+This product area targets OLTS L3 for active release-scope requirements, with reviewed exceptions listed in the OLTS adoption notes.
+```
+
 ## Recommended First Pull Request
 
 The first OLTS PR should usually include:
@@ -165,7 +175,7 @@ The first OLTS PR should usually include:
 - one minimal record file;
 - one minimal relationship file;
 - a known-gaps section;
-- a statement of the target conformance level.
+- a scoped statement of the target conformance level.
 
 ## Stop Gates
 

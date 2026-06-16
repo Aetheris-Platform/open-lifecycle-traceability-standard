@@ -14,6 +14,8 @@ Repo source truth -> OLTS records and links -> local checks -> CI diagnostics ->
 
 Start with diagnostics. Promote only trusted checks to merge or release gates. Use the draft conformance model in [../spec/conformance.md](../spec/conformance.md) to decide whether checks are advisory or blocking for the claimed scope.
 
+Any pipeline claim should name the checked scope, the claimed level, and whether diagnostics are advisory or blocking. A pipeline should not report an unscoped `OLTS L3` or `OLTS L4` result when it only inspected selected paths, entity types, or release records.
+
 ## GitHub Pipeline
 
 Recommended GitHub flow:
