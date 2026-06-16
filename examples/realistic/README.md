@@ -47,6 +47,8 @@ APP-ART-00008 --evidenced_by--> APP-EVD-00035
 
 These directions match the draft vocabulary in [../../spec/relationships.md](../../spec/relationships.md) and the relationship semantics review in [../../docs/relationship-semantics.md](../../docs/relationship-semantics.md).
 
+The documented equivalent validation checks for this example are recorded in [../../docs/example-validation-review.md](../../docs/example-validation-review.md).
+
 In a real repository, records and relationships like these become source truth only when accepted through normal review. Generated diagrams, dashboards, RTMs, reports, or indexes built from them remain derived unless the repository explicitly accepts a generated artifact as source truth.
 
 ## Draft Conformance Notes
