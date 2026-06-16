@@ -6,6 +6,30 @@ OLTS is currently in the `v0.x` draft series. See [docs/versioning.md](docs/vers
 
 ## Unreleased
 
+No post-`v1.0.0` changes yet.
+
+## `v1.0.0` - Pending maintainer approval
+
+This section records the intended first stable public OLTS standard. It is not a release announcement. Do not create a public tag, GitHub Release, or visibility change until maintainers explicitly approve the launch.
+
+### Stable Scope
+
+- Stable core terminology, entity types, identifier shape, source-of-truth boundaries, and generated-artifact posture.
+- Stable relationship vocabulary and direction, including `documented_by` as the canonical stored lifecycle-to-artifact relationship.
+- Stable `L1` through `L5` conformance levels with scoped adopter claim language, diagnostics guidance, and non-goals.
+- Candidate v1 schema identifiers and validation guidance for records, relationship rows, diagnostics, conformance reports, and generated artifacts.
+- Minimal and realistic examples suitable for public adopters.
+- Governance, contribution, security, trademark, license, community, and public launch settings guidance.
+
+### Migration Notes
+
+- Pre-`v1.0.0` adopters should update stored artifact relationships from `documents` to `documented_by` when using core OLTS lifecycle-to-artifact traceability.
+- Relationship files should use only core OLTS verbs or documented local extensions.
+- Record `type` should match the type segment in `id`.
+- Conformance claims should name scope, level, sources inspected, diagnostics posture, and reviewed exceptions.
+- Generated diagrams, dashboards, reports, and indexes remain derived unless accepted through reviewed source truth.
+- Public community processes should activate only after maintainers verify Issues, Discussions, branch protection, security settings, templates, and release approval evidence.
+
 ### Added
 
 - Draft `v0.2.0` conformance model with level expectations, diagnostics guidance, validation reporting, extension guidance, and adopter claim language.

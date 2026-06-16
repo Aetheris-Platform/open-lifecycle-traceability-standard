@@ -172,7 +172,7 @@ Use [public-launch-settings.md](public-launch-settings.md) as the settings runbo
 
 Before tagging `v1.0.0`:
 
-- [ ] Changelog has a `v1.0.0` section with stable scope and migration notes.
+- [x] Changelog has a `v1.0.0` section with stable scope and migration notes.
 - [ ] All intended launch PRs are merged.
 - [ ] Final private/local scrub is clean.
 - [ ] Markdown links are checked.
@@ -181,6 +181,8 @@ Before tagging `v1.0.0`:
 - [ ] Public README, overview, and Get Started path reflect the actual public repo state.
 - [ ] Maintainers explicitly approve public visibility and tag creation.
 - [ ] A tracked release-readiness issue or final checklist PR records the approval evidence and links to this plan.
+
+Track final evidence in [v1-release-evidence.md](v1-release-evidence.md).
 
 ## Non-Goals for v1.0.0
 
