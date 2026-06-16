@@ -1,0 +1,131 @@
+- id: APP-CAP-00002
+  type: CAP
+  title: Passwordless sign-in
+  description: Users can authenticate without storing or typing a reusable password.
+  status: release-candidate
+  realizes:
+    - APP-UC-00011
+  source:
+    repository: example-application
+    file: docs/product-plan.md
+    section: Authentication roadmap
+
+- id: APP-TRK-00042
+  type: TRK
+  title: Deliver passwordless sign-in flow
+  description: Implementation work item for the first passwordless sign-in release slice.
+  status: release-candidate
+  implements:
+    - APP-CAP-00002
+  source:
+    repository: example-application
+    external_system: issue-tracker
+    external_key: APP-42
+
+- id: APP-UC-00011
+  type: UC
+  title: User signs in with a one-time code
+  description: A returning user requests a one-time code and completes sign-in without entering a password.
+  status: release-candidate
+  requires:
+    - APP-SR-00027
+  validated_by:
+    - APP-VAL-00006
+  source:
+    repository: example-application
+    file: docs/use-cases/authentication.md
+    section: Passwordless sign-in
+
+- id: APP-SR-00027
+  type: SR
+  title: One-time sign-in code expires after 10 minutes
+  description: The system rejects one-time sign-in codes more than 10 minutes after issuance.
+  status: release-candidate
+  specified_by:
+    - openspec:passwordless-sign-in
+  verified_by:
+    - APP-VT-00019
+  explained_by:
+    - APP-ADR-00004
+  source:
+    repository: example-application
+    file: docs/requirements/authentication.md
+    section: One-time code expiry
+
+- id: APP-VAL-00006
+  type: VAL
+  title: Passwordless sign-in usability validation
+  description: Validation scenario confirming that representative users can complete sign-in with a one-time code.
+  status: executed
+  evidenced_by:
+    - APP-EVD-00034
+  source:
+    repository: example-application
+    file: docs/validation/passwordless-sign-in.md
+    section: Usability validation
+
+- id: APP-VT-00019
+  type: VT
+  title: Reject expired one-time code
+  description: Automated verification test for one-time code expiry behavior.
+  status: implemented
+  evidenced_by:
+    - APP-EVD-00033
+  source:
+    repository: example-application
+    file: tests/authentication/test_one_time_code_expiry.py
+    section: test_rejects_expired_one_time_code
+
+- id: APP-EVD-00033
+  type: EVD
+  title: CI test run for one-time code expiry
+  description: Evidence that the verification test ran in the release candidate pipeline.
+  status: captured
+  source:
+    repository: example-application
+    file: evidence/release-candidate-2026-06-16/test-results.json
+    section: authentication
+
+- id: APP-EVD-00034
+  type: EVD
+  title: Usability validation notes for passwordless sign-in
+  description: Evidence record for the validation scenario review.
+  status: captured
+  source:
+    repository: example-application
+    file: evidence/release-candidate-2026-06-16/usability-validation.md
+    section: Passwordless sign-in
+
+- id: APP-ADR-00004
+  type: ADR
+  title: Use short-lived one-time codes for initial passwordless release
+  description: Decision record explaining why the first release uses short-lived one-time codes.
+  status: accepted
+  source:
+    repository: example-application
+    file: docs/adr/0004-passwordless-one-time-codes.md
+    section: Decision
+
+- id: APP-ART-00008
+  type: ART
+  title: Authentication sequence diagram
+  description: Design artifact documenting the one-time code sign-in flow.
+  status: reviewed
+  documents:
+    - APP-SR-00027
+  evidenced_by:
+    - APP-EVD-00035
+  source:
+    repository: example-application
+    file: docs/design/authentication-sequence.md
+    section: Passwordless sign-in sequence
+
+- id: APP-EVD-00035
+  type: EVD
+  title: Design review approval for authentication sequence
+  description: Evidence that the authentication sequence artifact was reviewed for the release slice.
+  status: captured
+  source:
+    repository: example-application
+    file: evidence/release-candidate-2026-06-16/design-review.md
+    section: Authentication sequence approval

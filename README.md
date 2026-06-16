@@ -79,9 +79,10 @@ See [docs/versioning.md](docs/versioning.md), [docs/v1-readiness.md](docs/v1-rea
 
 1. Read [docs/overview.md](docs/overview.md).
 2. Review the [minimal example](examples/minimal/README.md).
-3. Follow [docs/adoption-guide.md](docs/adoption-guide.md) for a first L1 or L2 adoption slice.
-4. Use [docs/pipeline-integration.md](docs/pipeline-integration.md) to connect OLTS to GitHub, GitLab, Azure DevOps, Jira, OpenSpec, CI/CD, or release review.
-5. If using an AI coding agent, start with [docs/ai-agent-adoption-prompt.md](docs/ai-agent-adoption-prompt.md).
+3. Review the [realistic example](examples/realistic/README.md) when you need a fuller capability-to-evidence chain.
+4. Follow [docs/adoption-guide.md](docs/adoption-guide.md) for a first L1 or L2 adoption slice.
+5. Use [docs/pipeline-integration.md](docs/pipeline-integration.md) to connect OLTS to GitHub, GitLab, Azure DevOps, Jira, OpenSpec, CI/CD, or release review.
+6. If using an AI coding agent, start with [docs/ai-agent-adoption-prompt.md](docs/ai-agent-adoption-prompt.md).
 
 ## License
 
