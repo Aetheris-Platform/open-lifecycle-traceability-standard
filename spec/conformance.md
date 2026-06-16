@@ -8,12 +8,12 @@ Normative keywords in this file use the convention defined in [core.md](core.md#
 
 ## Conformance Principles
 
-1. Conformance levels are cumulative. A repository claiming `OLTS L3` SHOULD satisfy `L1`, `L2`, and `L3` for the stated scope.
+1. Conformance levels are cumulative. A repository claiming `OLTS L3` MUST satisfy `L1`, `L2`, and `L3` for the stated scope.
 2. Claims SHOULD name their scope. A claim MAY cover a whole repository, one product area, one release line, or one reviewed path such as `docs/olts/`.
 3. Source truth MUST be explicit. Generated diagrams, dashboards, indexes, and reports are derived unless accepted by normal review.
 4. Unknown, missing, or ambiguous lifecycle data SHOULD produce diagnostics, not false confidence.
-5. Automation MAY validate, diagnose, summarize, and propose. Humans approve canonical lifecycle truth.
-6. Local extensions MAY be allowed, but claims SHOULD separate draft OLTS vocabulary from repository-specific extensions.
+5. Automation MAY validate, diagnose, summarize, and propose. Humans MUST approve canonical lifecycle truth.
+6. Adopters MAY define local extensions, but claims SHOULD separate draft OLTS vocabulary from repository-specific extensions.
 
 ## Claim Shape
 

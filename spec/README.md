@@ -33,7 +33,7 @@ OLTS does not require:
 - a specific UI;
 - a specific MBSE or architecture framework.
 
-Product repositories remain the source of truth. Automation MAY propose changes, but humans approve lifecycle truth through normal review.
+Product repositories remain the source of truth. Automation MAY propose changes, but humans MUST approve lifecycle truth through normal review.
 
 ## Draft Files
 

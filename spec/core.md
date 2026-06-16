@@ -18,7 +18,7 @@ During the `v0.x` draft period, normative keywords describe intended stable sema
 2. Stable identifiers name lifecycle entities, not status or priority.
 3. Important lifecycle relationships are explicit records, not inferred guesses.
 4. Generated views, diagrams, indexes, and reports are derived artifacts.
-5. Automation MAY diagnose and propose; humans approve canonical truth.
+5. Automation MAY diagnose and propose; humans MUST approve canonical lifecycle truth.
 6. Missing lifecycle data produces diagnostics, not false confidence.
 7. OLTS MUST NOT require a specific ALM tool, database, UI, AI agent, MBSE framework, or change-governance method.
 
