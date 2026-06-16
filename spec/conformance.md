@@ -179,7 +179,7 @@ Recommended severities:
 | Severity | Meaning |
 | --- | --- |
 | `info` | Useful context that does not indicate a traceability gap. |
-| `warning` | A likely gap or ambiguity that should be reviewed. |
+| `warning` | A likely gap or ambiguity that warrants review. |
 | `error` | A conformance expectation failed for the stated scope. |
 | `blocked` | The source could not be read, so the checker cannot make a trustworthy claim. |
 

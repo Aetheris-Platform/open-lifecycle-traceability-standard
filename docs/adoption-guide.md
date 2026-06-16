@@ -162,9 +162,9 @@ Every claim should name its scope. A scope might be a repository, release branch
 Examples:
 
 ```text
-This repository is experimenting with OLTS L1 for lifecycle records under docs/olts/.
+This repository is experimenting with OLTS L1 for lifecycle records under docs/olts/records/.
 This release branch maintains an OLTS L2 draft relationship set for selected authentication requirements.
-This product area targets OLTS L3 for active release-scope requirements, with reviewed exceptions listed in docs/olts/exceptions.md.
+This product area targets OLTS L3 for active release-scope requirements, with reviewed exceptions listed in the OLTS adoption notes.
 ```
 
 ## Recommended First Pull Request
