@@ -30,6 +30,8 @@ The product team is adding passwordless sign-in. Reviewers need to see:
 | [records.yaml](records.yaml) | Reviewable lifecycle records for the scoped feature. |
 | [relationships.csv](relationships.csv) | Canonical OLTS relationships between the records. |
 
+The `openspec:` reference in this example is only one possible external-reference namespace. A team could use `jira:`, `issue:`, `adr:`, or another reviewed provenance source instead.
+
 ## Relationship Chain
 
 ```text

@@ -2,7 +2,7 @@
   type: CAP
   title: Passwordless sign-in
   description: Users can authenticate without storing or typing a reusable password.
-  status: draft
+  status: release-candidate
   realizes:
     - APP-UC-00011
   source:
@@ -14,7 +14,7 @@
   type: TRK
   title: Deliver passwordless sign-in flow
   description: Implementation work item for the first passwordless sign-in release slice.
-  status: planned
+  status: release-candidate
   implements:
     - APP-CAP-00002
   source:
@@ -26,7 +26,7 @@
   type: UC
   title: User signs in with a one-time code
   description: A returning user requests a one-time code and completes sign-in without entering a password.
-  status: draft
+  status: release-candidate
   requires:
     - APP-SR-00027
   validated_by:
@@ -40,7 +40,7 @@
   type: SR
   title: One-time sign-in code expires after 10 minutes
   description: The system rejects one-time sign-in codes more than 10 minutes after issuance.
-  status: draft
+  status: release-candidate
   specified_by:
     - openspec:passwordless-sign-in
   verified_by:
@@ -56,7 +56,7 @@
   type: VAL
   title: Passwordless sign-in usability validation
   description: Validation scenario confirming that representative users can complete sign-in with a one-time code.
-  status: planned
+  status: executed
   evidenced_by:
     - APP-EVD-00034
   source:
