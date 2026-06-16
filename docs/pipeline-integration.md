@@ -12,7 +12,7 @@ A practical OLTS integration usually follows this pattern:
 Repo source truth -> OLTS records and links -> local checks -> CI diagnostics -> review gates -> release evidence
 ```
 
-Start with diagnostics. Promote only trusted checks to merge or release gates.
+Start with diagnostics. Promote only trusted checks to merge or release gates. Use the draft conformance model in [../spec/conformance.md](../spec/conformance.md) to decide whether checks are advisory or blocking for the claimed scope.
 
 ## GitHub Pipeline
 
@@ -100,7 +100,7 @@ The key requirement is that provenance is explicit and reviewable.
 
 ## CI/CD Checks
 
-Useful early checks:
+Useful early checks, usually aligned with `L1` and `L2` claims:
 
 - validate ID shape;
 - detect duplicate IDs;
@@ -109,7 +109,7 @@ Useful early checks:
 - detect missing required files;
 - detect generated artifact metadata gaps.
 
-Useful later checks:
+Useful later checks, usually aligned with `L3`, `L4`, and `L5` claims:
 
 - requirements without verification tests;
 - tests without evidence;

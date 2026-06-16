@@ -1,27 +1,21 @@
 # OLTS Draft Specification
 
-This directory will hold the public draft specification for the Open Lifecycle Traceability Standard.
+This directory holds the draft specification material for the Open Lifecycle Traceability Standard.
 
 ## Current Status
 
-OLTS is an early open draft. The initial repository focuses on:
+OLTS is an early draft being shaped before the stable public `v1.0.0` standard. The current repository focuses on:
 
 - stable lifecycle identifiers;
 - explicit lifecycle relationships;
 - repo-native catalog and relationship files;
 - provenance for generated artifacts;
 - diagnostics for missing or malformed lifecycle data;
-- staged conformance levels.
+- staged conformance levels and draft claim language.
 
-## Draft Conformance Levels
+## Draft Conformance Model
 
-| Level | Meaning |
-| --- | --- |
-| L1: Stable IDs | Lifecycle entities have durable identifiers. |
-| L2: Explicit Relationships | Key relationships are recorded in reviewable files. |
-| L3: Verification Coverage | Requirements and use cases link to tests or validation scenarios. |
-| L4: Evidence Coverage | Tests, validation scenarios, and release claims link to evidence. |
-| L5: Automated Conformance | CI checks validate identifiers, links, provenance, and diagnostics. |
+The provisional `L1` through `L5` levels now have draft claim language, diagnostics expectations, and validation guidance in [conformance.md](conformance.md).
 
 ## Non-Goals
 
@@ -38,5 +32,6 @@ Product repositories remain the source of truth. Automation may propose changes,
 
 ## Draft Files
 
-- [core.md](core.md) - initial OLTS Core principles, identifier shape, entity types, provenance, diagnostics, and conformance levels.
+- [core.md](core.md) - initial OLTS Core principles, identifier shape, entity types, provenance, diagnostics, and conformance summary.
 - [relationships.md](relationships.md) - initial explicit relationship model, relationship file shape, and OpenSpec/non-OpenSpec guidance.
+- [conformance.md](conformance.md) - draft conformance levels, diagnostics expectations, validation guidance, and adopter claim language.

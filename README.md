@@ -12,7 +12,7 @@ It connects requirements, tests, evidence, decisions, release readiness, artifac
 
 ## Maturity
 
-OLTS is an early open draft. We are publishing it to gather feedback before stabilizing the public standard, conformance levels, examples, and governance model.
+OLTS is an early draft. It is being shaped before the stable public `v1.0.0` standard, conformance levels, examples, and governance model are finalized.
 
 The intent is practical: make lifecycle traceability usable in real development pipelines, not only in specialized tools or after-the-fact compliance reviews.
 
@@ -46,19 +46,21 @@ In an OpenSpec-based workflow, OLTS can use OpenSpec as change provenance. OpenS
 
 ## Conformance Levels
 
+OLTS defines a draft adoption ladder from stable IDs through automated conformance. See [spec/conformance.md](spec/conformance.md) for level expectations, diagnostics guidance, validation reporting, and draft adopter claim language.
+
 | Level | Meaning |
 | --- | --- |
-| L1: Stable IDs | Lifecycle entities have durable identifiers. |
-| L2: Explicit Relationships | Key relationships are recorded in reviewable files. |
-| L3: Verification Coverage | Requirements and use cases link to tests or validation scenarios. |
-| L4: Evidence Coverage | Tests, validation scenarios, and release claims link to evidence. |
-| L5: Automated Conformance | CI checks validate identifiers, links, provenance, and diagnostics. |
+| `L1`: Stable IDs | Lifecycle entities have durable identifiers. |
+| `L2`: Explicit Relationships | Key relationships are recorded in reviewable files or fields. |
+| `L3`: Verification Coverage | Requirements and use cases in scope link to tests or validation scenarios. |
+| `L4`: Evidence Coverage | Tests, validation scenarios, and release claims in scope link to evidence. |
+| `L5`: Automated Conformance | Automated checks validate identifiers, relationships, provenance, and diagnostics. |
 
 ## Versioning
 
 OLTS is currently an early draft. The planned readiness path is:
 
-- `v0.1.0` initial public draft
+- `v0.1.0` initial draft
 - `v0.2.0` conformance draft
 - `v0.3.0` schemas draft
 - `v1.0.0` first stable standard

@@ -12,7 +12,7 @@ It connects requirements, tests, evidence, decisions, release readiness, artifac
 
 ## Maturity
 
-OLTS is an early open draft. We are publishing it to gather feedback before stabilizing the public standard, conformance levels, examples, and governance model.
+OLTS is an early draft. It is being shaped before the stable public `v1.0.0` standard, conformance levels, examples, and governance model are finalized.
 
 The intent is practical: make lifecycle traceability usable in real development pipelines, not only in specialized tools or after-the-fact compliance reviews.
 
@@ -218,17 +218,17 @@ For larger teams, regulated programs, multi-repo platforms, or systems engineeri
 
 ## Conformance Levels
 
-OLTS should be adoptable in stages.
+OLTS should be adoptable in stages. The draft conformance model is defined in [../spec/conformance.md](../spec/conformance.md), including level expectations, diagnostics, validation reporting, and claim language.
 
 | Level | Meaning |
 | --- | --- |
-| L1: Stable IDs | Lifecycle entities have durable identifiers. |
-| L2: Explicit Relationships | Key relationships are recorded in reviewable files. |
-| L3: Verification Coverage | Requirements and use cases link to tests or validation scenarios. |
-| L4: Evidence Coverage | Tests, validation scenarios, and release claims link to evidence. |
-| L5: Automated Conformance | CI checks validate identifiers, links, provenance, and diagnostics. |
+| `L1`: Stable IDs | Lifecycle entities have durable identifiers. |
+| `L2`: Explicit Relationships | Key relationships are recorded in reviewable files or fields. |
+| `L3`: Verification Coverage | Requirements and use cases in scope link to tests or validation scenarios. |
+| `L4`: Evidence Coverage | Tests, validation scenarios, and release claims in scope link to evidence. |
+| `L5`: Automated Conformance | Automated checks validate identifiers, relationships, provenance, and diagnostics. |
 
-This gives teams a practical adoption ladder. A team can honestly say "we are OLTS L2" without pretending to have full evidence automation on day one.
+This gives teams a practical adoption ladder. During the `v0.x` draft period, teams should phrase claims as scoped adoption statements, such as "this repository is experimenting with OLTS L2 for selected requirements," rather than broad certification claims.
 
 ## What Makes OLTS Different
 

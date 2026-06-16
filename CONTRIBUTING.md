@@ -1,6 +1,6 @@
 # Contributing to OLTS
 
-OLTS is an early open draft. Feedback is welcome, especially from product engineering, systems engineering, QA, DevOps, security, compliance, ALM, and MBSE practitioners.
+OLTS is an early draft. Feedback is welcome, especially from product engineering, systems engineering, QA, DevOps, security, compliance, ALM, and MBSE practitioners.
 
 ## Good First Contributions
 
@@ -15,7 +15,7 @@ OLTS is an early open draft. Feedback is welcome, especially from product engine
 The intended public flow is:
 
 ```text
-Discussion -> Issue -> Pull Request -> Review -> Merge -> Release tag
+Discussion -> Issue -> Pull Request -> Review -> Merge -> Milestone or release decision
 ```
 
 Use GitHub Discussions for broad questions, ideas, prior art, and adoption stories. Use Issues for trackable changes. Use Pull Requests for accepted edits to the standard, examples, docs, schemas, templates, or future tools.
