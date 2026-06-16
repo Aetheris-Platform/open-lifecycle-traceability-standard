@@ -13,6 +13,7 @@ OLTS is currently in the `v0.x` draft series. See [docs/versioning.md](docs/vers
 - `v1.0.0` readiness plan with stable-standard gates, launch settings, release evidence, and explicit approval requirements.
 - Realistic multi-entity example covering capability, work item, use case, requirement, validation, verification, evidence, decision, and artifact records.
 - Draft normative keyword convention for OLTS spec files, using RFC 2119 and RFC 8174 uppercase terms.
+- Tool-agnostic schema validation path for records, CSV relationship rows, semantic checks, diagnostics, and example validation.
 
 ### Changed
 

@@ -61,6 +61,8 @@ OLTS examples use CSV because CSV is easy to review in pull requests. JSON Schem
 }
 ```
 
+See [../docs/schema-validation.md](../docs/schema-validation.md) for a repeatable validation path that covers schema parsing, record validation, CSV row mapping, and semantic checks that plain JSON Schema cannot express.
+
 ## Extension Guidance
 
 Local extensions are allowed during the draft period, but they should be documented. A repository that adds local entity types, relationship verbs, diagnostic codes, or metadata fields should state whether those extensions are local-only or proposed for future OLTS standardization.

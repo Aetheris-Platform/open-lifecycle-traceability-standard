@@ -189,6 +189,8 @@ A missing file, parser failure, inaccessible external source, or disabled data s
 
 Candidate v1 machine-readable schemas are available under [../schemas/](../schemas/). Adopters MAY also validate conformance with reviewed checklists, repository scripts, CI jobs, or external tooling.
 
+A repeatable, tool-agnostic validation path is described in [../docs/schema-validation.md](../docs/schema-validation.md). It is one acceptable way to validate parsed records, parsed relationship rows, semantic checks, and diagnostics without making any one implementation mandatory.
+
 A useful validation report SHOULD identify:
 
 - claimed level and scope;
