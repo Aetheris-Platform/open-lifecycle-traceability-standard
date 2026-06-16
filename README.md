@@ -13,7 +13,9 @@ It connects requirements, tests, evidence, decisions, release readiness, artifac
 
 ## Maturity
 
-OLTS is an early draft. It is being shaped before the stable public `v1.0.0` standard, conformance levels, examples, and governance model are finalized.
+OLTS is a private `v1.0.0` release candidate. Core terminology, relationship semantics, conformance levels, schemas, examples, and governance guidance have been reviewed for the first stable public standard.
+
+The repository should remain private until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release. See [docs/v1-readiness.md](docs/v1-readiness.md) and [docs/v1-release-evidence.md](docs/v1-release-evidence.md) for the remaining launch gates.
 
 The intent is practical: make lifecycle traceability usable in real development pipelines, not only in specialized tools or after-the-fact compliance reviews.
 

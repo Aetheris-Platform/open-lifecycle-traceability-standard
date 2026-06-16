@@ -61,6 +61,7 @@ This section records the intended first stable public OLTS standard. It is not a
 - Reviewed governance and community readiness, including stewardship expectations, contribution flow, private-vs-public feedback channels, community files, and Apache-2.0 license posture.
 - Added public launch settings guidance, including recommended repository description, topics, features, Discussion categories, branch protection, and security setting checks.
 - Recorded public launch settings evidence for repository description, topics, Issues, branch protection, security settings, Wiki, Projects, and private/local scrub posture.
+- Updated README maturity language to describe OLTS as a private `v1.0.0` release candidate pending explicit visibility, tag, and release approval.
 
 ## `v0.1.0` - 2026-06-16
 
