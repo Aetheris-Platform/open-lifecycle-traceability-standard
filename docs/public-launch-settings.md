@@ -67,12 +67,12 @@ Repo -> Discussions -> Manage discussion categories
 
 ## Branch Protection
 
-Before public launch, protect `main`.
+Before public launch, protect `main` for pull-request workflow integrity. Maintainers may keep the required approving-review count at `0` while the repository is private and under active launch preparation. After public launch, update the rule to require at least one approving review.
 
 Minimum intended settings:
 
 - require a pull request before merging;
-- require at least one approving review;
+- keep required approving reviews at `0` during private launch preparation, then raise to at least one approving review after public launch;
 - require conversation resolution before merging;
 - block force pushes;
 - block deletion of the protected branch.
