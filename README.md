@@ -72,7 +72,7 @@ See [docs/versioning.md](docs/versioning.md) and [CHANGELOG.md](CHANGELOG.md).
 - [docs/](docs/) - overview, adoption notes, pipeline integration, governance, and migration guidance.
 - [spec/](spec/) - draft core and relationship standard material.
 - [examples/](examples/) - minimal and realistic OLTS-compatible examples.
-- [schemas/](schemas/) - future machine-readable validation contracts.
+- [schemas/](schemas/) - draft machine-readable validation contracts for records, relationships, diagnostics, conformance reports, and generated artifacts.
 - [tools/](tools/) - future conformance and migration tooling.
 
 ## Get Started

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:olts:schema:draft:olts-diagnostic",
+  "title": "OLTS Diagnostic",
+  "description": "Draft schema for one OLTS diagnostic emitted by manual review, scripts, CI, or reference tooling.",
+  "type": "object",
+  "required": ["code", "severity", "message"],
+  "properties": {
+    "code": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "examples": ["invalid_identifier", "missing_referenced_entity", "missing_evidence_coverage"]
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["info", "warning", "error", "blocked"]
+    },
+    "message": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subject_id": {
+      "$ref": "#/$defs/idOrExternalReference"
+    },
+    "relationship": {
+      "type": "string"
+    },
+    "source_file": {
+      "type": "string"
+    },
+    "source_row": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_column": {
+      "type": "string"
+    },
+    "expected": {
+      "type": "string"
+    },
+    "actual": {
+      "type": "string"
+    },
+    "remediation": {
+      "type": "string"
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "oltsIdentifier": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9]*-[A-Z][A-Z0-9]{1,9}-[0-9]{5}$"
+    },
+    "externalReference": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_.-]*:.+"
+    },
+    "idOrExternalReference": {
+      "anyOf": [
+        { "$ref": "#/$defs/oltsIdentifier" },
+        { "$ref": "#/$defs/externalReference" }
+      ]
+    }
+  }
+}

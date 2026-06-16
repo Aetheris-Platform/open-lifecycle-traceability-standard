@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:olts:schema:draft:olts-generated-artifact",
+  "title": "OLTS Generated Artifact Metadata",
+  "description": "Draft schema for metadata attached to generated OLTS diagrams, dashboards, reports, RTMs, indexes, and review packets.",
+  "type": "object",
+  "required": ["artifact_id", "artifact_type", "generated_at", "generator", "sources"],
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artifact_type": {
+      "type": "string",
+      "examples": ["diagram", "dashboard", "rtm", "report", "index", "review_packet"]
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "generator": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "configuration": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["path"],
+        "properties": {
+          "path": { "type": "string" },
+          "kind": { "type": "string" },
+          "commit": { "type": "string" },
+          "source_hash": { "type": "string" },
+          "inspected_at": { "type": "string", "format": "date-time" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "included_relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "urn:olts:schema:draft:olts-relationship"
+      }
+    },
+    "omitted_facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["reason"],
+        "properties": {
+          "subject_id": { "type": "string" },
+          "reason": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "$ref": "urn:olts:schema:draft:olts-diagnostic"
+      }
+    },
+    "derived": {
+      "type": "boolean",
+      "const": true,
+      "description": "Generated artifacts are derived unless accepted as source truth through normal review."
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
