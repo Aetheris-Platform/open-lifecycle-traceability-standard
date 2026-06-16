@@ -1,8 +1,8 @@
 # AI Agent Adoption Prompt
 
-Use this prompt with an AI coding agent to produce a first OLTS adoption plan or pull request for an existing repository.
+Use this prompt with an AI coding agent to produce a first OLTS adoption plan or, when explicitly authorized, a pull request for an existing repository.
 
-Before using it, decide whether the agent may edit files directly or should only produce a plan.
+Before using it, decide whether the agent may edit files directly or should only produce a plan. If edits are allowed, state that authorization inside the prompt you send to the agent.
 
 ## Copy/Paste Prompt
 
@@ -10,6 +10,11 @@ Before using it, decide whether the agent may edit files directly or should only
 You are helping adopt the Open Lifecycle Traceability Standard (OLTS) in this repository.
 
 Default to plan-only. Do not create, edit, or delete any files unless the maintainer explicitly authorizes edits in this prompt.
+
+Authorization mode:
+- If this prompt does not include an explicit "Edits authorized" statement from the maintainer, produce a plan only.
+- If edits are authorized, make the smallest useful change on a branch and preserve normal human review.
+- Never treat the ability to edit files as permission to rewrite source truth, delete lifecycle records, or bypass review.
 
 Goal:
 Create a conservative first OLTS adoption slice that makes lifecycle traceability more explicit without rewriting product truth or inventing relationships.
@@ -46,6 +51,8 @@ Hard constraints:
 - Do not claim compliance or verification coverage unless evidence is explicit.
 - Do not treat generated diagrams, dashboards, or reports as source truth.
 - Do not introduce a database, hosted service, or mandatory tool unless requested.
+- Do not present generated or proposed OLTS records as accepted source truth until they are reviewed.
+- Do not make broad migration changes unless the maintainer explicitly requests that scope.
 
 Expected output:
 1. A short repository inventory.
@@ -55,7 +62,7 @@ Expected output:
 5. A small sample of OLTS records and relationships.
 6. Known gaps and diagnostics.
 7. A review plan for the first PR.
-8. If editing is allowed, create the minimal files and summarize the diff.
+8. If and only if edits are explicitly authorized, create the minimal files and summarize the diff.
 
 Suggested first PR contents:
 - docs/olts/README.md explaining source truth, scope, and adoption level;
@@ -67,6 +74,18 @@ Suggested first PR contents:
 When in doubt, stop and ask for maintainer review rather than guessing.
 ```
 
+## Optional Authorization Template
+
+Maintainers can paste one of these lines into the prompt:
+
+```text
+Authorization: Plan only. Do not create, edit, delete, stage, commit, push, or open a pull request.
+```
+
+```text
+Authorization: Edits authorized for a minimal OLTS adoption slice. Use a branch, keep the diff small, and do not rewrite canonical lifecycle truth. Do not stage, commit, push, or open a pull request unless explicitly authorized.
+```
+
 ## Optional Maintainer Answers
 
 Before running the prompt, maintainers can provide:
@@ -75,7 +94,7 @@ Before running the prompt, maintainers can provide:
 - desired first conformance target;
 - source-of-truth files;
 - paths the agent must not edit;
-- whether the agent may create a branch and PR;
+- whether the agent may edit files, create a branch, commit, push, or open a pull request;
 - whether OpenSpec, Jira, GitHub Issues, GitLab Issues, or Azure Boards is the change-provenance source.
 
 ## Review Checklist for AI-Generated OLTS Changes
