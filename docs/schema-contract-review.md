@@ -1,8 +1,8 @@
 # OLTS Schema Contract Review
 
-This review records the candidate `v1.0.0` schema contracts against the prose standard.
+This review records the `v1.0.0` schema contracts against the prose standard.
 
-It is launch-readiness evidence, not a release announcement. OLTS remains a private `v1.0.0` release candidate until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release.
+It is launch evidence for the first stable OLTS release.
 
 ## Review Scope
 
@@ -26,7 +26,7 @@ Reviewed prose sources:
 
 ## Review Findings
 
-The candidate schema files match the prose standard at the level portable JSON Schema is intended to express.
+The schema files match the prose standard at the level portable JSON Schema is intended to express.
 
 | Schema | Prose alignment |
 | --- | --- |
@@ -44,7 +44,7 @@ The relationship schema enum matches the core relationship vocabulary:
 implements, realizes, requires, specified_by, verified_by, validated_by, evidenced_by, documented_by, explained_by, supersedes
 ```
 
-The record schema describes the same candidate entity types documented in the core terminology review:
+The record schema describes the same entity types documented in the core terminology review:
 
 ```text
 CAP, TRK, UC, SR, VT, VAL, EVD, ART, ADR
@@ -74,6 +74,6 @@ That flexibility does not make local vocabulary core OLTS vocabulary. Local enti
 
 ## Stability Decision
 
-The schemas reflect the pre-`v1.0.0` vocabulary decision to use `documented_by` as the canonical stored relationship from lifecycle entities to artifacts. No additional schema behavior changes are required by this review.
+The schemas reflect the `v1.0.0` vocabulary decision to use `documented_by` as the canonical stored relationship from lifecycle entities to artifacts. No additional schema behavior changes are required by this review.
 
-The candidate schema contracts are aligned with the prose standard for `v1.0.0` readiness, subject to the documented semantic checks and extension guidance above. Future changes to required fields, schema identifiers, relationship vocabulary, diagnostic severity values, report posture fields, or generated-artifact provenance expectations should be treated as compatibility-impacting v1 readiness decisions.
+The schema contracts are aligned with the prose standard for `v1.0.0`, subject to the documented semantic checks and extension guidance above. Future changes to required fields, schema identifiers, relationship vocabulary, diagnostic severity values, report posture fields, or generated-artifact provenance expectations should be treated as compatibility-impacting changes.

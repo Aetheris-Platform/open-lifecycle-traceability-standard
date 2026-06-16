@@ -1,6 +1,6 @@
 # OLTS Conformance Model
 
-This file defines the release-candidate OLTS conformance model for scoped adopter claims. It remains launch-gated until the `v1.0.0` release process is explicitly approved, and it is not a certification policy.
+This file defines the OLTS `v1.0.0` conformance model for scoped adopter claims. It is not a certification policy.
 
 OLTS conformance is designed to help adopters make honest, incremental claims about lifecycle traceability without requiring a specific tool, database, UI, ALM platform, MBSE framework, OpenSpec workflow, or AI agent.
 
@@ -48,9 +48,9 @@ OLTS has no official third-party certification program before an explicit certif
 
 ## Claim Stability
 
-The `L1` through `L5` names, cumulative ordering, claim criteria, expected diagnostics, and non-goals are candidate v1 semantics for scoped adopter claims. Before `v1.0.0`, maintainers SHOULD treat changes to those semantics as compatibility-impacting changes that need explicit review.
+The `L1` through `L5` names, cumulative ordering, claim criteria, expected diagnostics, and non-goals are stable v1 semantics for scoped adopter claims. Maintainers SHOULD treat changes to those semantics as compatibility-impacting changes that need explicit review.
 
-A scoped claim is stable enough for private adoption, pilot use, and repository-local governance when it follows the claim shape above. It is not a public compatibility guarantee, third-party certification, or blanket statement about records outside the stated scope.
+A scoped claim is stable enough for adoption, pilot use, and repository-local governance when it follows the claim shape above. It is not third-party certification or a blanket statement about records outside the stated scope.
 
 Manual review, repository scripts, CI jobs, external validators, and platform-native checks MAY all produce evidence for a scoped claim. `L5` requires automation for the claimed scope, but it does not require OLTS reference tooling or any specific vendor platform.
 
@@ -197,7 +197,7 @@ Severity describes the diagnostic finding. It does not, by itself, define whethe
 
 ## Validation Expectations
 
-Candidate v1 machine-readable schemas are available under [../schemas/](../schemas/). Adopters MAY also validate conformance with manual review checklists, repository scripts, CI jobs, external tooling, or platform-native checks.
+Machine-readable schemas are available under [../schemas/](../schemas/). Adopters MAY also validate conformance with manual review checklists, repository scripts, CI jobs, external tooling, or platform-native checks.
 
 A repeatable, tool-agnostic validation path is described in [../docs/schema-validation.md](../docs/schema-validation.md). It is one acceptable way to validate parsed records, parsed relationship rows, semantic checks, and diagnostics without making any one implementation mandatory.
 
@@ -210,7 +210,7 @@ A useful validation report SHOULD identify:
 - explicit exceptions;
 - whether the report is advisory or blocking.
 
-The candidate schemas translate the conformance semantics into small reviewable contracts. Schemas SHOULD support diagnostics and adoption without replacing human-approved lifecycle truth.
+The schemas translate the conformance semantics into small reviewable contracts. Schemas SHOULD support diagnostics and adoption without replacing human-approved lifecycle truth.
 
 ## Extensions
 

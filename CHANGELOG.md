@@ -2,22 +2,24 @@
 
 All notable changes to OLTS will be documented in this file.
 
-OLTS is currently a private `v1.0.0` release candidate. See [docs/versioning.md](docs/versioning.md), [docs/v1-readiness.md](docs/v1-readiness.md), and [docs/v1-release-evidence.md](docs/v1-release-evidence.md) for the versioning, readiness, and launch approval plan.
+OLTS is currently `v1.0.0`. See [docs/versioning.md](docs/versioning.md), [docs/v1-readiness.md](docs/v1-readiness.md), and [docs/v1-release-evidence.md](docs/v1-release-evidence.md) for the versioning, readiness, and launch record.
 
 ## Unreleased
 
 No post-`v1.0.0` changes yet.
 
-## `v1.0.0` - Pending maintainer approval
+## `v1.0.0` - 2026-06-16
 
-This section records the intended first stable public OLTS standard. It is not a release announcement. Do not create a public tag, GitHub Release, or visibility change until maintainers explicitly approve the launch.
+First stable public OLTS standard.
+
+The git tag and GitHub Release remain separate actions pending explicit maintainer approval.
 
 ### Stable Scope
 
 - Stable core terminology, entity types, identifier shape, source-of-truth boundaries, and generated-artifact posture.
 - Stable relationship vocabulary and direction, including `documented_by` as the canonical stored lifecycle-to-artifact relationship.
 - Stable `L1` through `L5` conformance levels with scoped adopter claim language, diagnostics guidance, and non-goals.
-- Candidate v1 schema identifiers and validation guidance for records, relationship rows, diagnostics, conformance reports, and generated artifacts.
+- Stable v1 schema identifiers and validation guidance for records, relationship rows, diagnostics, conformance reports, and generated artifacts.
 - Minimal and realistic examples suitable for public adopters.
 - Governance, contribution, security, trademark, license, community, and public launch settings guidance.
 
@@ -61,11 +63,13 @@ This section records the intended first stable public OLTS standard. It is not a
 - Reviewed governance and community readiness, including stewardship expectations, contribution flow, private-vs-public feedback channels, community files, and Apache-2.0 license posture.
 - Added public launch settings guidance, including recommended repository description, topics, features, Discussion categories, branch protection, and security setting checks.
 - Recorded public launch settings evidence for repository description, topics, Issues, branch protection, security settings, Wiki, Projects, and private/local scrub posture.
-- Updated README maturity language to describe OLTS as a private `v1.0.0` release candidate pending explicit visibility, tag, and release approval.
-- Updated public-facing maturity language across overview, spec, schema, governance, adoption, pipeline, and validation docs to reflect the private `v1.0.0` release-candidate posture.
+- Updated README maturity language during launch preparation to describe approval-gated `v1.0.0` readiness.
+- Updated public-facing maturity language across overview, spec, schema, governance, adoption, pipeline, and validation docs to reflect the `v1.0.0` launch posture.
 - Recorded launch-candidate validation evidence for schema consistency, relationship vocabulary, example checks, public-facing maturity language, and remote repository settings.
 - Recorded maintainer direction to keep `main` required approving reviews at `0` during private launch preparation and raise the count after launch.
 - Recorded final Discussion category evidence, including question-and-answer formats for `Conformance` and `Governance`.
+- Promoted public-facing maturity and version language to `v1.0.0`.
+- Recorded final `main` validation evidence and public visibility approval for maintainer action after the final launch-record pull request merges.
 
 ## `v0.1.0` - 2026-06-16
 
@@ -101,13 +105,3 @@ Expected scope:
 - relationship file schemas;
 - generated artifact metadata schemas;
 - diagnostic and conformance report schemas.
-
-### `v1.0.0` - First stable public standard
-
-Expected scope:
-
-- stable core terminology;
-- stable conformance levels;
-- stable compatibility expectations;
-- public governance flow;
-- reference examples suitable for broad adoption.

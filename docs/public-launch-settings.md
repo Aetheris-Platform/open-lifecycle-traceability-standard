@@ -1,8 +1,8 @@
 # Public Launch Settings
 
-This runbook records the GitHub repository settings OLTS maintainers should verify before making the repository public. It is launch-readiness guidance, not approval to change visibility, create a tag, or publish a GitHub Release.
+This runbook records the GitHub repository settings OLTS maintainers verified for the `v1.0.0` public launch. It is launch guidance, not a command to create a tag or publish a GitHub Release.
 
-OLTS remains a private `v1.0.0` release candidate until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release.
+Public visibility is approved for maintainer action after the final launch-record pull request merges. The `v1.0.0` tag and GitHub Release remain separate launch actions.
 
 ## Repository Description and Topics
 
@@ -67,7 +67,7 @@ Repo -> Discussions -> Manage discussion categories
 
 ## Branch Protection
 
-Before public launch, protect `main` for pull-request workflow integrity. Maintainers may keep the required approving-review count at `0` while the repository is private and under active launch preparation. After public launch, update the rule to require at least one approving review.
+For launch, protect `main` for pull-request workflow integrity. Maintainers may keep the required approving-review count at `0` while the repository is private and under active launch preparation. After public launch, update the rule to require at least one approving review.
 
 Minimum intended settings:
 
@@ -92,7 +92,7 @@ Repo -> Settings -> Rules -> Rulesets
 
 ## Security and Vulnerability Reporting
 
-Before public launch, review the security settings available to the repository and organization.
+Review the security settings available to the repository and organization.
 
 Recommended checks:
 
@@ -109,7 +109,7 @@ Repo -> Settings -> Code security and analysis
 
 ## Issue and Pull Request Templates
 
-The repository already includes issue templates and a pull request template. Before public launch, verify that GitHub renders them as expected:
+The repository already includes issue templates and a pull request template. Verify that GitHub renders them as expected:
 
 - spec clarification;
 - proposal;

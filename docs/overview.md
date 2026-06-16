@@ -12,9 +12,9 @@ It connects requirements, tests, evidence, decisions, release readiness, artifac
 
 ## Maturity
 
-OLTS is a private `v1.0.0` release candidate. Core terminology, relationship semantics, conformance levels, schemas, examples, and governance guidance have been reviewed for the first stable public standard.
+OLTS is `v1.0.0`, the first stable public version of the Open Lifecycle Traceability Standard. Core terminology, relationship semantics, conformance levels, schemas, examples, and governance guidance are stable for adopter use.
 
-The repository should remain private until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release. See [v1-readiness.md](v1-readiness.md) and [v1-release-evidence.md](v1-release-evidence.md) for the remaining launch gates.
+See [v1-readiness.md](v1-readiness.md) and [v1-release-evidence.md](v1-release-evidence.md) for the launch record and separate tag/GitHub Release status.
 
 The intent is practical: make lifecycle traceability usable in real development pipelines, not only in specialized tools or after-the-fact compliance reviews.
 
@@ -162,7 +162,7 @@ OLTS makes it easier to identify:
 - use cases without validation scenarios;
 - tests without evidence;
 - evidence that is stale or disconnected;
-- release candidates with unresolved lifecycle gaps.
+- release reviews with unresolved lifecycle gaps.
 
 This turns traceability from a late release scramble into a normal development signal.
 
@@ -293,9 +293,9 @@ Conformance tooling under `tools/` is planned. Until it lands, run these steps a
 
 ## Repository Layout
 
-- `spec/` - release-candidate core and relationship standard material.
+- `spec/` - core and relationship standard material.
 - `examples/` - minimal and realistic OLTS-compatible examples.
-- `schemas/` - candidate machine-readable validation contracts for records, relationships, diagnostics, conformance reports, and generated artifacts.
+- `schemas/` - machine-readable validation contracts for records, relationships, diagnostics, conformance reports, and generated artifacts.
 - `tools/` - planned conformance and migration tooling.
 - `docs/` - overview, adoption, pipeline, governance, and versioning guidance.
 

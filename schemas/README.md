@@ -1,13 +1,13 @@
 # OLTS Schemas
 
-This directory contains machine-readable schema contracts for OLTS `v1.0.0` readiness. They are candidate stable contracts for early adopters and tooling authors, but they do not create a public `v1.0.0` release or compatibility guarantee until maintainers explicitly approve the public release.
+This directory contains machine-readable schema contracts for OLTS `v1.0.0`. They are stable v1 contracts for adopters and tooling authors.
 
 ## Schema Files
 
 | File | Purpose |
 | --- | --- |
 | [olts-record.schema.json](olts-record.schema.json) | Validates one lifecycle record with a stable ID, entity type, title, optional provenance, and inline relationship fields. |
-| [olts-relationship.schema.json](olts-relationship.schema.json) | Validates one parsed relationship row using the candidate relationship vocabulary. |
+| [olts-relationship.schema.json](olts-relationship.schema.json) | Validates one parsed relationship row using the OLTS relationship vocabulary. |
 | [olts-diagnostic.schema.json](olts-diagnostic.schema.json) | Validates one diagnostic emitted by review, local scripts, CI, or future reference tooling. |
 | [olts-conformance-report.schema.json](olts-conformance-report.schema.json) | Validates one conformance report for a stated level and scope. |
 | [olts-generated-artifact.schema.json](olts-generated-artifact.schema.json) | Validates metadata for generated diagrams, dashboards, RTMs, reports, indexes, or review packets. |
@@ -28,9 +28,9 @@ Cross-schema references use those same `urn:olts:schema:v1:*` identifiers. Futur
 
 ## Scope
 
-The schemas intentionally stay small and readable. They cover the shared shape of OLTS facts while leaving room for repository-specific extensions during the release-candidate period.
+The schemas intentionally stay small and readable. They cover the shared shape of OLTS facts while leaving room for documented repository-specific extensions.
 
-They are designed around the current release-candidate specs:
+They are designed around the current `v1.0.0` specs:
 
 - [../spec/core.md](../spec/core.md)
 - [../spec/relationships.md](../spec/relationships.md)
@@ -73,10 +73,10 @@ See [../docs/schema-validation.md](../docs/schema-validation.md) for a repeatabl
 
 Local extensions are allowed, but they should be documented. A repository that adds local entity types, relationship verbs, diagnostic codes, or metadata fields should state whether those extensions are local-only or proposed for future OLTS standardization.
 
-The core relationship schema accepts only the candidate OLTS relationship vocabulary. Repositories that intentionally use local relationship verbs should layer their own schema overlay on top of the core schema rather than presenting local verbs as core OLTS vocabulary.
+The core relationship schema accepts only the OLTS relationship vocabulary. Repositories that intentionally use local relationship verbs should layer their own schema overlay on top of the core schema rather than presenting local verbs as core OLTS vocabulary.
 
 See [../docs/extensions.md](../docs/extensions.md) for extension behavior across records, relationship rows, diagnostics, conformance reports, generated artifact metadata, and local schema overlays.
 
 ## Stability
 
-These schemas are candidate v1 contracts. They may still change before `v1.0.0` if review finds a blocking issue, but changes to identifiers, required fields, relationship vocabulary, or cross-schema references should be treated as v1 readiness decisions and reviewed intentionally.
+These schemas are stable v1 contracts. Changes to identifiers, required fields, relationship vocabulary, or cross-schema references are compatibility-impacting and should follow the versioning policy.

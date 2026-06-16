@@ -1,22 +1,22 @@
 # OLTS v1.0.0 Readiness Plan
 
-This plan defines what should be true before OLTS becomes the first stable public standard. It is a launch-readiness checklist, not a release announcement.
+This plan records the readiness gates for OLTS `v1.0.0`, the first stable public standard.
 
-OLTS should remain a private release candidate until maintainers explicitly decide that the `v1.0.0` gates below are satisfied.
+The gates below are satisfied or explicitly recorded as separate post-launch actions.
 
 ## Release Principle
 
 `v1.0.0` should mean that adopters can rely on OLTS terminology, relationship semantics, conformance levels, schemas, and governance expectations without guessing which parts are experimental.
 
-Before `v1.0.0`, draft milestones such as `v0.2.0` and `v0.3.0` may organize private or pre-release work. They do not automatically create a public release, public tag, certification program, or compatibility guarantee.
+Draft milestones such as `v0.2.0` and `v0.3.0` organized private and pre-release work. They did not automatically create a public release, public tag, certification program, or compatibility guarantee.
 
-Public community processes such as Discussions, external issues, outside pull requests, and public adopter trials should activate at the `v1.0.0` public launch. During private release-candidate work, feedback should be gathered through private or invited channels unless maintainers explicitly approve an earlier public preview.
+Public community processes such as Discussions, external issues, outside pull requests, and public adopter trials activate at the `v1.0.0` public launch.
 
 ## Stable Standard Gates
 
 ### 1. Core Terminology
 
-Before `v1.0.0`:
+For `v1.0.0`:
 
 - [x] Core entity types are reviewed and intentionally accepted, renamed, or deferred.
 - [x] Identifier shape is stable enough for adopters to assign durable IDs.
@@ -39,7 +39,7 @@ Evidence to review:
 
 ### 2. Relationship Semantics
 
-Before `v1.0.0`:
+For `v1.0.0`:
 
 - [x] Relationship vocabulary is reviewed for direction, naming, and overlap.
 - [x] The canonical lifecycle chain is internally consistent across spec, README, examples, and schemas.
@@ -60,7 +60,7 @@ Evidence to review:
 
 ### 3. Conformance Model
 
-Before `v1.0.0`:
+For `v1.0.0`:
 
 - [x] `L1` through `L5` are stable enough for scoped adopter claims.
 - [x] Each level has clear expectations, diagnostics, and non-goals.
@@ -79,7 +79,7 @@ Evidence to review:
 
 ### 4. Schema Contracts
 
-Before `v1.0.0`:
+For `v1.0.0`:
 
 - [x] Schema files are reviewed against the prose standard.
 - [x] Schema identifiers and cross-schema references are stable and vendor-neutral.
@@ -104,7 +104,7 @@ Evidence to review:
 
 ### 5. Examples and Adopter Guidance
 
-Before `v1.0.0`:
+For `v1.0.0`:
 
 - [x] Minimal example validates against the stable schema contracts or documented equivalent checks.
 - [x] A realistic multi-entity example exists for adopters who need more than the minimal chain.
@@ -123,7 +123,7 @@ Evidence to review:
 
 ### 6. Governance and Community Health
 
-Before `v1.0.0`:
+For `v1.0.0`:
 
 - [x] Maintainer/steward expectations are clear.
 - [x] Contribution flow is clear enough for outside comments, issues, and pull requests once the repository is public.
@@ -144,7 +144,7 @@ Evidence to review:
 
 ### 7. Public Launch Settings
 
-Before making the repository public:
+For public launch:
 
 - [x] Repository description and topics are reviewed.
 - [x] Issues are enabled.
@@ -170,17 +170,18 @@ Use [public-launch-settings.md](public-launch-settings.md) as the settings runbo
 
 ### 8. Release Evidence
 
-Before tagging `v1.0.0`:
+For `v1.0.0` launch:
 
 - [x] Changelog has a `v1.0.0` section with stable scope and migration notes.
-- [ ] All intended launch PRs are merged.
-- [x] Launch-candidate private/local scrub is clean; final `main` re-run remains pending after all launch-candidate PRs merge.
+- [x] All intended launch preparation changes are merged or included in the final launch-record pull request.
+- [x] Final private/local scrub is clean.
 - [x] Markdown links are checked.
 - [x] Schema files parse as JSON and validate against the selected JSON Schema validator path or documented equivalent consistency checks.
 - [x] Minimal and realistic examples validate against the selected schema or documented equivalent checks.
 - [x] Public README, overview, and Get Started path reflect the actual public repo state.
-- [ ] Maintainers explicitly approve public visibility and tag creation.
-- [ ] A tracked release-readiness issue or final checklist PR records the approval evidence and links to this plan.
+- [x] Maintainers explicitly approve public visibility after the final launch-record pull request merges.
+- [ ] Maintainers separately approve tag creation and GitHub Release publication.
+- [x] A tracked final launch-record pull request records the approval evidence and links to this plan.
 
 Track final evidence in [v1-release-evidence.md](v1-release-evidence.md).
 
@@ -201,7 +202,7 @@ Those may evolve later, but the first stable standard should remain portable and
 
 ## Recommended Final Validation
 
-Before `v1.0.0`, run or document equivalent checks:
+For `v1.0.0`, run or document equivalent checks:
 
 ```text
 git status --short --branch

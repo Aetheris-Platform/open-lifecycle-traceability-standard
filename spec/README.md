@@ -1,10 +1,10 @@
 # OLTS Specification
 
-This directory holds the release-candidate specification material for the Open Lifecycle Traceability Standard.
+This directory holds the `v1.0.0` specification material for the Open Lifecycle Traceability Standard.
 
 ## Current Status
 
-OLTS is a private `v1.0.0` release candidate pending explicit public visibility, tag, and GitHub Release approval. The current repository focuses on:
+OLTS `v1.0.0` focuses on:
 
 - stable lifecycle identifiers;
 - explicit lifecycle relationships;
@@ -12,7 +12,7 @@ OLTS is a private `v1.0.0` release candidate pending explicit public visibility,
 - provenance for generated artifacts;
 - diagnostics for missing or malformed lifecycle data;
 - staged conformance levels and scoped claim language;
-- candidate machine-readable schema contracts.
+- machine-readable schema contracts.
 
 ## Conformance Model
 
@@ -20,7 +20,7 @@ The `L1` through `L5` levels have scoped claim language, diagnostics expectation
 
 ## Core Terminology
 
-Candidate `v1.0.0` entity types, identifier shape, source-of-truth boundaries, generated artifact semantics, and launch-gated language scope are reviewed in [../docs/core-terminology.md](../docs/core-terminology.md).
+`v1.0.0` entity types, identifier shape, source-of-truth boundaries, and generated artifact semantics are reviewed in [../docs/core-terminology.md](../docs/core-terminology.md).
 
 ## Normative Language
 
@@ -41,6 +41,6 @@ Product repositories remain the source of truth. Automation MAY propose changes,
 
 ## Specification Files
 
-- [core.md](core.md) - initial OLTS Core principles, identifier shape, entity types, provenance, diagnostics, and conformance summary.
-- [relationships.md](relationships.md) - initial explicit relationship model, relationship file shape, and OpenSpec/non-OpenSpec guidance.
+- [core.md](core.md) - OLTS Core principles, identifier shape, entity types, provenance, diagnostics, and conformance summary.
+- [relationships.md](relationships.md) - explicit relationship model, relationship file shape, and OpenSpec/non-OpenSpec guidance.
 - [conformance.md](conformance.md) - conformance levels, diagnostics expectations, validation guidance, and adopter claim language.
