@@ -1,0 +1,26 @@
+name: Adoption story
+description: Share how a team is evaluating, adopting, or migrating toward OLTS.
+title: "Adoption story: "
+labels: ["adoption story"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Describe the repo, team, pipeline, or lifecycle challenge.
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Adoption approach
+      description: What OLTS files, levels, tools, or workflows are you trying?
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: What worked, what was confusing, and what would improve adoption?
+    validations:
+      required: false

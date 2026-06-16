@@ -1,0 +1,18 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# Microsoft Office lock files
+~$*.docx
+~$*.pptx
+~$*.xlsx
+
+# Local generated state
+.aetherion/
+.codex-runs/
+.claude-runs/
+
+# Local source draft converted to Markdown
+docs/description.docx

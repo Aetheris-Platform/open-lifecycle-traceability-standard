@@ -1,0 +1,5 @@
+Source_Key,Target_Key,Relationship,Notes
+APP-UC-00003,APP-SR-00014,requires,Use case depends on requirement
+APP-SR-00014,APP-VT-00221,verified_by,Requirement is verified by test
+APP-VT-00221,APP-EVD-00098,evidenced_by,Test run has evidence record
+APP-SR-00014,APP-ADR-00007,explained_by,Requirement design rationale

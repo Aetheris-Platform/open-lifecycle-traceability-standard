@@ -1,2 +1,90 @@
-# open-lifecycle-traceability-standard
-An open, tool-agnostic standard for making software lifecycle traceability explicit, version-controlled, and automatable across requirements, tests, evidence, decisions, artifacts, CI/CD, and AI-assisted engineering.
+# OLTS: Open Lifecycle Traceability Standard
+
+OLTS turns scattered lifecycle knowledge into explicit, version-controlled relationships your existing tools, reviewers, CI systems, and AI assistants can read.
+
+It connects requirements, tests, evidence, decisions, release readiness, artifacts, and implementation work without requiring a new database, UI, modeling framework, or vendor platform.
+
+## TL;DR
+
+- No new ALM platform required: OLTS can work with Markdown, CSV, YAML, JSON, GitHub, GitLab, Jira, Azure DevOps, OpenSpec, and MBSE tools.
+- Product repositories remain the source of truth.
+- Automation can diagnose, visualize, and propose changes, but humans approve lifecycle truth through normal review.
+
+## Maturity
+
+OLTS is an early open draft. We are publishing it to gather feedback before stabilizing the public standard, conformance levels, examples, and governance model.
+
+The intent is practical: make lifecycle traceability usable in real development pipelines, not only in specialized tools or after-the-fact compliance reviews.
+
+## Why OLTS
+
+Most teams already produce lifecycle information: product capabilities, roadmap items, use cases, requirements, decisions, implementation work, tests, validation scenarios, release evidence, diagrams, and generated artifacts.
+
+The problem is that this information is often scattered across issue trackers, documents, spreadsheets, PRs, test reports, CI logs, and chat history. OLTS gives teams a shared way to make those relationships explicit, inspectable, and automatable.
+
+Read the full public overview: [docs/overview.md](docs/overview.md). To try OLTS in an existing repository, start with the [adoption guide](docs/adoption-guide.md), the [pipeline integration guide](docs/pipeline-integration.md), or the [AI agent adoption prompt](docs/ai-agent-adoption-prompt.md).
+
+## A Minimal Example
+
+```yaml
+id: APP-SR-00014
+type: requirement
+title: Operator can revoke an API token
+supports:
+  - APP-UC-00003
+verified_by:
+  - APP-VT-00221
+evidence:
+  - APP-EVD-00098
+decisions:
+  - APP-ADR-00007
+```
+
+That small record lets a reviewer ask which use case a requirement supports, which test verifies it, which evidence proves the test ran, and which decision explains the design.
+
+## How OLTS Fits With OpenSpec
+
+OpenSpec makes change intent reviewable. OLTS makes the full lifecycle traceable.
+
+In an OpenSpec-based workflow, OLTS can use OpenSpec as change provenance. OpenSpec is not required to adopt OLTS; teams can also use GitHub Issues, Jira tickets, ADRs, change request documents, release plans, pull requests, or other repo-native planning records.
+
+## Conformance Levels
+
+| Level | Meaning |
+| --- | --- |
+| L1: Stable IDs | Lifecycle entities have durable identifiers. |
+| L2: Explicit Relationships | Key relationships are recorded in reviewable files. |
+| L3: Verification Coverage | Requirements and use cases link to tests or validation scenarios. |
+| L4: Evidence Coverage | Tests, validation scenarios, and release claims link to evidence. |
+| L5: Automated Conformance | CI checks validate identifiers, links, provenance, and diagnostics. |
+
+## Versioning
+
+OLTS is currently an early draft. The planned readiness path is:
+
+- `v0.1.0` initial public draft
+- `v0.2.0` conformance draft
+- `v0.3.0` schemas draft
+- `v1.0.0` first stable standard
+
+See [docs/versioning.md](docs/versioning.md) and [CHANGELOG.md](CHANGELOG.md).
+
+## Repository Layout
+
+- [docs/](docs/) - overview, adoption notes, pipeline integration, governance, and migration guidance.
+- [spec/](spec/) - draft core and relationship standard material.
+- [examples/](examples/) - minimal and realistic OLTS-compatible examples.
+- [schemas/](schemas/) - future machine-readable validation contracts.
+- [tools/](tools/) - future conformance and migration tooling.
+
+## Get Started
+
+1. Read [docs/overview.md](docs/overview.md).
+2. Review the [minimal example](examples/minimal/README.md).
+3. Follow [docs/adoption-guide.md](docs/adoption-guide.md) for a first L1 or L2 adoption slice.
+4. Use [docs/pipeline-integration.md](docs/pipeline-integration.md) to connect OLTS to GitHub, GitLab, Azure DevOps, Jira, OpenSpec, CI/CD, or release review.
+5. If using an AI coding agent, start with [docs/ai-agent-adoption-prompt.md](docs/ai-agent-adoption-prompt.md).
+
+## License
+
+OLTS is licensed under the [Apache License 2.0](LICENSE).

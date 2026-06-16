@@ -1,0 +1,19 @@
+name: Spec clarification
+description: Ask for clearer wording or interpretation of OLTS draft material.
+title: "Spec clarification: "
+labels: ["spec clarification"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What needs clarification?
+      description: Point to the section, term, example, or relationship that is unclear.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Suggested clarification
+      description: Optional wording or outcome you think would help.
+    validations:
+      required: false

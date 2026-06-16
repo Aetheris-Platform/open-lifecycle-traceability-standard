@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: OLTS Discussions
+    url: https://github.com/Aetheris-Platform/open-lifecycle-traceability-standard/discussions
+    about: Use Discussions for broad questions, ideas, prior art, and adoption stories.
