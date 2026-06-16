@@ -6,6 +6,12 @@ OLTS is currently in the `v0.x` draft series. See [docs/versioning.md](docs/vers
 
 ## Unreleased
 
+No unreleased changes yet.
+
+## `v0.1.0` - 2026-06-16
+
+Initial public draft of OLTS.
+
 ### Added
 
 - Initial public README and overview draft.
@@ -18,21 +24,6 @@ OLTS is currently in the `v0.x` draft series. See [docs/versioning.md](docs/vers
 - Security policy, code of conduct, pull request template, and issue templates.
 
 ## Planned Releases
-
-### `v0.1.0` - Initial public draft
-
-Readiness scope:
-
-- public overview;
-- initial core positioning;
-- initial identifier and relationship direction;
-- minimal examples;
-- contribution path;
-- governance and versioning policy;
-- first adopter guide;
-- first pipeline integration guide;
-- AI-agent adoption prompt;
-- community health templates.
 
 ### `v0.2.0` - Conformance draft
 
