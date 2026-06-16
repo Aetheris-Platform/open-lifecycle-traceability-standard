@@ -147,14 +147,14 @@ Evidence to review:
 Before making the repository public:
 
 - [x] Repository description and topics are reviewed.
-- [ ] Issues are enabled.
+- [x] Issues are enabled.
 - [ ] Discussions are enabled and categories are configured.
-- [ ] Main branch protection requires pull requests and review.
-- [ ] Required conversation resolution is enabled.
-- [ ] Force pushes and branch deletion are blocked for protected branches.
-- [ ] Security alerts, secret scanning, and vulnerability reporting settings are reviewed where available.
-- [ ] Wiki/projects settings match the intended governance model.
-- [ ] No local paths, private product names, secrets, credentials, or internal-only assumptions are present in tracked files.
+- [x] Main branch protection requires pull requests and review.
+- [x] Required conversation resolution is enabled.
+- [x] Force pushes and branch deletion are blocked for protected branches.
+- [x] Security alerts, secret scanning, and vulnerability reporting settings are reviewed where available.
+- [x] Wiki/projects settings match the intended governance model.
+- [x] No local paths, private product names, secrets, credentials, or internal-only assumptions are present in tracked files.
 
 Manual settings should be checked in GitHub before visibility changes:
 

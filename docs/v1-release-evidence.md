@@ -71,14 +71,18 @@ Record the final operational setting evidence here before launch:
 
 | Setting | Required state | Evidence |
 | --- | --- | --- |
-| Issues | Enabled | Pending final verification |
-| Discussions | Enabled and categories configured | Pending final verification |
-| Main branch protection | Pull requests and review required | Pending final verification |
-| Conversation resolution | Required before merge | Pending final verification |
-| Force pushes | Blocked on protected branches | Pending final verification |
-| Branch deletion | Blocked on protected branches | Pending final verification |
-| Security settings | Reviewed where available | Pending final verification |
-| Wiki/projects | Match governance posture | Pending final verification |
+| Repository visibility | Private until explicit launch approval | Verified private on `2026-06-16`; no visibility change performed. |
+| Repository description | Matches [public-launch-settings.md](public-launch-settings.md) | Verified on `2026-06-16`. |
+| Topics | Match [public-launch-settings.md](public-launch-settings.md) | Verified on `2026-06-16`: `traceability`, `requirements`, `requirements-management`, `verification`, `validation`, `evidence`, `devops`, `software-lifecycle`, `open-standard`, `systems-engineering`, `mbse`, `ci-cd`. |
+| Issues | Enabled | Verified enabled on `2026-06-16`. |
+| Discussions | Enabled and categories configured | Discussions are enabled and required category names are present. `Conformance` and `Governance` are currently open-ended categories rather than question-and-answer categories; final UI adjustment or maintainer acceptance is pending. |
+| Main branch protection | Pull requests and review required | Verified on `2026-06-16`: `main` requires pull request review with `required_approving_review_count: 1`; stale reviews are dismissed. |
+| Conversation resolution | Required before merge | Verified enabled on `2026-06-16`. |
+| Force pushes | Blocked on protected branches | Verified blocked on `2026-06-16`. |
+| Branch deletion | Blocked on protected branches | Verified blocked on `2026-06-16`. |
+| Security settings | Reviewed where available | Verified on `2026-06-16`: security policy enabled, Dependabot security updates enabled, secret scanning enabled, push protection enabled. Advanced Security returned `422` as unavailable for this repository and not a prerequisite for security features. |
+| Wiki/projects | Match governance posture | Verified on `2026-06-16`: Wiki disabled, Projects disabled. |
+| Private/local scrub | No local paths, private product names, secrets, credentials, or internal-only assumptions in tracked files | Current branch scrub passed on `2026-06-16`; final launch candidate scrub remains required. |
 
 ## Final Launch Decision
 
