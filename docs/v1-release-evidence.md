@@ -60,7 +60,7 @@ Run or document equivalent checks at the final launch candidate commit:
 - [x] Minimal example passes the selected schema or documented equivalent checks.
 - [x] Realistic example passes the selected schema or documented equivalent checks.
 - [x] Public README, overview, and Get Started path reflect the actual public repository state.
-- [ ] GitHub repository settings match [public-launch-settings.md](public-launch-settings.md).
+- [x] GitHub repository settings match [public-launch-settings.md](public-launch-settings.md).
 - [x] `CHANGELOG.md` has a `v1.0.0` section with stable scope and migration notes.
 - [ ] Maintainers approve public visibility.
 - [ ] Maintainers approve the `v1.0.0` tag and GitHub Release.
@@ -87,7 +87,7 @@ This run records launch-candidate evidence only. It does not approve public visi
 | Relationship vocabulary consistency | Passed | Relationship schema enum is exactly `implements`, `realizes`, `requires`, `specified_by`, `verified_by`, `validated_by`, `evidenced_by`, `documented_by`, `explained_by`, `supersedes`. Minimal and realistic examples use only in-vocabulary verbs. |
 | Example documented-equivalent checks | Passed | Minimal and realistic examples contain 16 records total; required record fields are present, ID shape is valid, `type` matches the ID type segment, relationship rows have required fields, sources resolve, and targets resolve to records or valid external references. |
 | README and overview public-state review | Passed | README and overview describe OLTS as a private `v1.0.0` release candidate and point readers to readiness and release-evidence gates before public visibility, tag, or GitHub Release. |
-| Remote repository settings | Partial | Repository remains private; description/topics match the runbook; Issues and Discussions are enabled; Wiki and Projects are disabled; security policy, Dependabot security updates, secret scanning, and push protection are enabled where available; `main` branch protection requires pull requests, conversation resolution, and linear history. Required approving reviews intentionally remain at `0` until after launch. Discussion category format remains pending for `Conformance` and `Governance`. |
+| Remote repository settings | Passed | Repository remains private; description/topics match the runbook; Issues and Discussions are enabled; required Discussion categories are present; `Conformance` and `Governance` are question-and-answer categories; Wiki and Projects are disabled; security policy, Dependabot security updates, secret scanning, and push protection are enabled where available; `main` branch protection requires pull requests, conversation resolution, and linear history. Required approving reviews intentionally remain at `0` until after launch. |
 
 ## GitHub Settings Evidence
 
@@ -99,7 +99,7 @@ Record the final operational setting evidence here before launch:
 | Repository description | Matches [public-launch-settings.md](public-launch-settings.md) | Verified on `2026-06-16`. |
 | Topics | Match [public-launch-settings.md](public-launch-settings.md) | Verified on `2026-06-16`: `traceability`, `requirements`, `requirements-management`, `verification`, `validation`, `evidence`, `devops`, `software-lifecycle`, `open-standard`, `systems-engineering`, `mbse`, `ci-cd`. |
 | Issues | Enabled | Verified enabled on `2026-06-16`. |
-| Discussions | Enabled and categories configured | Discussions are enabled and required category names are present. `Conformance` and `Governance` are currently open-ended categories rather than question-and-answer categories; final UI adjustment or maintainer acceptance is pending. |
+| Discussions | Enabled and categories configured | Verified on `2026-06-16`: Discussions are enabled and required category names are present. `Conformance` and `Governance` are question-and-answer categories. |
 | Main branch protection | Pull request workflow required; approving-review count deferred until after launch | Verified on `2026-06-16`: `main` requires pull requests, stale review dismissal is enabled, conversation resolution is required, linear history is required, force pushes are blocked, and branch deletion is blocked. Required approving reviews intentionally remain at `0` until after launch, per maintainer direction. |
 | Conversation resolution | Required before merge | Verified enabled on `2026-06-16`. |
 | Force pushes | Blocked on protected branches | Verified blocked on `2026-06-16`. |

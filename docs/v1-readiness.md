@@ -130,7 +130,7 @@ Before `v1.0.0`:
 - [x] Private or invited pre-launch feedback channels are documented separately from public `v1.0.0` community processes.
 - [x] Code of Conduct, security policy, trademark guidance, notice, license, issue templates, and PR template are reviewed.
 - [x] License posture for specification text and tooling is explicitly confirmed before stable publication.
-- [ ] Discussion categories and repository settings support public feedback.
+- [x] Discussion categories and repository settings support public feedback.
 - [ ] Post-launch approving-review requirement is recorded and still pending.
 
 Evidence to review:
@@ -148,7 +148,7 @@ Before making the repository public:
 
 - [x] Repository description and topics are reviewed.
 - [x] Issues are enabled.
-- [ ] Discussions are enabled and categories are configured.
+- [x] Discussions are enabled and categories are configured.
 - [x] Main branch protection requires pull requests; required approving reviews intentionally remain at `0` until after launch.
 - [x] Required conversation resolution is enabled.
 - [x] Force pushes and branch deletion are blocked for protected branches.
