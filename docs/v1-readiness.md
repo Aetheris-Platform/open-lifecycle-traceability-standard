@@ -23,11 +23,14 @@ Before `v1.0.0`:
 - [ ] Source-of-truth boundaries are stated consistently across README, docs, spec, examples, and schemas.
 - [ ] Generated artifacts are clearly described as derived unless accepted through reviewed source truth.
 - [ ] Draft-only language is removed or scoped to future experimental material.
-- [ ] Normative keyword conventions, such as RFC 2119/8174 `MUST`, `SHOULD`, and `MAY`, are defined and applied consistently across `spec/`.
+- [x] Normative keyword conventions, such as RFC 2119/8174 `MUST`, `SHOULD`, and `MAY`, are defined and applied consistently across `spec/`.
 
 Evidence to review:
 
 - [../spec/core.md](../spec/core.md)
+- [../spec/README.md](../spec/README.md)
+- [../spec/relationships.md](../spec/relationships.md)
+- [../spec/conformance.md](../spec/conformance.md)
 - [../README.md](../README.md)
 - [overview.md](overview.md)
 
@@ -52,6 +55,7 @@ Before `v1.0.0`:
 
 - [ ] `L1` through `L5` are stable enough for scoped adopter claims.
 - [ ] Each level has clear expectations, diagnostics, and non-goals.
+- [ ] Expected facts and expected diagnostics under each level are reviewed for their final `v1.0.0` normative force.
 - [ ] Claim language avoids overstatement and does not imply certification unless a certification policy exists.
 - [ ] Diagnostic severity guidance is consistent with pipeline and governance docs.
 - [ ] Manual, scripted, CI, and external-tool validation paths are all allowed without requiring a vendor platform.

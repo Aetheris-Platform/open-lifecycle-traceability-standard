@@ -2,11 +2,13 @@
 
 This file captures the initial direction for explicit OLTS relationships. It is draft material, not a stable `v1.0.0` standard.
 
+Normative keywords in this file use the convention defined in [core.md](core.md#normative-language).
+
 ## Relationship Principle
 
 A lifecycle relationship is a reviewed statement that one lifecycle entity depends on, supports, verifies, validates, documents, explains, or provides evidence for another lifecycle entity.
 
-Relationships should be explicit. OLTS-compatible tooling should not infer canonical relationships from text similarity, filename similarity, row order, heading names, generated diagrams, or AI guesses.
+Relationships SHOULD be explicit. OLTS-compatible tooling MUST NOT infer canonical relationships from text similarity, filename similarity, row order, heading names, generated diagrams, or AI guesses.
 
 ## Draft Relationship Chain
 
@@ -49,7 +51,7 @@ Status,Rationale,Source_File,Source_Row,Owner,Last_Reviewed
 
 ## Inline Fields and Relationship Files
 
-A record's inline relationship fields, such as `verified_by` or `explained_by`, use the same verb names and directions as the relationship vocabulary below. Every relationship used in a record or relationship file must appear in this vocabulary. Unknown verbs are diagnostics, not accepted truth.
+A record's inline relationship fields, such as `verified_by` or `explained_by`, MUST use the same verb names and directions as the relationship vocabulary below or a documented repository extension. Every relationship used in a record or relationship file MUST appear in this vocabulary or in a documented repository extension. Unknown verbs are diagnostics, not accepted truth.
 
 ## Draft Relationship Vocabulary
 
@@ -66,7 +68,7 @@ A record's inline relationship fields, such as `verified_by` or `explained_by`, 
 | `explained_by` | Requirement, artifact, or work item | Decision | Decision explains rationale. |
 | `supersedes` | Decision or artifact | Decision or artifact | Source replaces or supersedes target. |
 
-The vocabulary is intentionally draft. Unknown relationships should be surfaced as diagnostics until a repo explicitly allows them.
+The vocabulary is intentionally draft. Unknown relationships SHOULD be surfaced as diagnostics until a repo explicitly allows them.
 
 ## Relationship File Strategy
 
@@ -79,24 +81,24 @@ docs/olts/links/requirement-test-links.csv
 docs/olts/links/test-evidence-links.csv
 ```
 
-A single `relationships.csv` can work for small projects. Larger projects should prefer narrower files that match reviewer ownership and pipeline checks. The draft relationship schema in [../schemas/olts-relationship.schema.json](../schemas/olts-relationship.schema.json) validates parsed relationship rows rather than raw CSV text.
+A single `relationships.csv` can work for small projects. Larger projects SHOULD prefer narrower files that match reviewer ownership and pipeline checks. The draft relationship schema in [../schemas/olts-relationship.schema.json](../schemas/olts-relationship.schema.json) validates parsed relationship rows rather than raw CSV text.
 
 ## OpenSpec Integration
 
-OpenSpec can be used as change provenance. For example:
+OpenSpec MAY be used as change provenance. For example:
 
 ```text
 TRK -> OpenSpec change -> scenario -> PR -> test -> evidence
 ```
 
-OpenSpec IDs should not replace OLTS lifecycle IDs. OpenSpec answers what change is proposed and how it is accepted. OLTS answers which lifecycle entities are connected.
+OpenSpec IDs SHOULD NOT replace OLTS lifecycle IDs. OpenSpec answers what change is proposed and how it is accepted. OLTS answers which lifecycle entities are connected.
 
 ## Non-OpenSpec Integration
 
-Teams that do not use OpenSpec can use GitHub Issues, GitLab Issues, Jira tickets, Azure Boards work items, ADRs, design documents, change request documents, release plans, and pull requests.
+Teams that do not use OpenSpec MAY use GitHub Issues, GitLab Issues, Jira tickets, Azure Boards work items, ADRs, design documents, change request documents, release plans, and pull requests.
 
 The requirement is not OpenSpec. The requirement is explicit provenance.
 
 ## Generated Artifacts
 
-Generated diagrams, reports, dashboards, and RTMs should preserve their source relationships and metadata. They are derived views unless a repository explicitly accepts them as source truth through normal review.
+Generated diagrams, reports, dashboards, and RTMs SHOULD preserve their source relationships and metadata. They are derived views unless a repository explicitly accepts them as source truth through normal review.

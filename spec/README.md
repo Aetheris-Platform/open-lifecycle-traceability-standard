@@ -18,6 +18,10 @@ OLTS is an early draft being shaped before the stable public `v1.0.0` standard. 
 
 The provisional `L1` through `L5` levels now have draft claim language, diagnostics expectations, and validation guidance in [conformance.md](conformance.md).
 
+## Normative Language
+
+Normative keywords in OLTS specification files use the convention defined in [core.md](core.md#normative-language).
+
 ## Non-Goals
 
 OLTS does not require:
@@ -29,7 +33,7 @@ OLTS does not require:
 - a specific UI;
 - a specific MBSE or architecture framework.
 
-Product repositories remain the source of truth. Automation may propose changes, but humans approve lifecycle truth through normal review.
+Product repositories remain the source of truth. Automation MAY propose changes, but humans MUST approve lifecycle truth through normal review.
 
 ## Draft Files
 
