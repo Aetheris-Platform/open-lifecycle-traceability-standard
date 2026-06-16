@@ -2,7 +2,7 @@
 
 This review records the documented equivalent checks used to validate the minimal and realistic examples for `v1.0.0` readiness.
 
-It is launch-readiness evidence, not a release announcement. OLTS remains in the `v0.x` draft series until maintainers explicitly approve `v1.0.0`.
+It is launch-readiness evidence, not a release announcement. OLTS remains a private `v1.0.0` release candidate until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release.
 
 ## Review Scope
 
@@ -67,7 +67,7 @@ The realistic example passes the documented equivalent checks:
 - the `documented_by` relationship points from the requirement to the design artifact;
 - evidence attaches to validation, verification, or artifact records.
 
-The realistic example remains a scoped draft `OLTS L4` example. It does not claim `L5` because the repository does not include an automated conformance checker or generated conformance report.
+The realistic example remains a scoped `OLTS L4` example. It does not claim `L5` because the repository does not include an automated conformance checker or generated conformance report.
 
 ## Stability Decision
 

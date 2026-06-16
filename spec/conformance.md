@@ -1,6 +1,6 @@
-# OLTS Conformance Model Draft
+# OLTS Conformance Model
 
-This file defines the candidate OLTS conformance model for scoped adopter claims. It remains draft material until the `v1.0.0` release process is explicitly approved, and it is not a certification policy.
+This file defines the release-candidate OLTS conformance model for scoped adopter claims. It remains launch-gated until the `v1.0.0` release process is explicitly approved, and it is not a certification policy.
 
 OLTS conformance is designed to help adopters make honest, incremental claims about lifecycle traceability without requiring a specific tool, database, UI, ALM platform, MBSE framework, OpenSpec workflow, or AI agent.
 
@@ -13,26 +13,26 @@ Normative keywords in this file use the convention defined in [core.md](core.md#
 3. Source truth MUST be explicit. Generated diagrams, dashboards, indexes, and reports are derived unless accepted by normal review.
 4. Unknown, missing, or ambiguous lifecycle data SHOULD produce diagnostics, not false confidence.
 5. Automation MAY validate, diagnose, summarize, and propose. Humans MUST approve canonical lifecycle truth.
-6. Adopters MAY define local extensions, but claims SHOULD separate draft OLTS vocabulary from repository-specific extensions.
+6. Adopters MAY define local extensions, but claims SHOULD separate core OLTS vocabulary from repository-specific extensions.
 
 ## Claim Shape
 
-During the `v0.x` draft period, claims SHOULD be phrased as draft adoption statements, not certification statements.
+Before an explicit certification policy exists, claims SHOULD be phrased as scoped adoption statements, not certification statements.
 
-A draft conformance claim MUST identify:
+A conformance claim MUST identify:
 
 - the claimed OLTS level;
 - the repository, product area, release line, source path, or other scope being claimed;
 - any documented local extensions that are needed to understand the claim;
 - any reviewed exceptions that affect the claimed scope.
 
-A draft conformance claim MUST NOT imply coverage outside its stated scope.
+A conformance claim MUST NOT imply coverage outside its stated scope.
 
 Good examples:
 
 ```text
 This repository is experimenting with OLTS L1 for requirements under docs/olts/records/.
-This release branch maintains an OLTS L2 draft relationship set for selected use cases and system requirements.
+This release branch maintains an OLTS L2 relationship set for selected use cases and system requirements.
 This product area targets OLTS L3 for requirements that are in active release scope.
 ```
 
@@ -44,13 +44,13 @@ Fully OLTS compliant.
 All requirements are verified.
 ```
 
-OLTS has no official third-party certification program during the `v0.x` draft series.
+OLTS has no official third-party certification program before an explicit certification policy is approved.
 
 ## Claim Stability
 
 The `L1` through `L5` names, cumulative ordering, claim criteria, expected diagnostics, and non-goals are candidate v1 semantics for scoped adopter claims. Before `v1.0.0`, maintainers SHOULD treat changes to those semantics as compatibility-impacting changes that need explicit review.
 
-A scoped draft claim is stable enough for private adoption, pilot use, and repository-local governance when it follows the claim shape above. It is not a public compatibility guarantee, third-party certification, or blanket statement about records outside the stated scope.
+A scoped claim is stable enough for private adoption, pilot use, and repository-local governance when it follows the claim shape above. It is not a public compatibility guarantee, third-party certification, or blanket statement about records outside the stated scope.
 
 Manual review, repository scripts, CI jobs, external validators, and platform-native checks MAY all produce evidence for a scoped claim. `L5` requires automation for the claimed scope, but it does not require OLTS reference tooling or any specific vendor platform.
 
@@ -68,19 +68,19 @@ Manual review, repository scripts, CI jobs, external validators, and platform-na
 
 Each level below separates claim criteria from diagnostics.
 
-Claim criteria define what MUST or SHOULD be true for a repository to make a scoped draft claim at that level. Diagnostics define the gaps, malformed facts, or blocked checks that reviewers and validators SHOULD surface when evaluating the claim.
+Claim criteria define what MUST or SHOULD be true for a repository to make a scoped claim at that level. Diagnostics define the gaps, malformed facts, or blocked checks that reviewers and validators SHOULD surface when evaluating the claim.
 
 Diagnostics do not automatically make a repository non-conforming. A scoped claim MAY include reviewed exceptions, advisory diagnostics, or deferred work when the level criteria explicitly allow them and the claim identifies the affected scope.
 
 ## L1: Stable IDs
 
-An `OLTS L1` draft claim means lifecycle entities in scope have stable IDs.
+An `OLTS L1` claim means lifecycle entities in scope have stable IDs.
 
 Claim criteria:
 
 - each lifecycle record in scope MUST have an `id`;
-- IDs MUST follow the draft shape `<DOMAIN>-<TYPE>-<NNNNN>`;
-- `TYPE` values MUST be draft OLTS entity type codes or explicitly documented local extensions;
+- IDs MUST follow the candidate shape `<DOMAIN>-<TYPE>-<NNNNN>`;
+- `TYPE` values MUST be OLTS entity type codes or explicitly documented local extensions;
 - IDs MUST NOT be reused for different lifecycle entities;
 - retired or deprecated records SHOULD preserve their IDs.
 
@@ -95,12 +95,12 @@ L1 does not require relationship coverage. It gives the repository stable handle
 
 ## L2: Explicit Relationships
 
-An `OLTS L2` draft claim means key lifecycle relationships in scope are explicit and reviewable.
+An `OLTS L2` claim means key lifecycle relationships in scope are explicit and reviewable.
 
 Claim criteria:
 
 - relationships in scope MUST be stored in reviewed files or reviewed fields;
-- relationship verbs MUST use the draft OLTS relationship vocabulary or documented local extensions;
+- relationship verbs MUST use the OLTS relationship vocabulary or documented local extensions;
 - relationship direction MUST be consistent with the vocabulary or documented extension;
 - referenced OLTS IDs MUST resolve to known records or documented external references;
 - relationship source files SHOULD be part of normal review.
@@ -117,7 +117,7 @@ L2 does not require every requirement to have verification or evidence. It requi
 
 ## L3: Verification Coverage
 
-An `OLTS L3` draft claim means requirements and use cases in scope have verification or validation coverage.
+An `OLTS L3` claim means requirements and use cases in scope have verification or validation coverage.
 
 Claim criteria:
 
@@ -137,7 +137,7 @@ L3 helps reviewers see whether the product behavior in scope has a planned way t
 
 ## L4: Evidence Coverage
 
-An `OLTS L4` draft claim means verification, validation, and release claims in scope link to evidence.
+An `OLTS L4` claim means verification, validation, and release claims in scope link to evidence.
 
 Claim criteria:
 
@@ -158,7 +158,7 @@ L4 supports release review and audit preparation, but it does not by itself prov
 
 ## L5: Automated Conformance
 
-An `OLTS L5` draft claim means automated checks validate the lower-level expectations for the stated scope.
+An `OLTS L5` claim means automated checks validate the lower-level expectations for the stated scope.
 
 Claim criteria:
 
@@ -176,11 +176,11 @@ Expected diagnostics:
 - generated artifact without source metadata;
 - conformance report that cannot identify the checked scope.
 
-L5 does not require OLTS reference tooling. A repository can satisfy an L5 draft claim with its own checks if the checks preserve OLTS semantics and produce reviewable diagnostics.
+L5 does not require OLTS reference tooling. A repository can satisfy an L5 claim with its own checks if the checks preserve OLTS semantics and produce reviewable diagnostics.
 
 ## Diagnostic Severity
 
-OLTS diagnostics SHOULD be understandable before they are enforceable. A draft validator or manual review process SHOULD classify diagnostics in a way maintainers can act on.
+OLTS diagnostics SHOULD be understandable before they are enforceable. A validator or manual review process SHOULD classify diagnostics in a way maintainers can act on.
 
 Recommended severities:
 
@@ -210,11 +210,11 @@ A useful validation report SHOULD identify:
 - explicit exceptions;
 - whether the report is advisory or blocking.
 
-The `v0.3.0` schemas draft translates the conformance semantics into small reviewable contracts. Schemas SHOULD support diagnostics and adoption without replacing human-approved lifecycle truth.
+The candidate schemas translate the conformance semantics into small reviewable contracts. Schemas SHOULD support diagnostics and adoption without replacing human-approved lifecycle truth.
 
 ## Extensions
 
-Adopters MAY define local entity types, relationship verbs, external reference namespaces, and diagnostic codes during the draft period.
+Adopters MAY define local entity types, relationship verbs, external reference namespaces, and diagnostic codes.
 
 Detailed extension behavior is described in [../docs/extensions.md](../docs/extensions.md).
 

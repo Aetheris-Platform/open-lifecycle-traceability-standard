@@ -12,7 +12,9 @@ It connects requirements, tests, evidence, decisions, release readiness, artifac
 
 ## Maturity
 
-OLTS is an early draft. It is being shaped before the stable public `v1.0.0` standard, conformance levels, examples, and governance model are finalized.
+OLTS is a private `v1.0.0` release candidate. Core terminology, relationship semantics, conformance levels, schemas, examples, and governance guidance have been reviewed for the first stable public standard.
+
+The repository should remain private until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release. See [v1-readiness.md](v1-readiness.md) and [v1-release-evidence.md](v1-release-evidence.md) for the remaining launch gates.
 
 The intent is practical: make lifecycle traceability usable in real development pipelines, not only in specialized tools or after-the-fact compliance reviews.
 
@@ -218,7 +220,7 @@ For larger teams, regulated programs, multi-repo platforms, or systems engineeri
 
 ## Conformance Levels
 
-OLTS should be adoptable in stages. The draft conformance model is defined in [../spec/conformance.md](../spec/conformance.md), including level expectations, diagnostics, validation reporting, and claim language.
+OLTS should be adoptable in stages. The conformance model is defined in [../spec/conformance.md](../spec/conformance.md), including level expectations, diagnostics, validation reporting, and claim language.
 
 | Level | Meaning |
 | --- | --- |
@@ -228,7 +230,7 @@ OLTS should be adoptable in stages. The draft conformance model is defined in [.
 | `L4`: Evidence Coverage | Tests, validation scenarios, and release claims in scope link to evidence. |
 | `L5`: Automated Conformance | Automated checks validate identifiers, relationships, provenance, and diagnostics. |
 
-This gives teams a practical adoption ladder. During the `v0.x` draft period, teams should phrase claims as scoped adoption statements, such as "this repository is experimenting with OLTS L2 for selected requirements," rather than broad certification claims.
+This gives teams a practical adoption ladder. Before an official certification or compatibility policy exists, teams should phrase claims as scoped adoption statements, such as "this repository is experimenting with OLTS L2 for selected requirements," rather than broad certification claims.
 
 ## What Makes OLTS Different
 
@@ -291,9 +293,9 @@ Conformance tooling under `tools/` is planned. Until it lands, run these steps a
 
 ## Repository Layout
 
-- `spec/` - draft core and relationship standard material.
+- `spec/` - release-candidate core and relationship standard material.
 - `examples/` - minimal and realistic OLTS-compatible examples.
-- `schemas/` - draft machine-readable validation contracts for records, relationships, diagnostics, conformance reports, and generated artifacts.
+- `schemas/` - candidate machine-readable validation contracts for records, relationships, diagnostics, conformance reports, and generated artifacts.
 - `tools/` - planned conformance and migration tooling.
 - `docs/` - overview, adoption, pipeline, governance, and versioning guidance.
 

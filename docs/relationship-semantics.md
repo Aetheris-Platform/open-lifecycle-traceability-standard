@@ -2,7 +2,7 @@
 
 This review records the candidate `v1.0.0` relationship direction, naming, overlap, and canonical-chain decisions.
 
-It is launch-readiness evidence, not a release announcement. OLTS remains in the `v0.x` draft series until maintainers explicitly approve `v1.0.0`.
+It is launch-readiness evidence, not a release announcement. OLTS remains a private `v1.0.0` release candidate until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release.
 
 ## Direction Rule
 
@@ -31,7 +31,7 @@ Relationship names are not inverse aliases. A repository SHOULD NOT use `support
 
 ## Canonical Chain
 
-The canonical chain uses these draft core verbs:
+The canonical chain uses these candidate core verbs:
 
 ```text
 Capability --realizes--> Use Case --requires--> System Requirement --verified_by--> Verification Test --evidenced_by--> Evidence
@@ -55,7 +55,7 @@ Decision --supersedes--> Decision
 
 ## Vocabulary Review
 
-The current draft vocabulary intentionally separates these concerns:
+The current candidate vocabulary intentionally separates these concerns:
 
 | Relationship | Direction | Distinct meaning |
 | --- | --- | --- |
@@ -84,7 +84,7 @@ Artifact-centric views MAY render the inverse display wording, such as "Artifact
 
 ## Cross-Artifact Consistency
 
-The canonical chain is aligned across the current draft materials:
+The canonical chain is aligned across the current release-candidate materials:
 
 | Surface | Consistency evidence |
 | --- | --- |

@@ -2,7 +2,7 @@
 
 This plan defines what should be true before OLTS becomes the first stable public standard. It is a launch-readiness checklist, not a release announcement.
 
-OLTS should remain draft material until maintainers explicitly decide that the `v1.0.0` gates below are satisfied.
+OLTS should remain a private release candidate until maintainers explicitly decide that the `v1.0.0` gates below are satisfied.
 
 ## Release Principle
 
@@ -10,7 +10,7 @@ OLTS should remain draft material until maintainers explicitly decide that the `
 
 Before `v1.0.0`, draft milestones such as `v0.2.0` and `v0.3.0` may organize private or pre-release work. They do not automatically create a public release, public tag, certification program, or compatibility guarantee.
 
-Public community processes such as Discussions, external issues, outside pull requests, and public adopter trials should activate at the `v1.0.0` public launch. During `v0.x`, feedback should be gathered through private or invited channels unless maintainers explicitly approve an earlier public draft.
+Public community processes such as Discussions, external issues, outside pull requests, and public adopter trials should activate at the `v1.0.0` public launch. During private release-candidate work, feedback should be gathered through private or invited channels unless maintainers explicitly approve an earlier public preview.
 
 ## Stable Standard Gates
 
@@ -22,7 +22,7 @@ Before `v1.0.0`:
 - [x] Identifier shape is stable enough for adopters to assign durable IDs.
 - [x] Source-of-truth boundaries are stated consistently across README, docs, spec, examples, and schemas.
 - [x] Generated artifacts are clearly described as derived unless accepted through reviewed source truth.
-- [x] Draft-only language is removed or scoped to future experimental material.
+- [x] Draft-only language is removed or scoped to historical milestones, unreleased readiness work, or future experimental material.
 - [x] Normative keyword conventions, such as RFC 2119/8174 `MUST`, `SHOULD`, and `MAY`, are defined and applied consistently across `spec/`.
 
 Evidence to review:
@@ -127,7 +127,7 @@ Before `v1.0.0`:
 
 - [x] Maintainer/steward expectations are clear.
 - [x] Contribution flow is clear enough for outside comments, issues, and pull requests once the repository is public.
-- [x] Private or invited `v0.x` feedback channels are documented separately from public `v1.0.0` community processes.
+- [x] Private or invited pre-launch feedback channels are documented separately from public `v1.0.0` community processes.
 - [x] Code of Conduct, security policy, trademark guidance, notice, license, issue templates, and PR template are reviewed.
 - [x] License posture for specification text and tooling is explicitly confirmed before stable publication.
 - [ ] Discussion categories and repository settings support public feedback.

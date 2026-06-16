@@ -2,7 +2,7 @@
 
 All notable changes to OLTS will be documented in this file.
 
-OLTS is currently in the `v0.x` draft series. See [docs/versioning.md](docs/versioning.md) for the versioning and readiness plan.
+OLTS is currently a private `v1.0.0` release candidate. See [docs/versioning.md](docs/versioning.md), [docs/v1-readiness.md](docs/v1-readiness.md), and [docs/v1-release-evidence.md](docs/v1-release-evidence.md) for the versioning, readiness, and launch approval plan.
 
 ## Unreleased
 
@@ -62,6 +62,7 @@ This section records the intended first stable public OLTS standard. It is not a
 - Added public launch settings guidance, including recommended repository description, topics, features, Discussion categories, branch protection, and security setting checks.
 - Recorded public launch settings evidence for repository description, topics, Issues, branch protection, security settings, Wiki, Projects, and private/local scrub posture.
 - Updated README maturity language to describe OLTS as a private `v1.0.0` release candidate pending explicit visibility, tag, and release approval.
+- Updated public-facing maturity language across overview, spec, schema, governance, adoption, pipeline, and validation docs to reflect the private `v1.0.0` release-candidate posture.
 
 ## `v0.1.0` - 2026-06-16
 

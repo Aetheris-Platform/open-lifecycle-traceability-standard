@@ -2,7 +2,7 @@
 
 This runbook records the GitHub repository settings OLTS maintainers should verify before making the repository public. It is launch-readiness guidance, not approval to change visibility, create a tag, or publish a GitHub Release.
 
-OLTS remains private and in the `v0.x` draft series until maintainers explicitly approve both public visibility and the `v1.0.0` release.
+OLTS remains a private `v1.0.0` release candidate until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release.
 
 ## Repository Description and Topics
 
