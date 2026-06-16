@@ -73,7 +73,7 @@ type: SR
 title: Operator can revoke an API token
 ```
 
-The `type` value uses the entity-type code from the Draft Entity Types table, such as `UC`, `SR`, `VT`, or `EVD`.
+The `type` value uses the entity-type code from the Draft Entity Types table, such as `UC`, `SR`, `VT`, or `EVD`. The `type` value MUST match the `<TYPE>` segment in `id`; for example, `APP-SR-00014` uses `type: SR`.
 
 A more useful record includes explicit relationships:
 

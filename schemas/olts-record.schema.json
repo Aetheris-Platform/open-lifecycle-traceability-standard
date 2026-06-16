@@ -1,8 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:olts:schema:draft:olts-record",
+  "$id": "urn:olts:schema:v1:record",
+  "$comment": "Candidate stable OLTS v1 schema identifier. Publication remains gated by the OLTS v1.0.0 release process.",
   "title": "OLTS Lifecycle Record",
-  "description": "Draft schema for one OLTS lifecycle record. Local extensions may add fields, but core fields should remain reviewable and explicit.",
+  "description": "Candidate v1 schema for one OLTS lifecycle record. Local extensions may add fields, but core fields remain reviewable and explicit. Validators MUST also check that the type field matches the type segment in id.",
   "type": "object",
   "required": ["id", "type", "title"],
   "properties": {
@@ -10,7 +11,8 @@
       "$ref": "#/$defs/oltsIdentifier"
     },
     "type": {
-      "$ref": "#/$defs/entityType"
+      "$ref": "#/$defs/entityType",
+      "description": "Entity type code. Validators MUST check that this value matches the type segment in id, such as SR in APP-SR-00014."
     },
     "title": {
       "type": "string",

@@ -187,7 +187,7 @@ A missing file, parser failure, inaccessible external source, or disabled data s
 
 ## Validation Expectations
 
-Draft machine-readable schemas are available under [../schemas/](../schemas/). Adopters MAY also validate conformance with reviewed checklists, repository scripts, CI jobs, or external tooling.
+Candidate v1 machine-readable schemas are available under [../schemas/](../schemas/). Adopters MAY also validate conformance with reviewed checklists, repository scripts, CI jobs, or external tooling.
 
 A useful validation report SHOULD identify:
 

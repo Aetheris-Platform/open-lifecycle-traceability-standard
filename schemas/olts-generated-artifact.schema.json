@@ -1,8 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:olts:schema:draft:olts-generated-artifact",
+  "$id": "urn:olts:schema:v1:generated-artifact",
+  "$comment": "Candidate stable OLTS v1 schema identifier. Publication remains gated by the OLTS v1.0.0 release process.",
   "title": "OLTS Generated Artifact Metadata",
-  "description": "Draft schema for metadata attached to generated OLTS diagrams, dashboards, reports, RTMs, indexes, and review packets.",
+  "description": "Candidate v1 schema for metadata attached to generated OLTS diagrams, dashboards, reports, RTMs, indexes, and review packets.",
   "type": "object",
   "required": ["artifact_id", "artifact_type", "generated_at", "generator", "sources"],
   "properties": {
@@ -47,7 +48,7 @@
     "included_relationships": {
       "type": "array",
       "items": {
-        "$ref": "urn:olts:schema:draft:olts-relationship"
+        "$ref": "urn:olts:schema:v1:relationship"
       }
     },
     "omitted_facts": {
@@ -65,7 +66,7 @@
     "diagnostics": {
       "type": "array",
       "items": {
-        "$ref": "urn:olts:schema:draft:olts-diagnostic"
+        "$ref": "urn:olts:schema:v1:diagnostic"
       }
     },
     "derived": {
