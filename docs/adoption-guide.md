@@ -37,7 +37,7 @@ Recommended starting points:
 - **L1:** Assign stable IDs to existing lifecycle records.
 - **L2:** Add explicit relationships between a small number of records.
 
-See [../spec/conformance.md](../spec/conformance.md) for the draft level expectations, diagnostics, validation guidance, and claim language.
+See [../spec/conformance.md](../spec/conformance.md) for the level expectations, diagnostics, validation guidance, and claim language.
 
 Avoid starting at L5 unless the repo already has strong requirements, test, evidence, and CI discipline.
 
@@ -78,7 +78,7 @@ Small projects may start with one YAML file and one relationship file. Larger pr
 
 ## Step 5: Assign Stable IDs
 
-Use the draft shape:
+Use the candidate shape:
 
 ```text
 <DOMAIN>-<TYPE>-<NNNNN>
@@ -157,7 +157,7 @@ or:
 This repository maintains explicit OLTS L2 relationship files for selected requirements and tests.
 ```
 
-During `v0.x`, conformance claims are provisional and should be phrased as scoped adoption targets or experiments. Avoid certification-style claims until OLTS publishes a stable certification or trademark policy.
+Before OLTS publishes a stable certification or trademark policy, conformance claims should be phrased as scoped adoption targets or experiments. Avoid certification-style claims until a policy defines who can make those claims and what evidence is required.
 
 Every claim should name its scope. A scope might be a repository, release branch, product area, source path, or selected record set. Do not imply that an OLTS claim covers records outside the stated scope.
 
@@ -165,7 +165,7 @@ Examples:
 
 ```text
 This repository is experimenting with OLTS L1 for lifecycle records under docs/olts/records/.
-This release branch maintains an OLTS L2 draft relationship set for selected authentication requirements.
+This release branch maintains an OLTS L2 relationship set for selected authentication requirements.
 This product area targets OLTS L3 for active release-scope requirements, with reviewed exceptions listed in the OLTS adoption notes.
 ```
 

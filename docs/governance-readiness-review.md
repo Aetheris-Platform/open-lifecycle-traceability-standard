@@ -2,7 +2,7 @@
 
 This review records the governance decisions that should be stable before the first public `v1.0.0` launch. It is launch-readiness evidence, not a release announcement.
 
-OLTS remains in the `v0.x` draft series until maintainers explicitly approve public visibility and the `v1.0.0` tag.
+OLTS remains a private `v1.0.0` release candidate until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release.
 
 ## Review Scope
 
@@ -41,7 +41,7 @@ This is intentionally lightweight. If OLTS later moves to a foundation, working 
 
 ## Feedback Channel Decision
 
-During `v0.x`, feedback may be gathered through private or invited channels. Public community processes should activate at the `v1.0.0` public launch unless maintainers explicitly approve an earlier public draft.
+During private release-candidate work, feedback may be gathered through private or invited channels. Public community processes should activate at the `v1.0.0` public launch unless maintainers explicitly approve an earlier public preview.
 
 At public launch:
 

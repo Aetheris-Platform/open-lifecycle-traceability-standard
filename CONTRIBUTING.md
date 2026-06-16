@@ -1,6 +1,6 @@
 # Contributing to OLTS
 
-OLTS is an early draft. Feedback is welcome, especially from product engineering, systems engineering, QA, DevOps, security, compliance, ALM, and MBSE practitioners.
+OLTS is a private `v1.0.0` release candidate. Feedback is welcome, especially from product engineering, systems engineering, QA, DevOps, security, compliance, ALM, and MBSE practitioners.
 
 ## Good First Contributions
 
@@ -24,7 +24,7 @@ Small clarifications may start directly as an Issue or Pull Request when the pro
 
 Before contributing, read [docs/governance.md](docs/governance.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
-Contributors should certify that they have the right to submit their contribution under Apache-2.0. A Developer Certificate of Origin sign-off is welcome but not required for `v0.x` draft contributions.
+Contributors should certify that they have the right to submit their contribution under Apache-2.0. A Developer Certificate of Origin sign-off is welcome but not required for pre-launch contributions.
 
 Pull requests should describe the problem, proposed change, affected files or concepts, and any compatibility or migration impact. Changes that affect conformance levels, relationship semantics, schemas, or adopter claim language should call that out explicitly.
 

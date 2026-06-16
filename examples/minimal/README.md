@@ -27,7 +27,7 @@ APP-SR-00014 --explained_by--> APP-ADR-00007
 
 This is enough for a reviewer to inspect which use case requires the requirement, how the requirement is verified, which evidence proves the verification ran, and which decision explains the rationale.
 
-The relationship direction matches the draft vocabulary in [../../spec/relationships.md](../../spec/relationships.md).
+The relationship direction matches the candidate vocabulary in [../../spec/relationships.md](../../spec/relationships.md).
 
 The documented equivalent validation checks for this example are recorded in [../../docs/example-validation-review.md](../../docs/example-validation-review.md).
 

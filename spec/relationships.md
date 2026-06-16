@@ -1,6 +1,6 @@
-# OLTS Relationship Model Draft
+# OLTS Relationship Model
 
-This file captures the initial direction for explicit OLTS relationships. It is draft material, not a stable `v1.0.0` standard.
+This file captures the release-candidate model for explicit OLTS relationships. It remains launch-gated until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release.
 
 Normative keywords in this file use the convention defined in [core.md](core.md#normative-language).
 
@@ -10,7 +10,7 @@ A lifecycle relationship is a reviewed statement that one lifecycle entity depen
 
 Relationships SHOULD be explicit. OLTS-compatible tooling MUST NOT infer canonical relationships from text similarity, filename similarity, row order, heading names, generated diagrams, or AI guesses.
 
-## Draft Relationship Chain
+## Relationship Chain
 
 A common traceability chain is:
 
@@ -36,7 +36,7 @@ Decision --supersedes--> Decision
 
 ## Minimal Relationship File Shape
 
-The recommended `v0.1.0` relationship file shape is:
+The recommended relationship file shape is:
 
 ```csv
 Source_Key,Target_Key,Relationship,Notes
@@ -57,7 +57,7 @@ Status,Rationale,Source_File,Source_Row,Owner,Last_Reviewed
 
 A record's inline relationship fields, such as `verified_by` or `explained_by`, MUST use the same verb names and directions as the relationship vocabulary below or a documented repository extension. Every relationship used in a record or relationship file MUST appear in this vocabulary or in a documented repository extension. Unknown verbs are diagnostics, not accepted truth.
 
-## Draft Relationship Vocabulary
+## Relationship Vocabulary
 
 | Relationship | Typical Source | Typical Target | Meaning |
 | --- | --- | --- | --- |
@@ -76,13 +76,13 @@ The vocabulary is directed. Relationship names are not inverse aliases. For exam
 
 For lifecycle-to-artifact traceability, canonical stored relationship rows use `documented_by` from the lifecycle entity to the artifact. Artifact-centric tools MAY render the inverse display wording, such as "Artifact documents Requirement," but `documents` is not the canonical core stored relationship. Repositories that need inverse or domain-specific relationships MAY define them as local extensions, but they MUST document those extensions and keep them separate from core OLTS vocabulary.
 
-The vocabulary is intentionally draft. Unknown relationships SHOULD be surfaced as diagnostics until a repo explicitly allows them.
+Unknown relationships SHOULD be surfaced as diagnostics until a repo explicitly allows them.
 
 See [../docs/relationship-semantics.md](../docs/relationship-semantics.md) for the candidate `v1.0.0` relationship semantics review.
 
 ## Relationship Extensions
 
-Repositories MAY define local relationship verbs during the draft period. Local verbs MUST be documented before they are used in a conformance claim, and they MUST NOT be presented as core OLTS vocabulary unless accepted into the standard.
+Repositories MAY define local relationship verbs. Local verbs MUST be documented before they are used in a conformance claim, and they MUST NOT be presented as core OLTS vocabulary unless accepted into the standard.
 
 A relationship extension SHOULD define its source type, target type or external reference namespace, direction, meaning, and diagnostic behavior. Unknown relationship verbs SHOULD be surfaced as diagnostics unless a documented local extension or reviewed exception applies.
 
@@ -99,7 +99,7 @@ docs/olts/links/requirement-test-links.csv
 docs/olts/links/test-evidence-links.csv
 ```
 
-A single `relationships.csv` can work for small projects. Larger projects SHOULD prefer narrower files that match reviewer ownership and pipeline checks. The draft relationship schema in [../schemas/olts-relationship.schema.json](../schemas/olts-relationship.schema.json) validates parsed relationship rows rather than raw CSV text.
+A single `relationships.csv` can work for small projects. Larger projects SHOULD prefer narrower files that match reviewer ownership and pipeline checks. The relationship schema in [../schemas/olts-relationship.schema.json](../schemas/olts-relationship.schema.json) validates parsed relationship rows rather than raw CSV text.
 
 ## OpenSpec Integration
 

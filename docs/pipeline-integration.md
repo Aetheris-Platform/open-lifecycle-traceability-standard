@@ -1,6 +1,6 @@
 # Pipeline Integration Guide
 
-This guide describes how OLTS can fit into common development pipelines. It is draft guidance for `v0.1.0`.
+This guide describes how OLTS can fit into common development pipelines. It reflects the private `v1.0.0` release candidate and remains subject to explicit launch approval.
 
 OLTS is not a pipeline vendor. It is a repo-native traceability layer that existing tools can read, validate, and review.
 
@@ -12,7 +12,7 @@ A practical OLTS integration usually follows this pattern:
 Repo source truth -> OLTS records and links -> local checks -> CI diagnostics -> review gates -> release evidence
 ```
 
-Start with diagnostics. Promote only trusted checks to merge or release gates. Use the draft conformance model in [../spec/conformance.md](../spec/conformance.md) to decide whether checks are advisory or blocking for the claimed scope.
+Start with diagnostics. Promote only trusted checks to merge or release gates. Use the conformance model in [../spec/conformance.md](../spec/conformance.md) to decide whether checks are advisory or blocking for the claimed scope.
 
 Any pipeline claim should name the checked scope, the claimed level, inspected sources, and whether diagnostics are advisory or blocking. A pipeline should not report an unscoped `OLTS L3`, `OLTS L4`, or `OLTS L5` result when it only inspected selected paths, entity types, release records, or generated artifacts.
 

@@ -2,7 +2,7 @@
 
 This review records the candidate `v1.0.0` schema contracts against the prose standard.
 
-It is launch-readiness evidence, not a release announcement. OLTS remains in the `v0.x` draft series until maintainers explicitly approve `v1.0.0`.
+It is launch-readiness evidence, not a release announcement. OLTS remains a private `v1.0.0` release candidate until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release.
 
 ## Review Scope
 

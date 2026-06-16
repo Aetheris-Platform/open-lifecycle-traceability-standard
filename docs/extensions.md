@@ -12,7 +12,7 @@ Extensions are allowed so OLTS can fit real development pipelines, regulated dom
 4. Unknown values SHOULD produce diagnostics unless a reviewed extension allows them.
 5. A local extension MUST NOT weaken source-of-truth, provenance, diagnostic, or human-approval expectations.
 
-An adopter can make a draft conformance claim with local extensions, but the claim SHOULD identify which extensions were used and which scope they affect.
+An adopter can make a scoped conformance claim with local extensions, but the claim SHOULD identify which extensions were used and which scope they affect.
 
 ## What Can Be Extended
 
@@ -58,7 +58,7 @@ Local inline relationship fields SHOULD use the same verb name and direction as 
 
 ## Relationship Rows
 
-The core relationship-row schema accepts the draft OLTS relationship vocabulary. Local relationship verbs SHOULD be handled through a documented schema overlay, validator configuration, or reviewed exception.
+The core relationship-row schema accepts the OLTS relationship vocabulary. Local relationship verbs SHOULD be handled through a documented schema overlay, validator configuration, or reviewed exception.
 
 A relationship extension SHOULD define:
 

@@ -4,9 +4,9 @@ OLTS uses versioned milestones to separate draft maturity from stable standard c
 
 ## Current Maturity
 
-OLTS is in the `v0.x` draft series. Draft milestones are intended for review, experimentation, compatibility feedback, and early or invited adopter trials before a stable public `v1.0.0` release. They may change as maintainers, invited reviewers, and eventually the public community clarify terminology, schemas, conformance levels, and governance.
+OLTS is a private `v1.0.0` release candidate. Earlier `v0.x` milestones organized draft review, experimentation, compatibility feedback, and invited adopter trials before the first stable public release. The remaining launch work is tracked in [v1-readiness.md](v1-readiness.md) and [v1-release-evidence.md](v1-release-evidence.md).
 
-The first stable standard target is `v1.0.0`; see [v1-readiness.md](v1-readiness.md) for the launch gates. After `v1.0.0`, compatibility promises become stricter and breaking changes require a major version. `v0.1.0` introduces provisional conformance levels for orientation; `v0.2.0` is expected to formalize diagnostics, validation expectations, and adopter-claim language.
+The first stable standard target is `v1.0.0`. After `v1.0.0`, compatibility promises become stricter and breaking changes require a major version. Earlier draft milestones introduced provisional conformance levels, diagnostics, validation expectations, adopter-claim language, and schema contracts.
 
 ## Planned Readiness Path
 
@@ -25,7 +25,7 @@ OLTS versions follow semantic-versioning style once the standard reaches `v1.0.0
 - **Minor:** backward-compatible additions, new optional fields, new examples, additional diagnostics, or new optional integration guidance.
 - **Patch:** clarifications, typo fixes, non-normative wording updates, examples that do not change conformance meaning, or tooling/documentation fixes.
 
-During the `v0.x` draft period, minor versions may still include breaking changes. Each release should call out any known migration impact.
+Before the approved `v1.0.0` public launch, release-candidate changes may still include corrections needed for stable publication. Each release or launch note should call out any known migration impact.
 
 ## Release and Tag Policy
 
@@ -63,7 +63,7 @@ Exploratory feedback belongs in Discussions. Trackable changes belong in Issues.
 
 Before `v1.0.0`:
 
-- adopters should treat OLTS as a draft;
+- adopters should treat OLTS as a launch-gated release candidate;
 - examples and schemas may change;
 - conformance labels are provisional;
 - release notes should describe migration impact clearly.

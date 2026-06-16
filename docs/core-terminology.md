@@ -1,8 +1,8 @@
 # OLTS Core Terminology Review
 
-This review records the candidate `v1.0.0` core terminology decisions for entity types, identifier shape, source-of-truth boundaries, generated artifacts, and draft-only language.
+This review records the candidate `v1.0.0` core terminology decisions for entity types, identifier shape, source-of-truth boundaries, generated artifacts, and launch-gated language.
 
-It is launch-readiness evidence, not a release announcement. OLTS remains in the `v0.x` draft series until maintainers explicitly approve `v1.0.0`.
+It is launch-readiness evidence, not a release announcement. OLTS remains a private `v1.0.0` release candidate until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release.
 
 ## Entity Types
 
@@ -72,27 +72,27 @@ Generated artifacts SHOULD preserve:
 
 If a repository wants a generated artifact to become source truth, it MUST define and follow a reviewed acceptance process. Without that acceptance, generated artifacts remain derived and rebuildable.
 
-## Draft-Only Language
+## Launch-Gated Language
 
-During the `v0.x` private readiness series, OLTS documents still use draft framing because the stable public release has not been approved.
+During the private release-candidate period, OLTS documents still use launch-gated framing because the stable public release has not been approved.
 
-For `v1.0.0` readiness, draft-only language is scoped as follows:
+For `v1.0.0` readiness, launch-gated language is scoped as follows:
 
-- Draft framing may describe unreleased readiness work, provisional milestones, or future experimental material.
+- Draft framing may describe historical milestones, unreleased readiness work, provisional milestones, or future experimental material.
 - Candidate v1 decisions may be documented before release, but they do not create a public release, certification program, or compatibility guarantee.
 - Public-facing `v1.0.0` release material should not imply that unresolved draft work is stable.
 - Any future experimental material after `v1.0.0` should be clearly labeled as experimental or future-facing.
 
 ## Cross-Artifact Consistency
 
-The core terminology is aligned across the current draft materials:
+The core terminology is aligned across the current release-candidate materials:
 
 | Surface | Consistency evidence |
 | --- | --- |
 | [../spec/core.md](../spec/core.md) | Defines principles, identifier shape, entity types, source formats, source-truth boundaries, generated artifacts, provenance, diagnostics, and conformance summary. |
 | [../README.md](../README.md) | States product repositories remain source truth and automation requires human approval. |
 | [overview.md](overview.md) | Describes the same source-truth, derived-artifact, and tool-agnostic principles. |
-| [../spec/README.md](../spec/README.md) | States non-goals and source-truth boundaries for the draft specification. |
+| [../spec/README.md](../spec/README.md) | States non-goals and source-truth boundaries for the release-candidate specification. |
 | [../examples/minimal/README.md](../examples/minimal/README.md) | States that example records and relationships become source truth only through normal review and generated views remain derived. |
 | [../examples/realistic/README.md](../examples/realistic/README.md) | States the same source-truth and generated-artifact boundary for a fuller L4 example. |
 | [../schemas/README.md](../schemas/README.md) | Describes candidate schema contracts and the record `type` versus ID type-segment invariant. |

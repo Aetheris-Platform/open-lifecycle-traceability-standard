@@ -86,7 +86,7 @@ Validators SHOULD apply these checks in addition to schema validation:
 
 - `record.type` MUST match the `<TYPE>` segment in `record.id`;
 - lifecycle IDs MUST NOT be reused for different entities in the checked scope;
-- relationship verbs MUST use the draft OLTS vocabulary or documented local extensions;
+- relationship verbs MUST use the OLTS vocabulary or documented local extensions;
 - relationship direction SHOULD match [../spec/relationships.md](../spec/relationships.md);
 - OLTS relationship targets SHOULD resolve to known records unless they are documented external references;
 - inline relationship fields SHOULD align with relationship-file rows when both are present;
@@ -103,7 +103,7 @@ The minimal example can be checked as a small shape and relationship-row validat
 - confirm each `type` matches the ID type segment;
 - parse [../examples/minimal/relationships.csv](../examples/minimal/relationships.csv);
 - validate each parsed relationship row;
-- confirm all relationship verbs are in the draft vocabulary;
+- confirm all relationship verbs are in the candidate vocabulary;
 - confirm each OLTS relationship source and target resolves to a record in the example.
 
 The realistic example exercises a broader scoped L4 traceability chain:
@@ -141,7 +141,7 @@ A CI job SHOULD NOT report an unscoped `OLTS L3`, `OLTS L4`, or `OLTS L5` result
 
 Manual checklists, local scripts, CI jobs, external validators, and platform-native checks can all produce validation evidence. The chosen validation path SHOULD preserve OLTS semantics and report the same scope, sources, diagnostics, exceptions, and advisory or blocking posture.
 
-L5 does not require OLTS reference tooling. A repository can make a scoped draft L5 claim with its own automation if the checks preserve OLTS semantics and produce reviewable diagnostics.
+L5 does not require OLTS reference tooling. A repository can make a scoped L5 claim with its own automation if the checks preserve OLTS semantics and produce reviewable diagnostics.
 
 ## Extension Handling
 

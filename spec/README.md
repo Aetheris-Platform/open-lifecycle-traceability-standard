@@ -1,26 +1,26 @@
-# OLTS Draft Specification
+# OLTS Specification
 
-This directory holds the draft specification material for the Open Lifecycle Traceability Standard.
+This directory holds the release-candidate specification material for the Open Lifecycle Traceability Standard.
 
 ## Current Status
 
-OLTS is an early draft being shaped before the stable public `v1.0.0` standard. The current repository focuses on:
+OLTS is a private `v1.0.0` release candidate pending explicit public visibility, tag, and GitHub Release approval. The current repository focuses on:
 
 - stable lifecycle identifiers;
 - explicit lifecycle relationships;
 - repo-native catalog and relationship files;
 - provenance for generated artifacts;
 - diagnostics for missing or malformed lifecycle data;
-- staged conformance levels and draft claim language;
-- draft machine-readable schema contracts.
+- staged conformance levels and scoped claim language;
+- candidate machine-readable schema contracts.
 
-## Draft Conformance Model
+## Conformance Model
 
-The provisional `L1` through `L5` levels now have draft claim language, diagnostics expectations, and validation guidance in [conformance.md](conformance.md).
+The `L1` through `L5` levels have scoped claim language, diagnostics expectations, and validation guidance in [conformance.md](conformance.md).
 
 ## Core Terminology
 
-Candidate `v1.0.0` entity types, identifier shape, source-of-truth boundaries, generated artifact semantics, and draft-only language scope are reviewed in [../docs/core-terminology.md](../docs/core-terminology.md).
+Candidate `v1.0.0` entity types, identifier shape, source-of-truth boundaries, generated artifact semantics, and launch-gated language scope are reviewed in [../docs/core-terminology.md](../docs/core-terminology.md).
 
 ## Normative Language
 
@@ -39,8 +39,8 @@ OLTS does not require:
 
 Product repositories remain the source of truth. Automation MAY propose changes, but humans MUST approve lifecycle truth through normal review.
 
-## Draft Files
+## Specification Files
 
 - [core.md](core.md) - initial OLTS Core principles, identifier shape, entity types, provenance, diagnostics, and conformance summary.
 - [relationships.md](relationships.md) - initial explicit relationship model, relationship file shape, and OpenSpec/non-OpenSpec guidance.
-- [conformance.md](conformance.md) - draft conformance levels, diagnostics expectations, validation guidance, and adopter claim language.
+- [conformance.md](conformance.md) - conformance levels, diagnostics expectations, validation guidance, and adopter claim language.

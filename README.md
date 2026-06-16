@@ -13,7 +13,9 @@ It connects requirements, tests, evidence, decisions, release readiness, artifac
 
 ## Maturity
 
-OLTS is an early draft. It is being shaped before the stable public `v1.0.0` standard, conformance levels, examples, and governance model are finalized.
+OLTS is a private `v1.0.0` release candidate. Core terminology, relationship semantics, conformance levels, schemas, examples, and governance guidance have been reviewed for the first stable public standard.
+
+The repository should remain private until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release. See [docs/v1-readiness.md](docs/v1-readiness.md) and [docs/v1-release-evidence.md](docs/v1-release-evidence.md) for the remaining launch gates.
 
 The intent is practical: make lifecycle traceability usable in real development pipelines, not only in specialized tools or after-the-fact compliance reviews.
 
@@ -23,7 +25,7 @@ Most teams already produce lifecycle information: product capabilities, roadmap 
 
 The problem is that this information is often scattered across issue trackers, documents, spreadsheets, PRs, test reports, CI logs, and chat history. OLTS gives teams a shared way to make those relationships explicit, inspectable, and automatable.
 
-Read the full public overview: [docs/overview.md](docs/overview.md). To try OLTS in an existing repository, start with the [adoption guide](docs/adoption-guide.md), the [pipeline integration guide](docs/pipeline-integration.md), or the [AI agent adoption prompt](docs/ai-agent-adoption-prompt.md).
+Read the full overview: [docs/overview.md](docs/overview.md). To try OLTS in an existing repository, start with the [adoption guide](docs/adoption-guide.md), the [pipeline integration guide](docs/pipeline-integration.md), or the [AI agent adoption prompt](docs/ai-agent-adoption-prompt.md).
 
 ## A Minimal Example
 
@@ -53,7 +55,7 @@ In an OpenSpec-based workflow, OLTS can use OpenSpec as change provenance. OpenS
 
 ## Conformance Levels
 
-OLTS defines a draft adoption ladder from stable IDs through automated conformance. See [spec/conformance.md](spec/conformance.md) for level expectations, diagnostics guidance, validation reporting, and draft adopter claim language.
+OLTS defines an adoption ladder from stable IDs through automated conformance. See [spec/conformance.md](spec/conformance.md) for level expectations, diagnostics guidance, validation reporting, and scoped adopter claim language.
 
 | Level | Meaning |
 | --- | --- |
@@ -65,7 +67,7 @@ OLTS defines a draft adoption ladder from stable IDs through automated conforman
 
 ## Versioning
 
-OLTS is currently an early draft. The planned readiness path is:
+OLTS is currently a private `v1.0.0` release candidate. The readiness path has been:
 
 - `v0.1.0` initial draft
 - `v0.2.0` conformance draft
@@ -74,14 +76,14 @@ OLTS is currently an early draft. The planned readiness path is:
 
 See [docs/versioning.md](docs/versioning.md), [docs/v1-readiness.md](docs/v1-readiness.md), and [CHANGELOG.md](CHANGELOG.md).
 
-Core entity types, identifier shape, source-truth boundaries, generated artifact semantics, and draft-only language scope are reviewed in [docs/core-terminology.md](docs/core-terminology.md).
+Core entity types, identifier shape, source-truth boundaries, generated artifact semantics, and launch-gated language scope are reviewed in [docs/core-terminology.md](docs/core-terminology.md).
 
 ## Repository Layout
 
 - [docs/](docs/) - overview, adoption notes, pipeline integration, governance, and migration guidance.
-- [spec/](spec/) - draft core and relationship standard material.
+- [spec/](spec/) - release-candidate core and relationship standard material.
 - [examples/](examples/) - minimal and realistic OLTS-compatible examples.
-- [schemas/](schemas/) - draft machine-readable validation contracts for records, relationships, diagnostics, conformance reports, and generated artifacts.
+- [schemas/](schemas/) - candidate machine-readable validation contracts for records, relationships, diagnostics, conformance reports, and generated artifacts.
 - [tools/](tools/) - future conformance and migration tooling.
 
 ## Get Started

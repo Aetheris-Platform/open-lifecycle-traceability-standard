@@ -1,6 +1,6 @@
-# OLTS Core Draft
+# OLTS Core
 
-This file captures the initial direction for OLTS Core. It is draft material, not a stable `v1.0.0` standard.
+This file captures the release-candidate OLTS Core model. It remains launch-gated until maintainers explicitly approve public visibility, the `v1.0.0` tag, and the GitHub Release.
 
 OLTS Core defines the minimum shared language needed to make lifecycle traceability explicit, repo-native, reviewable, and automatable.
 
@@ -12,7 +12,7 @@ The key words `MUST`, `MUST NOT`, `SHOULD`, `SHOULD NOT`, and `MAY` in OLTS spec
 
 Lowercase words such as "should", "may", and "recommended" are ordinary explanatory language unless this standard explicitly says otherwise.
 
-During the `v0.x` draft period, normative keywords describe intended stable semantics. They do not create a public certification program, public release guarantee, or third-party compliance claim.
+Before an explicit public launch and certification policy, normative keywords describe intended stable semantics. They do not create a public certification program, public release guarantee, or third-party compliance claim.
 
 ## Core Principles
 
@@ -126,7 +126,7 @@ Provenance is essential because OLTS is designed to support review, CI checks, g
 
 ## Diagnostics
 
-OLTS diagnostics SHOULD be explicit and reviewable. Draft diagnostic categories include:
+OLTS diagnostics SHOULD be explicit and reviewable. Candidate diagnostic categories include:
 
 - invalid identifier shape;
 - duplicate identifier;
@@ -142,7 +142,7 @@ OLTS diagnostics SHOULD be explicit and reviewable. Draft diagnostic categories 
 
 A missing source MUST NOT be treated as a healthy zero state. It SHOULD produce a diagnostic.
 
-## Draft Conformance Summary
+## Conformance Summary
 
 The OLTS conformance ladder is defined in [conformance.md](conformance.md). In summary:
 
@@ -154,4 +154,4 @@ The OLTS conformance ladder is defined in [conformance.md](conformance.md). In s
 | `L4` | Tests, validation scenarios, and release claims in scope link to evidence. |
 | `L5` | Automated checks validate identifiers, relationships, provenance, and diagnostics. |
 
-These labels remain provisional during the `v0.x` draft series.
+These labels remain launch-gated until maintainers approve the public `v1.0.0` release.
