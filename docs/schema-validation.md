@@ -141,7 +141,9 @@ L5 does not require OLTS reference tooling. A repository can make a scoped draft
 
 ## Extension Handling
 
-Local extensions SHOULD be declared before validation runs. A validator SHOULD distinguish:
+Local extensions SHOULD be declared before validation runs. See [extensions.md](extensions.md) for the full extension model.
+
+A validator SHOULD distinguish:
 
 - core OLTS entity types and relationship verbs;
 - local entity types and relationship verbs that are allowed for this repository;

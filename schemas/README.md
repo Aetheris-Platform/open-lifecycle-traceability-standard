@@ -69,6 +69,8 @@ Local extensions are allowed during the draft period, but they should be documen
 
 The core relationship schema accepts only the draft OLTS relationship vocabulary. Repositories that intentionally use local relationship verbs should layer their own schema overlay on top of the core schema rather than presenting local verbs as core OLTS vocabulary.
 
+See [../docs/extensions.md](../docs/extensions.md) for extension behavior across records, relationship rows, diagnostics, conformance reports, generated artifact metadata, and local schema overlays.
+
 ## Stability
 
 These schemas are candidate v1 contracts. They may still change before `v1.0.0` if review finds a blocking issue, but changes to identifiers, required fields, relationship vocabulary, or cross-schema references should be treated as v1 readiness decisions and reviewed intentionally.
