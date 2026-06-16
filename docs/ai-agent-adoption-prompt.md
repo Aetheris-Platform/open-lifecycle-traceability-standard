@@ -83,7 +83,7 @@ Authorization: Plan only. Do not create, edit, delete, stage, commit, push, or o
 ```
 
 ```text
-Authorization: Edits authorized for a minimal OLTS adoption slice. Use a branch, keep the diff small, and do not rewrite canonical lifecycle truth.
+Authorization: Edits authorized for a minimal OLTS adoption slice. Use a branch, keep the diff small, and do not rewrite canonical lifecycle truth. Do not stage, commit, push, or open a pull request unless explicitly authorized.
 ```
 
 ## Optional Maintainer Answers
