@@ -109,7 +109,7 @@ Before `v1.0.0`:
 - [x] Minimal example validates against the stable schema contracts or documented equivalent checks.
 - [x] A realistic multi-entity example exists for adopters who need more than the minimal chain.
 - [x] Adoption guide explains a first `L1` or `L2` slice without requiring a full migration.
-- [ ] AI-agent adoption prompt preserves source truth and defaults to plan-only unless edits are explicitly authorized.
+- [x] AI-agent adoption prompt preserves source truth and defaults to plan-only unless edits are explicitly authorized.
 - [x] Pipeline guide explains advisory checks, blocking gates, and evidence expectations without promising unavailable tooling.
 
 Evidence to review:
