@@ -38,16 +38,20 @@ Evidence to review:
 
 Before `v1.0.0`:
 
-- [ ] Relationship vocabulary is reviewed for direction, naming, and overlap.
-- [ ] The canonical lifecycle chain is internally consistent across spec, README, examples, and schemas.
+- [x] Relationship vocabulary is reviewed for direction, naming, and overlap.
+- [x] The canonical lifecycle chain is internally consistent across spec, README, examples, and schemas.
 - [x] Local extension guidance is clear enough that adopters do not confuse local verbs with core OLTS verbs.
 - [x] Unknown relationships are consistently described as diagnostics unless explicitly allowed by a repository extension.
 
 Evidence to review:
 
 - [../spec/relationships.md](../spec/relationships.md)
+- [relationship-semantics.md](relationship-semantics.md)
 - [extensions.md](extensions.md)
 - [../examples/minimal/README.md](../examples/minimal/README.md)
+- [../examples/realistic/README.md](../examples/realistic/README.md)
+- [../README.md](../README.md)
+- [overview.md](overview.md)
 - [../schemas/olts-relationship.schema.json](../schemas/olts-relationship.schema.json)
 
 ### 3. Conformance Model

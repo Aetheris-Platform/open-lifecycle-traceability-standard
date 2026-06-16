@@ -38,6 +38,12 @@ explained_by:
 
 That small record lets a reviewer ask which test verifies the requirement and which decision explains the design. The related relationship file links the use case to the requirement and the test to its evidence.
 
+The canonical relationship direction is:
+
+```text
+Use Case --requires--> Requirement --verified_by--> Test --evidenced_by--> Evidence
+```
+
 ## How OLTS Fits With OpenSpec
 
 OpenSpec makes change intent reviewable. OLTS makes the full lifecycle traceable.

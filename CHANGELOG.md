@@ -27,6 +27,7 @@ OLTS is currently in the `v0.x` draft series. See [docs/versioning.md](docs/vers
 - Applied normative keywords consistently across the core, relationship, and conformance draft specs.
 - Hardened `L1` through `L5` conformance criteria with scoped claim requirements, explicit criteria, diagnostics guidance, and adopter-facing scope language.
 - Promoted schema `$id` values and cross-schema references to candidate stable v1 URNs, and documented the record `type` versus ID type-segment semantic check.
+- Reviewed relationship vocabulary direction, naming, overlap, and canonical-chain consistency across spec, README, overview, examples, and schema guidance.
 
 ## `v0.1.0` - 2026-06-16
 

@@ -45,6 +45,8 @@ APP-ART-00008 --documents--> APP-SR-00027
 APP-ART-00008 --evidenced_by--> APP-EVD-00035
 ```
 
+These directions match the draft vocabulary in [../../spec/relationships.md](../../spec/relationships.md) and the relationship semantics review in [../../docs/relationship-semantics.md](../../docs/relationship-semantics.md).
+
 ## Draft Conformance Notes
 
 This example is intended to be read as a scoped draft adoption statement:

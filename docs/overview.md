@@ -248,10 +248,10 @@ These principles matter because traceability only works if teams trust it. OLTS 
 
 ```text
 Capability
-  -> Use Case
-    -> System Requirement
-      -> Verification Test
-        -> Evidence
+  --realizes--> Use Case
+    --requires--> System Requirement
+      --verified_by--> Verification Test
+        --evidenced_by--> Evidence
 ```
 
 A release reviewer can then ask:
