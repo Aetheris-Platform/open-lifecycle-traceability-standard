@@ -73,7 +73,7 @@
     "entityType": {
       "type": "string",
       "pattern": "^[A-Z][A-Z0-9]{1,9}$",
-      "description": "Core draft types are CAP, TRK, UC, SR, VT, VAL, EVD, ART, and ADR. Other values are local extensions and should be documented."
+      "description": "Core candidate types are CAP, TRK, UC, SR, VT, VAL, EVD, ART, and ADR. Other values are local extensions and should be documented."
     },
     "externalReference": {
       "type": "string",
