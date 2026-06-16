@@ -65,6 +65,7 @@ This section records the intended first stable public OLTS standard. It is not a
 - Updated public-facing maturity language across overview, spec, schema, governance, adoption, pipeline, and validation docs to reflect the private `v1.0.0` release-candidate posture.
 - Recorded launch-candidate validation evidence for schema consistency, relationship vocabulary, example checks, public-facing maturity language, and remote repository settings.
 - Recorded maintainer direction to keep `main` required approving reviews at `0` during private launch preparation and raise the count after launch.
+- Recorded final Discussion category evidence, including question-and-answer formats for `Conformance` and `Governance`.
 
 ## `v0.1.0` - 2026-06-16
 
