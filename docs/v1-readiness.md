@@ -146,7 +146,7 @@ Evidence to review:
 
 Before making the repository public:
 
-- [ ] Repository description and topics are reviewed.
+- [x] Repository description and topics are reviewed.
 - [ ] Issues are enabled.
 - [ ] Discussions are enabled and categories are configured.
 - [ ] Main branch protection requires pull requests and review.
@@ -165,6 +165,8 @@ Repo -> Settings -> Rules -> Rulesets
 Repo -> Settings -> Code security and analysis
 Repo -> Discussions -> Manage discussion categories
 ```
+
+Use [public-launch-settings.md](public-launch-settings.md) as the settings runbook.
 
 ### 8. Release Evidence
 
