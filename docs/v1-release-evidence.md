@@ -53,7 +53,7 @@ Run or document equivalent checks at the final launch candidate commit:
 
 - [ ] `git status --short --branch` is clean on `main`.
 - [x] `git diff --check` passes.
-- [x] Final private/local reference scrub has no matches.
+- [x] Launch-candidate private/local reference scrub has no matches; final `main` re-run remains pending after all launch-candidate PRs merge.
 - [x] Markdown relative-link check passes.
 - [x] All schema files parse as JSON.
 - [x] Schema files validate against the selected JSON Schema validator path or documented equivalent.

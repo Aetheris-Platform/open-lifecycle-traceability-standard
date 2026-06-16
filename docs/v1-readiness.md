@@ -174,7 +174,7 @@ Before tagging `v1.0.0`:
 
 - [x] Changelog has a `v1.0.0` section with stable scope and migration notes.
 - [ ] All intended launch PRs are merged.
-- [x] Final private/local scrub is clean.
+- [x] Launch-candidate private/local scrub is clean; final `main` re-run remains pending after all launch-candidate PRs merge.
 - [x] Markdown links are checked.
 - [x] Schema files parse as JSON and validate against the selected JSON Schema validator path or documented equivalent consistency checks.
 - [x] Minimal and realistic examples validate against the selected schema or documented equivalent checks.
