@@ -1,0 +1,7 @@
+id: APP-SR-00014
+type: SR
+title: Operator can revoke an API token
+verified_by:
+  - APP-VT-00221
+explained_by:
+  - APP-ADR-00007

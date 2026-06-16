@@ -1,0 +1,19 @@
+name: Prior art or compatibility note
+description: Share relevant standards, tools, research, or lifecycle practices.
+title: "Prior art: "
+labels: ["prior art"]
+body:
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference
+      description: Link or describe the relevant standard, tool, pattern, or practice.
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Why it matters for OLTS
+      description: Explain how OLTS should align with, differ from, or learn from it.
+    validations:
+      required: true

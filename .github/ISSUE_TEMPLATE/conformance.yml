@@ -1,0 +1,25 @@
+name: Conformance question
+description: Discuss OLTS conformance levels, diagnostics, schemas, or validation expectations.
+title: "Conformance: "
+labels: ["conformance"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or proposal
+      description: What conformance behavior needs discussion?
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Related level
+      options:
+        - L1: Stable IDs
+        - L2: Explicit Relationships
+        - L3: Verification Coverage
+        - L4: Evidence Coverage
+        - L5: Automated Conformance
+        - Not sure
+    validations:
+      required: false
