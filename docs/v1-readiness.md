@@ -125,17 +125,18 @@ Evidence to review:
 
 Before `v1.0.0`:
 
-- [ ] Maintainer/steward expectations are clear.
-- [ ] Contribution flow is clear enough for outside comments, issues, and pull requests once the repository is public.
-- [ ] Private or invited `v0.x` feedback channels are documented separately from public `v1.0.0` community processes.
-- [ ] Code of Conduct, security policy, trademark guidance, notice, license, issue templates, and PR template are reviewed.
-- [ ] License posture for specification text and tooling is explicitly confirmed before stable publication.
+- [x] Maintainer/steward expectations are clear.
+- [x] Contribution flow is clear enough for outside comments, issues, and pull requests once the repository is public.
+- [x] Private or invited `v0.x` feedback channels are documented separately from public `v1.0.0` community processes.
+- [x] Code of Conduct, security policy, trademark guidance, notice, license, issue templates, and PR template are reviewed.
+- [x] License posture for specification text and tooling is explicitly confirmed before stable publication.
 - [ ] Discussion categories and repository settings support public feedback.
 - [ ] Branch protection and review requirements are configured before public launch.
 
 Evidence to review:
 
 - [governance.md](governance.md)
+- [governance-readiness-review.md](governance-readiness-review.md)
 - [../CONTRIBUTING.md](../CONTRIBUTING.md)
 - [../MAINTAINERS.md](../MAINTAINERS.md)
 - [../SECURITY.md](../SECURITY.md)
