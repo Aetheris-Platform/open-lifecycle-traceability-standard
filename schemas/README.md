@@ -36,6 +36,8 @@ They are designed around the current draft specs:
 - [../spec/relationships.md](../spec/relationships.md)
 - [../spec/conformance.md](../spec/conformance.md)
 
+Relationship verb direction and naming are reviewed in [../docs/relationship-semantics.md](../docs/relationship-semantics.md). The relationship schema enum matches the core vocabulary documented there.
+
 ## Record Type Invariant
 
 The record schema validates the shape of `id` and `type`, but plain JSON Schema cannot portably compare the `type` value with the type segment embedded in `id`.

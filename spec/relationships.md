@@ -15,19 +15,23 @@ Relationships SHOULD be explicit. OLTS-compatible tooling MUST NOT infer canonic
 A common traceability chain is:
 
 ```text
-Capability -> Use Case -> System Requirement -> Verification Test -> Evidence
+Capability --realizes--> Use Case --requires--> System Requirement --verified_by--> Verification Test --evidenced_by--> Evidence
+```
+
+Validation uses a parallel path:
+
+```text
+Use Case --validated_by--> Validation Scenario --evidenced_by--> Evidence
 ```
 
 Other useful links include:
 
 ```text
-Work Item -> Capability
-Work Item -> Use Case
-Work Item -> Requirement
-Requirement -> Artifact
-Requirement -> Decision
-Artifact -> Evidence
-Decision -> Decision
+Work Item --implements--> Capability, Use Case, or Requirement
+Requirement --explained_by--> Decision
+Artifact --documents--> Capability, Use Case, Requirement, or Decision
+Artifact --evidenced_by--> Evidence
+Decision --supersedes--> Decision
 ```
 
 ## Minimal Relationship File Shape
@@ -68,7 +72,11 @@ A record's inline relationship fields, such as `verified_by` or `explained_by`, 
 | `explained_by` | Requirement, artifact, or work item | Decision | Decision explains rationale. |
 | `supersedes` | Decision or artifact | Decision or artifact | Source replaces or supersedes target. |
 
+The vocabulary is directed. Relationship names are not inverse aliases. For example, `requires` is written from use case to requirement; OLTS core does not define an inverse `supports` relationship from requirement to use case. Repositories that need inverse or domain-specific relationships MAY define them as local extensions, but they MUST document those extensions and keep them separate from core OLTS vocabulary.
+
 The vocabulary is intentionally draft. Unknown relationships SHOULD be surfaced as diagnostics until a repo explicitly allows them.
+
+See [../docs/relationship-semantics.md](../docs/relationship-semantics.md) for the candidate `v1.0.0` relationship semantics review.
 
 ## Relationship Extensions
 
