@@ -20,9 +20,13 @@ Discussion -> Issue -> Pull Request -> Review -> Merge -> Milestone or release d
 
 After the `v1.0.0` public launch, use GitHub Discussions for broad questions, ideas, prior art, and adoption stories. Use Issues for trackable changes. Use Pull Requests for accepted edits to the standard, examples, docs, schemas, templates, or future tools. While the repository is private, maintainers may gather feedback through private or invited channels.
 
+Small clarifications may start directly as an Issue or Pull Request when the problem and proposed wording are already clear.
+
 Before contributing, read [docs/governance.md](docs/governance.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 Contributors should certify that they have the right to submit their contribution under Apache-2.0. A Developer Certificate of Origin sign-off is welcome but not required for `v0.x` draft contributions.
+
+Pull requests should describe the problem, proposed change, affected files or concepts, and any compatibility or migration impact. Changes that affect conformance levels, relationship semantics, schemas, or adopter claim language should call that out explicitly.
 
 ## Contribution Principles
 

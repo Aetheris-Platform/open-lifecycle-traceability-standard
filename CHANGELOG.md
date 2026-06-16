@@ -34,6 +34,7 @@ OLTS is currently in the `v0.x` draft series. See [docs/versioning.md](docs/vers
 - Validated the minimal and realistic examples with documented equivalent checks, including complete minimal records and relationship target resolution.
 - Canonicalized lifecycle-to-artifact traceability on `documented_by`, with `documents` retained only as inverse display wording or local extension language.
 - Hardened the AI-agent adoption prompt so copy/paste usage defaults to plan-only unless maintainers explicitly authorize edits.
+- Reviewed governance and community readiness, including stewardship expectations, contribution flow, private-vs-public feedback channels, community files, and Apache-2.0 license posture.
 
 ## `v0.1.0` - 2026-06-16
 
