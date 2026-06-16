@@ -17,6 +17,8 @@ OLTS is currently in the `v0.x` draft series. See [docs/versioning.md](docs/vers
 - Linked README, overview, adoption, pipeline, and core spec guidance to the draft conformance model.
 - Updated schema guidance to describe draft machine-readable contracts and CSV relationship row validation.
 - Clarified draft maturity language so pre-`v1.0.0` work does not imply a public stable release.
+- Clarified that public community processes activate at `v1.0.0`, while `v0.x` feedback may use private or invited channels.
+- Added `v1.0.0` gates for normative keywords, stable schema identifiers, record ID/type consistency, approval evidence, and license posture.
 
 ## `v0.1.0` - 2026-06-16
 

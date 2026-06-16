@@ -4,6 +4,8 @@ OLTS is an early draft. Governance should be lightweight enough to invite feedba
 
 ## Public Change Flow
 
+This flow describes public operation after the `v1.0.0` launch. While the repository is private, maintainers may gather feedback through private or invited channels.
+
 The intended public flow is:
 
 ```text

@@ -18,7 +18,7 @@ The intended public flow is:
 Discussion -> Issue -> Pull Request -> Review -> Merge -> Milestone or release decision
 ```
 
-Use GitHub Discussions for broad questions, ideas, prior art, and adoption stories. Use Issues for trackable changes. Use Pull Requests for accepted edits to the standard, examples, docs, schemas, templates, or future tools.
+After the `v1.0.0` public launch, use GitHub Discussions for broad questions, ideas, prior art, and adoption stories. Use Issues for trackable changes. Use Pull Requests for accepted edits to the standard, examples, docs, schemas, templates, or future tools. While the repository is private, maintainers may gather feedback through private or invited channels.
 
 Before contributing, read [docs/governance.md](docs/governance.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 

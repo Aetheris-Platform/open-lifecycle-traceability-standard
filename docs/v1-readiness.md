@@ -10,6 +10,8 @@ OLTS should remain draft material until maintainers explicitly decide that the `
 
 Before `v1.0.0`, draft milestones such as `v0.2.0` and `v0.3.0` may organize private or pre-release work. They do not automatically create a public release, public tag, certification program, or compatibility guarantee.
 
+Public community processes such as Discussions, external issues, outside pull requests, and public adopter trials should activate at the `v1.0.0` public launch. During `v0.x`, feedback should be gathered through private or invited channels unless maintainers explicitly approve an earlier public draft.
+
 ## Stable Standard Gates
 
 ### 1. Core Terminology
@@ -21,6 +23,7 @@ Before `v1.0.0`:
 - [ ] Source-of-truth boundaries are stated consistently across README, docs, spec, examples, and schemas.
 - [ ] Generated artifacts are clearly described as derived unless accepted through reviewed source truth.
 - [ ] Draft-only language is removed or scoped to future experimental material.
+- [ ] Normative keyword conventions, such as RFC 2119/8174 `MUST`, `SHOULD`, and `MAY`, are defined and applied consistently across `spec/`.
 
 Evidence to review:
 
@@ -65,6 +68,8 @@ Before `v1.0.0`:
 
 - [ ] Draft schema files are reviewed against the prose standard.
 - [ ] Schema identifiers and cross-schema references are stable and vendor-neutral.
+- [ ] Draft schema `$id` URNs are promoted to stable, versioned identifiers and all cross-references are updated together.
+- [ ] The record `type` field and the type segment in `id` are either checked for consistency or explicitly documented as intentionally decoupled.
 - [ ] CSV relationship-row validation guidance is clear.
 - [ ] Local extension behavior is documented for records, relationships, diagnostics, conformance reports, and generated artifacts.
 - [ ] At least one validator path is documented or tested without making one implementation mandatory.
@@ -100,8 +105,10 @@ Evidence to review:
 Before `v1.0.0`:
 
 - [ ] Maintainer/steward expectations are clear.
-- [ ] Contribution flow is clear enough for outside comments, issues, and pull requests.
+- [ ] Contribution flow is clear enough for outside comments, issues, and pull requests once the repository is public.
+- [ ] Private or invited `v0.x` feedback channels are documented separately from public `v1.0.0` community processes.
 - [ ] Code of Conduct, security policy, trademark guidance, notice, license, issue templates, and PR template are reviewed.
+- [ ] License posture for specification text and tooling is explicitly confirmed before stable publication.
 - [ ] Discussion categories and repository settings support public feedback.
 - [ ] Branch protection and review requirements are configured before public launch.
 
@@ -149,6 +156,7 @@ Before tagging `v1.0.0`:
 - [ ] Minimal examples validate against the selected schema or documented equivalent checks.
 - [ ] Public README, overview, and Get Started path reflect the actual public repo state.
 - [ ] Maintainers explicitly approve public visibility and tag creation.
+- [ ] A tracked release-readiness issue or final checklist PR records the approval evidence and links to this plan.
 
 ## Non-Goals for v1.0.0
 
@@ -182,7 +190,7 @@ If a stronger JSON Schema validator is adopted, document the exact command and v
 
 ## Launch Decision
 
-A `v1.0.0` launch should require explicit maintainer approval for both actions:
+A `v1.0.0` launch should require explicit maintainer approval for both actions, recorded in a tracked release-readiness issue or final checklist PR:
 
 1. changing repository visibility to public;
 2. creating and pushing the `v1.0.0` tag and GitHub Release.
