@@ -40,6 +40,8 @@ Core entity types, identifier shape, source-of-truth boundaries, and generated a
 
 Relationship verb direction and naming are reviewed in [../docs/relationship-semantics.md](../docs/relationship-semantics.md). The relationship schema enum matches the core vocabulary documented there.
 
+Schema-to-prose alignment is reviewed in [../docs/schema-contract-review.md](../docs/schema-contract-review.md). That review records which expectations are expressed directly in portable JSON Schema and which remain semantic checks for validators or reviewers.
+
 ## Record Type Invariant
 
 The record schema validates the shape of `id` and `type`, but plain JSON Schema cannot portably compare the `type` value with the type segment embedded in `id`.

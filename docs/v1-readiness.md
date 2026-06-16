@@ -80,7 +80,7 @@ Evidence to review:
 
 Before `v1.0.0`:
 
-- [ ] Schema files are reviewed against the prose standard.
+- [x] Schema files are reviewed against the prose standard.
 - [x] Schema identifiers and cross-schema references are stable and vendor-neutral.
 - [x] Schema `$id` URNs are promoted to stable, versioned identifiers and all cross-references are updated together.
 - [x] The record `type` field and the type segment in `id` are checked for consistency or explicitly documented as intentionally decoupled.
@@ -92,6 +92,7 @@ Evidence to review:
 
 - [../spec/core.md](../spec/core.md)
 - [../schemas/README.md](../schemas/README.md)
+- [schema-contract-review.md](schema-contract-review.md)
 - [extensions.md](extensions.md)
 - [schema-validation.md](schema-validation.md)
 - [../schemas/olts-record.schema.json](../schemas/olts-record.schema.json)

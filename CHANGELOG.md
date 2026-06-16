@@ -30,6 +30,7 @@ OLTS is currently in the `v0.x` draft series. See [docs/versioning.md](docs/vers
 - Reviewed relationship vocabulary direction, naming, overlap, and canonical-chain consistency across spec, README, overview, examples, and schema guidance.
 - Reviewed core entity types, identifier shape, source-of-truth boundaries, generated artifact semantics, and draft-only language scope for `v1.0.0` readiness.
 - Hardened conformance claim language, diagnostic severity guidance, advisory/blocking pipeline posture, and vendor-neutral validation-path language for scoped adopter claims.
+- Reviewed candidate schema contracts against the prose standard and documented semantic checks that remain outside portable JSON Schema.
 
 ## `v0.1.0` - 2026-06-16
 
