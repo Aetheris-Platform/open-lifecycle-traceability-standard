@@ -1,6 +1,6 @@
 # OLTS Conformance Model Draft
 
-This file defines the draft OLTS conformance model intended for the `v0.2.0` conformance draft. It is not a stable `v1.0.0` certification policy.
+This file defines the candidate OLTS conformance model for scoped adopter claims. It remains draft material until the `v1.0.0` release process is explicitly approved, and it is not a certification policy.
 
 OLTS conformance is designed to help adopters make honest, incremental claims about lifecycle traceability without requiring a specific tool, database, UI, ALM platform, MBSE framework, OpenSpec workflow, or AI agent.
 
@@ -9,7 +9,7 @@ Normative keywords in this file use the convention defined in [core.md](core.md#
 ## Conformance Principles
 
 1. Conformance levels are cumulative. A repository claiming `OLTS L3` MUST satisfy `L1`, `L2`, and `L3` for the stated scope.
-2. Claims SHOULD name their scope. A claim MAY cover a whole repository, one product area, one release line, or one reviewed path such as `docs/olts/`.
+2. Claims MUST name their scope. A claim MAY cover a whole repository, one product area, one release line, or one reviewed path such as `docs/olts/`.
 3. Source truth MUST be explicit. Generated diagrams, dashboards, indexes, and reports are derived unless accepted by normal review.
 4. Unknown, missing, or ambiguous lifecycle data SHOULD produce diagnostics, not false confidence.
 5. Automation MAY validate, diagnose, summarize, and propose. Humans MUST approve canonical lifecycle truth.
@@ -45,6 +45,14 @@ All requirements are verified.
 ```
 
 OLTS has no official third-party certification program during the `v0.x` draft series.
+
+## Claim Stability
+
+The `L1` through `L5` names, cumulative ordering, claim criteria, expected diagnostics, and non-goals are candidate v1 semantics for scoped adopter claims. Before `v1.0.0`, maintainers SHOULD treat changes to those semantics as compatibility-impacting changes that need explicit review.
+
+A scoped draft claim is stable enough for private adoption, pilot use, and repository-local governance when it follows the claim shape above. It is not a public compatibility guarantee, third-party certification, or blanket statement about records outside the stated scope.
+
+Manual review, repository scripts, CI jobs, external validators, and platform-native checks MAY all produce evidence for a scoped claim. `L5` requires automation for the claimed scope, but it does not require OLTS reference tooling or any specific vendor platform.
 
 ## Level Summary
 
@@ -185,9 +193,11 @@ Recommended severities:
 
 A missing file, parser failure, inaccessible external source, or disabled data source MUST NOT be treated as a healthy zero-result scan.
 
+Severity describes the diagnostic finding. It does not, by itself, define whether a pull request, merge, release, or adoption claim is blocked. Maintainers SHOULD define the gate posture separately, such as advisory-only, blocking on `error`, blocking on `blocked`, or blocking on selected diagnostic codes for a stated scope.
+
 ## Validation Expectations
 
-Candidate v1 machine-readable schemas are available under [../schemas/](../schemas/). Adopters MAY also validate conformance with reviewed checklists, repository scripts, CI jobs, or external tooling.
+Candidate v1 machine-readable schemas are available under [../schemas/](../schemas/). Adopters MAY also validate conformance with manual review checklists, repository scripts, CI jobs, external tooling, or platform-native checks.
 
 A repeatable, tool-agnostic validation path is described in [../docs/schema-validation.md](../docs/schema-validation.md). It is one acceptable way to validate parsed records, parsed relationship rows, semantic checks, and diagnostics without making any one implementation mandatory.
 

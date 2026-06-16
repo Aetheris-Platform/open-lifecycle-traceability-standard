@@ -56,6 +56,18 @@ Maintainers should review for:
 - migration impact;
 - public readability.
 
+## Conformance and Diagnostics
+
+Changes that affect conformance levels, adopter claim language, diagnostic severity, or blocking-gate guidance should call out the impact in the pull request.
+
+Severity guidance should stay consistent with the conformance model and pipeline guidance:
+
+- `info` and `warning` diagnostics are usually advisory unless a repository documents a stricter gate;
+- `error` diagnostics identify failed expectations for the stated scope, but maintainers still define whether they block a pull request or release;
+- `blocked` diagnostics mean the source could not be read, so a trustworthy pass/fail claim should not be made for the affected scope.
+
+OLTS governance should not accept certification, compliance, or full-coverage claims unless a future policy explicitly defines who can make those claims, what evidence is required, and how disputes are handled.
+
 ## Decision Principles
 
 OLTS should prefer changes that make lifecycle relationships more explicit, reduce tool lock-in, preserve human review, support incremental adoption, improve diagnostics and provenance, and work with both OpenSpec and non-OpenSpec workflows.

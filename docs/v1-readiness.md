@@ -61,18 +61,20 @@ Evidence to review:
 
 Before `v1.0.0`:
 
-- [ ] `L1` through `L5` are stable enough for scoped adopter claims.
+- [x] `L1` through `L5` are stable enough for scoped adopter claims.
 - [x] Each level has clear expectations, diagnostics, and non-goals.
 - [x] Claim criteria and expected diagnostics under each level are reviewed for their final `v1.0.0` normative force.
-- [ ] Claim language avoids overstatement and does not imply certification unless a certification policy exists.
-- [ ] Diagnostic severity guidance is consistent with pipeline and governance docs.
-- [ ] Manual, scripted, CI, and external-tool validation paths are all allowed without requiring a vendor platform.
+- [x] Claim language avoids overstatement and does not imply certification unless a certification policy exists.
+- [x] Diagnostic severity guidance is consistent with pipeline and governance docs.
+- [x] Manual, scripted, CI, and external-tool validation paths are all allowed without requiring a vendor platform.
 
 Evidence to review:
 
 - [../spec/conformance.md](../spec/conformance.md)
 - [adoption-guide.md](adoption-guide.md)
 - [pipeline-integration.md](pipeline-integration.md)
+- [schema-validation.md](schema-validation.md)
+- [governance.md](governance.md)
 
 ### 4. Schema Contracts
 
@@ -104,9 +106,9 @@ Before `v1.0.0`:
 
 - [ ] Minimal example validates against the stable schema contracts or documented equivalent checks.
 - [x] A realistic multi-entity example exists for adopters who need more than the minimal chain.
-- [ ] Adoption guide explains a first `L1` or `L2` slice without requiring a full migration.
+- [x] Adoption guide explains a first `L1` or `L2` slice without requiring a full migration.
 - [ ] AI-agent adoption prompt preserves source truth and defaults to plan-only unless edits are explicitly authorized.
-- [ ] Pipeline guide explains advisory checks, blocking gates, and evidence expectations without promising unavailable tooling.
+- [x] Pipeline guide explains advisory checks, blocking gates, and evidence expectations without promising unavailable tooling.
 
 Evidence to review:
 

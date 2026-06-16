@@ -41,6 +41,8 @@ See [../spec/conformance.md](../spec/conformance.md) for the draft level expecta
 
 Avoid starting at L5 unless the repo already has strong requirements, test, evidence, and CI discipline.
 
+A first claim can be narrow. For example, a team can target `OLTS L1` for one reviewed path or `OLTS L2` for one release branch without migrating every tracker, requirement, test plan, or evidence source.
+
 ## Step 3: Inventory Current Sources
 
 Find existing lifecycle material:
@@ -143,7 +145,7 @@ Do not mass-edit requirements, tests, or evidence without a focused review plan.
 
 ## Step 10: Publish the Adoption Claim
 
-Once the team has reviewed the first adoption slice, document the claim:
+Once the team has reviewed the first adoption slice, document the claim with its level, scope, source files, and any reviewed exceptions:
 
 ```text
 This repository is experimenting with OLTS L1.
@@ -166,6 +168,8 @@ This repository is experimenting with OLTS L1 for lifecycle records under docs/o
 This release branch maintains an OLTS L2 draft relationship set for selected authentication requirements.
 This product area targets OLTS L3 for active release-scope requirements, with reviewed exceptions listed in the OLTS adoption notes.
 ```
+
+If automation is part of the claim evidence, also state whether the result is advisory or blocking. A warning or error diagnostic should remain reviewable and should not be hidden behind a summary such as `OLTS passed`.
 
 ## Recommended First Pull Request
 

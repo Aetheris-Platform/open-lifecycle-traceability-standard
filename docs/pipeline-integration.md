@@ -14,7 +14,22 @@ Repo source truth -> OLTS records and links -> local checks -> CI diagnostics ->
 
 Start with diagnostics. Promote only trusted checks to merge or release gates. Use the draft conformance model in [../spec/conformance.md](../spec/conformance.md) to decide whether checks are advisory or blocking for the claimed scope.
 
-Any pipeline claim should name the checked scope, the claimed level, and whether diagnostics are advisory or blocking. A pipeline should not report an unscoped `OLTS L3` or `OLTS L4` result when it only inspected selected paths, entity types, or release records.
+Any pipeline claim should name the checked scope, the claimed level, inspected sources, and whether diagnostics are advisory or blocking. A pipeline should not report an unscoped `OLTS L3`, `OLTS L4`, or `OLTS L5` result when it only inspected selected paths, entity types, release records, or generated artifacts.
+
+## Advisory and Blocking Posture
+
+Diagnostic severity and gate posture are related but separate:
+
+| Severity | Pipeline meaning |
+| --- | --- |
+| `info` | Context for reviewers; usually advisory. |
+| `warning` | A likely traceability gap or ambiguity; usually advisory until the team agrees it should block. |
+| `error` | A conformance expectation failed for the stated scope; may block when the rule is trusted for that scope. |
+| `blocked` | The source could not be read; should block any trustworthy pass/fail claim for the affected scope. |
+
+Early pipelines should publish diagnostics without blocking merges. Later pipelines can block on selected severities or diagnostic codes, but the blocking rule should be documented with the checked scope.
+
+Acceptable validation paths include manual release checklists, local scripts, CI jobs, external validators, and platform-native checks. OLTS does not require a hosted service, reference validator, GitHub Actions, GitLab CI, Azure Pipelines, Jira, OpenSpec, or any other vendor platform.
 
 ## GitHub Pipeline
 

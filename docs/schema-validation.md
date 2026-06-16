@@ -127,7 +127,8 @@ A useful report SHOULD identify:
 - local extensions allowed;
 - diagnostics found;
 - reviewed exceptions;
-- whether the result is advisory or blocking.
+- whether the result is advisory or blocking;
+- if blocking, which severities, diagnostic codes, or source-read failures can block the stated scope.
 
 Conformance reports can use [../schemas/olts-conformance-report.schema.json](../schemas/olts-conformance-report.schema.json), and individual diagnostics can use [../schemas/olts-diagnostic.schema.json](../schemas/olts-diagnostic.schema.json).
 
@@ -136,6 +137,8 @@ Conformance reports can use [../schemas/olts-conformance-report.schema.json](../
 Early CI jobs SHOULD start as advisory checks. They can become blocking only after maintainers trust the parser, schema mapping, semantic checks, and diagnostic quality for the claimed scope.
 
 A CI job SHOULD NOT report an unscoped `OLTS L3`, `OLTS L4`, or `OLTS L5` result when it inspected only selected paths, entity types, or releases.
+
+Manual checklists, local scripts, CI jobs, external validators, and platform-native checks can all produce validation evidence. The chosen validation path SHOULD preserve OLTS semantics and report the same scope, sources, diagnostics, exceptions, and advisory or blocking posture.
 
 L5 does not require OLTS reference tooling. A repository can make a scoped draft L5 claim with its own automation if the checks preserve OLTS semantics and produce reviewable diagnostics.
 
