@@ -4,6 +4,8 @@ This file captures the initial direction for OLTS Core. It is draft material, no
 
 OLTS Core defines the minimum shared language needed to make lifecycle traceability explicit, repo-native, reviewable, and automatable.
 
+The candidate `v1.0.0` core terminology review is recorded in [../docs/core-terminology.md](../docs/core-terminology.md).
+
 ## Normative Language
 
 The key words `MUST`, `MUST NOT`, `SHOULD`, `SHOULD NOT`, and `MAY` in OLTS specification files are to be interpreted as described in RFC 2119 and RFC 8174 when, and only when, they appear in all capitals.
@@ -24,7 +26,7 @@ During the `v0.x` draft period, normative keywords describe intended stable sema
 
 ## Lifecycle Identifier Shape
 
-The draft identifier shape is:
+The candidate identifier shape is:
 
 ```text
 <DOMAIN>-<TYPE>-<NNNNN>
@@ -45,9 +47,9 @@ APP-VT-00221
 APP-EVD-00098
 ```
 
-Stable IDs SHOULD NOT encode status, priority, maturity, owner, release, branch, or implementation state. Those are attributes that may change.
+Stable IDs name lifecycle entities. They SHOULD NOT encode status, priority, maturity, owner, release, branch, or implementation state. Those are attributes that may change.
 
-## Draft Entity Types
+## Candidate Entity Types
 
 | Type | Entity | Meaning |
 | --- | --- | --- |
@@ -61,7 +63,7 @@ Stable IDs SHOULD NOT encode status, priority, maturity, owner, release, branch,
 | `ART` | Artifact | Design doc, diagram, interface spec, generated artifact, or other lifecycle artifact. |
 | `ADR` | Decision | Architecture decision, design decision, or accepted rationale record. |
 
-Adopters MAY add local entity types during experimentation, but public conformance claims SHOULD identify which types are draft OLTS types and which are local extensions.
+Adopters MAY add local entity types during experimentation, but public conformance claims SHOULD identify which types are core OLTS types and which are local extensions.
 
 ## Minimal Record Shape
 
@@ -73,7 +75,7 @@ type: SR
 title: Operator can revoke an API token
 ```
 
-The `type` value uses the entity-type code from the Draft Entity Types table, such as `UC`, `SR`, `VT`, or `EVD`. The `type` value MUST match the `<TYPE>` segment in `id`; for example, `APP-SR-00014` uses `type: SR`.
+The `type` value uses the entity-type code from the Candidate Entity Types table, such as `UC`, `SR`, `VT`, or `EVD`. The `type` value MUST match the `<TYPE>` segment in `id`; for example, `APP-SR-00014` uses `type: SR`.
 
 A more useful record includes explicit relationships:
 
@@ -91,7 +93,25 @@ explained_by:
 
 OLTS SHOULD be format-tolerant. The same concepts MAY be represented in Markdown with YAML frontmatter, CSV, YAML, JSON, existing ALM exports, issue tracker metadata, OpenSpec changes, ADR folders, and release or evidence records.
 
-For early adoption, Markdown, CSV, YAML, and JSON are preferred because they are easy to review in pull requests. Draft JSON Schemas under [../schemas/](../schemas/) describe the shared validation contracts for records, parsed relationship rows, diagnostics, conformance reports, and generated artifact metadata.
+For early adoption, Markdown, CSV, YAML, and JSON are preferred because they are easy to review in pull requests. Candidate v1 JSON Schemas under [../schemas/](../schemas/) describe the shared validation contracts for records, parsed relationship rows, diagnostics, conformance reports, and generated artifact metadata.
+
+## Source-of-Truth Boundaries
+
+OLTS does not replace repository or system source truth. It makes lifecycle facts explicit enough for review, validation, reporting, and automation.
+
+Product repositories, reviewed files, or reviewed external systems own lifecycle truth. OLTS records and relationship rows are source truth only when the adopting repository accepts them through normal review.
+
+Generated diagrams, dashboards, indexes, reports, traceability matrices, and review packets are derived unless explicitly accepted as source truth through reviewed source-truth policy.
+
+Automation MAY diagnose, summarize, visualize, and propose updates. Humans MUST approve canonical lifecycle truth through normal review.
+
+Missing or unreadable sources MUST produce diagnostics instead of healthy zero states.
+
+## Generated Artifacts
+
+Generated artifacts SHOULD preserve the source files, records, relationship rows, external systems, commits, timestamps, hashes, omitted facts, diagnostics, and generator metadata needed for reviewers to understand how the artifact was produced.
+
+If a repository wants a generated artifact to become source truth, it MUST define and follow a reviewed acceptance process. Without that acceptance, generated artifacts remain derived and rebuildable.
 
 ## Provenance
 

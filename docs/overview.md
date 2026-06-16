@@ -244,6 +244,8 @@ OLTS is built around a few principles:
 
 These principles matter because traceability only works if teams trust it. OLTS is designed to make that trust inspectable.
 
+The core terminology and source-of-truth boundaries behind these principles are reviewed in [core-terminology.md](core-terminology.md).
+
 ## Example Lifecycle Chain
 
 ```text

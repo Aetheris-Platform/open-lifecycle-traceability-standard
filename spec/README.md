@@ -18,6 +18,10 @@ OLTS is an early draft being shaped before the stable public `v1.0.0` standard. 
 
 The provisional `L1` through `L5` levels now have draft claim language, diagnostics expectations, and validation guidance in [conformance.md](conformance.md).
 
+## Core Terminology
+
+Candidate `v1.0.0` entity types, identifier shape, source-of-truth boundaries, generated artifact semantics, and draft-only language scope are reviewed in [../docs/core-terminology.md](../docs/core-terminology.md).
+
 ## Normative Language
 
 Normative keywords in OLTS specification files use the convention defined in [core.md](core.md#normative-language).

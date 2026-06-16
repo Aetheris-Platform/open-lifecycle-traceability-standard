@@ -9,6 +9,7 @@ It connects requirements, tests, evidence, decisions, release readiness, artifac
 - No new ALM platform required: OLTS can work with Markdown, CSV, YAML, JSON, GitHub, GitLab, Jira, Azure DevOps, OpenSpec, and MBSE tools.
 - Product repositories remain the source of truth.
 - Automation can diagnose, visualize, and propose changes, but humans approve lifecycle truth through normal review.
+- Generated diagrams, dashboards, indexes, and reports are derived unless accepted through reviewed source truth.
 
 ## Maturity
 
@@ -72,6 +73,8 @@ OLTS is currently an early draft. The planned readiness path is:
 - `v1.0.0` first stable standard
 
 See [docs/versioning.md](docs/versioning.md), [docs/v1-readiness.md](docs/v1-readiness.md), and [CHANGELOG.md](CHANGELOG.md).
+
+Core entity types, identifier shape, source-truth boundaries, generated artifact semantics, and draft-only language scope are reviewed in [docs/core-terminology.md](docs/core-terminology.md).
 
 ## Repository Layout
 

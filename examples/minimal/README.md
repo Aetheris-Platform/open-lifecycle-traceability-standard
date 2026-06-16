@@ -31,3 +31,5 @@ APP-UC-00003 --requires--> APP-SR-00014 --verified_by--> APP-VT-00221 --evidence
 This is enough for a reviewer to inspect which use case requires the requirement, how the requirement is verified, and which evidence proves the verification ran.
 
 The relationship direction matches the draft vocabulary in [../../spec/relationships.md](../../spec/relationships.md).
+
+In a real repository, these records and relationships become source truth only when accepted through normal review. Generated views built from them remain derived unless the repository explicitly accepts a generated artifact as source truth.

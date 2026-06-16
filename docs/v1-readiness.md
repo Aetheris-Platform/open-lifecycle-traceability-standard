@@ -18,11 +18,11 @@ Public community processes such as Discussions, external issues, outside pull re
 
 Before `v1.0.0`:
 
-- [ ] Core entity types are reviewed and intentionally accepted, renamed, or deferred.
-- [ ] Identifier shape is stable enough for adopters to assign durable IDs.
-- [ ] Source-of-truth boundaries are stated consistently across README, docs, spec, examples, and schemas.
-- [ ] Generated artifacts are clearly described as derived unless accepted through reviewed source truth.
-- [ ] Draft-only language is removed or scoped to future experimental material.
+- [x] Core entity types are reviewed and intentionally accepted, renamed, or deferred.
+- [x] Identifier shape is stable enough for adopters to assign durable IDs.
+- [x] Source-of-truth boundaries are stated consistently across README, docs, spec, examples, and schemas.
+- [x] Generated artifacts are clearly described as derived unless accepted through reviewed source truth.
+- [x] Draft-only language is removed or scoped to future experimental material.
 - [x] Normative keyword conventions, such as RFC 2119/8174 `MUST`, `SHOULD`, and `MAY`, are defined and applied consistently across `spec/`.
 
 Evidence to review:
@@ -31,8 +31,11 @@ Evidence to review:
 - [../spec/README.md](../spec/README.md)
 - [../spec/relationships.md](../spec/relationships.md)
 - [../spec/conformance.md](../spec/conformance.md)
+- [core-terminology.md](core-terminology.md)
 - [../README.md](../README.md)
 - [overview.md](overview.md)
+- [../examples/minimal/README.md](../examples/minimal/README.md)
+- [../examples/realistic/README.md](../examples/realistic/README.md)
 
 ### 2. Relationship Semantics
 

@@ -36,6 +36,8 @@ They are designed around the current draft specs:
 - [../spec/relationships.md](../spec/relationships.md)
 - [../spec/conformance.md](../spec/conformance.md)
 
+Core entity types, identifier shape, source-of-truth boundaries, and generated artifact semantics are reviewed in [../docs/core-terminology.md](../docs/core-terminology.md).
+
 Relationship verb direction and naming are reviewed in [../docs/relationship-semantics.md](../docs/relationship-semantics.md). The relationship schema enum matches the core vocabulary documented there.
 
 ## Record Type Invariant
