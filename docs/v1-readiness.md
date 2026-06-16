@@ -154,7 +154,7 @@ Before making the repository public:
 - [x] Force pushes and branch deletion are blocked for protected branches.
 - [x] Security alerts, secret scanning, and vulnerability reporting settings are reviewed where available.
 - [x] Wiki/projects settings match the intended governance model.
-- [x] No local paths, private product names, secrets, credentials, or internal-only assumptions are present in tracked files.
+- [x] Current-branch scrub found no local paths, private product names, secrets, credentials, or internal-only assumptions in tracked files.
 
 Manual settings should be checked in GitHub before visibility changes:
 
