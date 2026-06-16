@@ -37,6 +37,8 @@ Recommended starting points:
 - **L1:** Assign stable IDs to existing lifecycle records.
 - **L2:** Add explicit relationships between a small number of records.
 
+See [../spec/conformance.md](../spec/conformance.md) for the draft level expectations, diagnostics, validation guidance, and claim language.
+
 Avoid starting at L5 unless the repo already has strong requirements, test, evidence, and CI discipline.
 
 ## Step 3: Inventory Current Sources
@@ -153,7 +155,7 @@ or:
 This repository maintains explicit OLTS L2 relationship files for selected requirements and tests.
 ```
 
-During `v0.x`, conformance claims are provisional and should be phrased as adoption targets or experiments.
+During `v0.x`, conformance claims are provisional and should be phrased as scoped adoption targets or experiments. Avoid certification-style claims until OLTS publishes a stable certification or trademark policy.
 
 ## Recommended First Pull Request
 

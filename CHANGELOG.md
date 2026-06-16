@@ -6,15 +6,22 @@ OLTS is currently in the `v0.x` draft series. See [docs/versioning.md](docs/vers
 
 ## Unreleased
 
-No unreleased changes yet.
+### Added
+
+- Draft `v0.2.0` conformance model with level expectations, diagnostics guidance, validation reporting, extension guidance, and adopter claim language.
+
+### Changed
+
+- Linked README, overview, adoption, pipeline, and core spec guidance to the draft conformance model.
+- Clarified draft maturity language so pre-`v1.0.0` work does not imply a public stable release.
 
 ## `v0.1.0` - 2026-06-16
 
-Initial public draft of OLTS.
+Initial draft of OLTS.
 
 ### Added
 
-- Initial public README and overview draft.
+- Initial README and overview draft.
 - Minimal OLTS example record and relationship file.
 - Draft repository structure for `spec/`, `schemas/`, `tools/`, `examples/`, and `docs/`.
 - Contribution, notice, trademark, and ignore-file scaffolding.
@@ -43,7 +50,7 @@ Expected scope:
 - generated artifact metadata schemas;
 - diagnostic and conformance report schemas.
 
-### `v1.0.0` - First stable standard
+### `v1.0.0` - First stable public standard
 
 Expected scope:
 

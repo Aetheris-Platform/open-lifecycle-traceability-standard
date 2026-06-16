@@ -1,6 +1,6 @@
 # OLTS Relationship Model Draft
 
-This file captures the initial public direction for explicit OLTS relationships. It is draft material for `v0.1.0`.
+This file captures the initial direction for explicit OLTS relationships. It is draft material, not a stable `v1.0.0` standard.
 
 ## Relationship Principle
 

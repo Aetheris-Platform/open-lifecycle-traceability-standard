@@ -1,13 +1,13 @@
 # OLTS Governance
 
-OLTS is an early open draft. Governance should be lightweight enough to invite feedback and structured enough to protect the standard from unclear changes.
+OLTS is an early draft. Governance should be lightweight enough to invite feedback and structured enough to protect the standard from unclear changes.
 
 ## Public Change Flow
 
 The intended public flow is:
 
 ```text
-Discussion -> Issue -> Pull Request -> Review -> Merge -> Release tag
+Discussion -> Issue -> Pull Request -> Review -> Merge -> Milestone or release decision
 ```
 
 ## Discussions
@@ -62,6 +62,6 @@ OLTS should avoid changes that require a specific vendor platform, require a dat
 
 ## Release Decisions
 
-Release tags should be created after reviewed changes are merged and the changelog is updated.
+Milestones and release decisions should happen after reviewed changes are merged and the changelog is updated. Public release tags should wait until `v1.0.0` unless maintainers explicitly approve an earlier draft release.
 
 During `v0.x`, releases are draft milestones. At `v1.0.0`, the project should publish a clearer compatibility and deprecation policy.

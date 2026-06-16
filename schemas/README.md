@@ -11,4 +11,4 @@ Planned schema areas include:
 - diagnostic output;
 - conformance reports.
 
-The initial public draft should keep schemas small, readable, and friendly to review in pull requests.
+The initial schemas draft should keep schemas small, readable, and friendly to review in pull requests.

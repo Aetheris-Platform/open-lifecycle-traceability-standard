@@ -1,6 +1,6 @@
 # OLTS Core Draft
 
-This file captures the initial public direction for OLTS Core. It is draft material for `v0.1.0`, not a stable `v1.0.0` standard.
+This file captures the initial direction for OLTS Core. It is draft material, not a stable `v1.0.0` standard.
 
 OLTS Core defines the minimum shared language needed to make lifecycle traceability explicit, repo-native, reviewable, and automatable.
 
@@ -114,14 +114,16 @@ OLTS diagnostics should be explicit and reviewable. Draft diagnostic categories 
 
 A missing source should not be treated as a healthy zero state. It should produce a diagnostic.
 
-## Draft Conformance Levels
+## Draft Conformance Summary
+
+The OLTS conformance ladder is defined in [conformance.md](conformance.md). In summary:
 
 | Level | Meaning |
 | --- | --- |
-| L1: Stable IDs | Lifecycle entities have durable identifiers. |
-| L2: Explicit Relationships | Key relationships are recorded in reviewable files. |
-| L3: Verification Coverage | Requirements and use cases link to tests or validation scenarios. |
-| L4: Evidence Coverage | Tests, validation scenarios, and release claims link to evidence. |
-| L5: Automated Conformance | CI checks validate identifiers, links, provenance, and diagnostics. |
+| `L1` | Lifecycle entities have durable identifiers. |
+| `L2` | Key relationships are recorded in reviewable files or fields. |
+| `L3` | Requirements and use cases in scope link to tests or validation scenarios. |
+| `L4` | Tests, validation scenarios, and release claims in scope link to evidence. |
+| `L5` | Automated checks validate identifiers, relationships, provenance, and diagnostics. |
 
-These labels are provisional during the `v0.x` draft series.
+These labels remain provisional during the `v0.x` draft series.
