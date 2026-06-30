@@ -3,15 +3,46 @@
 Thumbs.db
 *.tmp
 *.bak
+*.swp
+*.swo
 
 # Microsoft Office lock files
 ~$*.docx
 ~$*.pptx
 ~$*.xlsx
 
+# Local tool settings
+.claude/settings.local.json
+.codex/
+*.local.*
+
+# Local dependency environments
+.venv/
+node_modules/
+
 # Local generated state
 .local-state/
 .generated/
+
+# Generated build and documentation output
+build/
+dist/
+site/
+docs/_build/
+
+# Caches and logs
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+coverage/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
 
 # Local source draft converted to Markdown
 docs/description.docx
